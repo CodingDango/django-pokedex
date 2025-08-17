@@ -1,0 +1,10 @@
+@use 'variables.scss' as var;
+@use 'resets.scss';
+@use 'layout.scss';
+@use 'components.scss';
+
+body {
+  background-color: var.$creamy-white;
+  font-family: var.$main-font;
+  color: var.$text-color;
+}

@@ -1,0 +1,27 @@
+.content_wrapper_wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+
+    .content_wrapper {
+      max-width: 900px;
+      padding: 96px 0 32px 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 40px;
+  }
+}
+
+.results {
+  width: 100%;
+
+  .results__grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+}

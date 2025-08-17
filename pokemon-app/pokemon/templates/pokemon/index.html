@@ -1,0 +1,36 @@
+{% extends 'pokemon/base.html' %}
+{% load static %}
+
+{% block head %}
+<script src="{% static 'pokemon/js/home.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+  Homepage
+{% endblock %}
+
+{% block content %}
+<div class="content_wrapper_wrapper">
+  <div class="content_wrapper">
+    <!-- Search bar -->
+    <section class="search">
+      <div class="search-text-wrapper">
+        <h1 class="search__header">Pokedex</h1>
+        <p class="search__text">Search for a Pokemon by name or using its national pokedex number.</p>
+      </div>
+      <div class="search__input-wrapper">
+        <input id="search-input" class="search__input" type="text" placeholder="Search your pokemon!">
+        <button class="search__button">
+          <img src="{% static 'pokemon/images/pokeball.svg' %}">
+        </button>
+      </div>
+    </section>  
+
+    <!-- Pokemon results -->
+    <section class="results">
+      <div id="results-container" class="results__grid">
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

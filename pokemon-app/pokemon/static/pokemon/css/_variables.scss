@@ -1,0 +1,19 @@
+$main-font: 'Inter', sans-serif;
+$creamy-white: #F7F7F7;
+$primary-red: #FB2C36;
+$text-color: #1D293D;
+
+$drop-shadow-properties: 0px 4px 12px 0px; // offset-x = 0, offset-y = 4, blur = 8, spread = 0? right?
+$drop-shadow-color: rgba(#1D293D, 0.2);
+
+// Card colors for pokemons
+$leaf-card: #5ED0B5;
+$fire-card: #FA7474;
+$water-card: #8CC7FA;
+$electric-card: #F9D878;
+
+// Type indicator bg colors
+$leaf-type-indicator: #39C2A2;
+$fire-type-indicator: #FB2C36;
+$water-type-indicator: #5BAFF8;  
+$electric-type-indicator: #F7CA47;

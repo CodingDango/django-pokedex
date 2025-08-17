@@ -1,0 +1,149 @@
+@use 'variables' as var;
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .search-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .search__header {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    .search__text {
+      font-size: 18px;
+    }
+  }
+
+  .search__input-wrapper {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    // This is correct! 1fr = take all remaining space, auto = fit the content.
+    grid-template-columns: 1fr auto; 
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+    border-radius: 10px;
+    gap: 16px;
+
+    .search__input {
+      height: 20px;
+      border: 0;
+      outline: none;
+      font-size: 16px;
+      background: none; // Good practice to make sure it's transparent
+
+      &::placeholder {
+        color: rgba(var.$text-color, 0.5);
+      }
+    }
+
+    .search__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 5px;
+      background-color: var.$primary-red;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 0px 8px 0px rgba(var.$primary-red, 0.5);
+      cursor: pointer;
+      outline: none;
+
+      // img {
+      //   width: 28px;
+      //   height: 28px;
+      // }
+
+      &:hover, &:focus {
+        filter: brightness(80%);
+      }
+    }
+  }
+}
+
+.results {
+  .results__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+}
+
+.pokemon {
+  color: black;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 8px;
+  border-radius: 10px;
+
+  &.grass {
+    background-color: var.$leaf-card;
+    color: white;
+  }
+
+  &.fire {
+    background-color: var.$fire-card;
+    color: white;
+  }
+
+  &.water {
+    background-color: var.$water-card;
+    color: white;
+  }
+
+  &.electric {
+    background-color: var.$electric-card;
+    color: white;
+  }
+
+
+  .pokemon__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pokemon__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .pokemon__types {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .pokemon__sprite {
+      max-width: 125px;
+      max-height: 125px;
+    }
+  }
+}
+
+
+
+.pokemon__type {
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+
+  &.grass {
+    color: white;
+    background-color: var.$leaf-type-indicator;
+  }
+}
