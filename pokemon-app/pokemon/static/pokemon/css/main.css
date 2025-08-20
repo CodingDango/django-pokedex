@@ -35,6 +35,13 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.results .load-more {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
 .search {
   display: flex;
@@ -107,22 +114,22 @@
   padding: 10px 20px;
   gap: 8px;
   border-radius: 10px;
+  background-color: white;
 }
 .pokemon.grass {
-  background-color: #5ED0B5;
-  color: white;
+  background-color: rgba(94, 208, 181, 0.5568627451);
 }
 .pokemon.fire {
-  background-color: #FA7474;
-  color: white;
+  background-color: rgba(250, 116, 116, 0.5568627451);
 }
 .pokemon.water {
-  background-color: #8CC7FA;
-  color: white;
+  background-color: rgba(140, 199, 250, 0.5333333333);
 }
 .pokemon.electric {
-  background-color: #F9D878;
-  color: white;
+  background-color: rgba(249, 217, 120, 0.5568627451);
+}
+.pokemon.flying {
+  background-color: oklch(86.209% 0.07075 249.972deg / 0.521);
 }
 .pokemon .pokemon__header {
   display: flex;
@@ -145,17 +152,49 @@
 }
 
 .pokemon__type {
-  padding: 3px 10px;
+  color: #1D293D;
+  font-weight: 500;
+  border: none;
+}
+.pokemon__type span {
+  padding: 4px 10px;
   border-radius: 20px;
   background-color: white;
-  color: black;
-  font-weight: 400;
+  display: inline-block;
+}
+.pokemon__type.grass span {
+  color: white;
+  background-color: #5fd6ba;
+}
+.pokemon__type.fire span {
+  color: white;
+  background-color: #fb2c36;
+}
+.pokemon__type.water span {
+  color: white;
+  background-color: #5baff8;
+}
+.pokemon__type.electric span {
+  color: white;
+  background-color: #dbab1b;
+}
+.pokemon__type.flying span {
+  color: white;
+  background-color: oklch(76.903% 0.12105 252.704deg);
+}
+.pokemon__type.normal span {
+  background-color: oklch(86.9% 0.005 56.366deg);
+}
+
+.load-more__button {
   display: inline-block;
   text-align: center;
-}
-.pokemon__type.grass {
+  padding: 12px 20px;
+  background-color: #FB2C36;
   color: white;
-  background-color: #39C2A2;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
 }
 
 body {

@@ -85,27 +85,27 @@
   padding: 10px 20px;
   gap: 8px;
   border-radius: 10px;
+  background-color: white;
 
   &.grass {
     background-color: var.$leaf-card;
-    color: white;
   }
 
   &.fire {
     background-color: var.$fire-card;
-    color: white;
   }
 
   &.water {
     background-color: var.$water-card;
-    color: white;
   }
 
   &.electric {
     background-color: var.$electric-card;
-    color: white;
   }
 
+  &.flying {
+    background-color: var.$flying-card;
+  }
 
   .pokemon__header {
     display: flex;
@@ -131,19 +131,56 @@
   }
 }
 
-
-
 .pokemon__type {
-  padding: 3px 10px;
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  font-weight: 400;
-  display: inline-block;
-  text-align: center;
+  color: var.$text-color;
+  font-weight: 500;
+  border: none;
 
-  &.grass {
+  & span {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: inline-block;
+
+  }
+
+  &.grass span{
     color: white;
     background-color: var.$leaf-type-indicator;
   }
+
+  &.fire span{
+    color: white;
+    background-color: var.$fire-type-indicator;
+  }
+
+  &.water span{
+    color: white;
+    background-color: var.$water-type-indicator;
+  }
+
+  &.electric span{
+    color: white;
+    background-color: var.$electric-type-indicator;
+  }
+
+  &.flying span {
+    color: white;
+    background-color: var.$flying-type-indicator;
+  }
+
+  &.normal span {
+    background-color: var.$normal-type-indicator;
+  }
+}
+
+    .load-more__button {
+      display: inline-block;
+      text-align: center;
+      padding: 12px 20px;
+      background-color: var.$primary-red;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+      border: none;
 }

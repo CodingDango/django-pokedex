@@ -7,13 +7,16 @@ $drop-shadow-properties: 0px 4px 12px 0px; // offset-x = 0, offset-y = 4, blur =
 $drop-shadow-color: rgba(#1D293D, 0.2);
 
 // Card colors for pokemons
-$leaf-card: #5ED0B5;
-$fire-card: #FA7474;
-$water-card: #8CC7FA;
-$electric-card: #F9D878;
+$leaf-card: #5ed0b58e;
+$fire-card: #fa74748e;
+$water-card: #8cc7fa88;
+$electric-card: #f9d9788e;
+$flying-card: oklch(86.209% 0.07075 249.972 / 0.521);;
 
 // Type indicator bg colors
-$leaf-type-indicator: #39C2A2;
-$fire-type-indicator: #FB2C36;
-$water-type-indicator: #5BAFF8;  
-$electric-type-indicator: #F7CA47;
+$leaf-type-indicator: #5fd6ba;
+$fire-type-indicator: #fb2c36;
+$water-type-indicator: #5baff8;  
+$electric-type-indicator: #dbab1b;
+$flying-type-indicator:  oklch(76.903% 0.12105 252.704);
+$normal-type-indicator: oklch(86.9% 0.005 56.366);

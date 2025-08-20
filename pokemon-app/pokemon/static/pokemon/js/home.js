@@ -22,9 +22,12 @@ function formatId(id) {
     return formatDigits(id, totalDigits);
 }
 
+function getPokemonResultsContainer() {
+    return document.getElementById('results-container');
+}
+
 function clearPokemonResults() {
-    const resultsContainer = document.getElementById('results-container');
-    resultsContainer.innerHTML = '';
+    getPokemonResultsContainer().innerHTML = '';
 }
 
 function getPokemonCardHtml(pokemonData) {
@@ -40,7 +43,10 @@ function getPokemonCardHtml(pokemonData) {
             <ul class="pokemon__types">
                 ${pokemonData.types.reduce(
                     (accumulator, slot) => 
-                        accumulator + `<li class='pokemon__type ${slot.type.name}'>${capitalize(slot.type.name)}</li>`,
+                        accumulator + 
+                        `<li class='pokemon__type ${slot.type.name}'>
+                            <span>${capitalize(slot.type.name)}</span>
+                        </li>`,
                     ''
                     )
                 }
@@ -53,14 +59,14 @@ function getPokemonCardHtml(pokemonData) {
 }
 
 function renderPokemon(pokemonData) {
-    const resultsContainer = document.getElementById('results-container');
+    const resultsContainer = getPokemonResultsContainer();
     const htmlToRender = getPokemonCardHtml(pokemonData);
     resultsContainer.insertAdjacentHTML('beforeend', htmlToRender);
 }
 
 function renderFetchError() {
-    const resultsContainer = clearAndGetResultsContainer();
-    resultsContainer.innerHTML = `
+    clearPokemonResults();
+    getPokemonResultsContainer().innerHTML = `
         <div class='results__grid__not_found'>
             <span>Pokemon not found...</span>
             <img class='results__grid__not_found__image' src='/static/pokemon/images/sadpika.png'>
@@ -84,36 +90,46 @@ function fetchPokemon(pokemonNameOrId) {
 
 function addEventToSearchInput() {
     const searchInput = document.getElementById('search-input');
-
     searchInput?.addEventListener('keyup', (event) => {
         if (event.key === 'Enter') {
             const pokemonName = searchInput.value.trim().toLowerCase();
 
             if (!pokemonName) {
                 renderStartingPokemons();
-            } else {
-                fetchPokemon(pokemonName)
-                    .then(pokemonData => {
-                        clearPokemonResults();
-                        renderPokemon(pokemonData);
-                    })
-                    .catch(error => renderFetchError());
+                return;
             }
+            
+            fetchPokemon(pokemonName)
+                .then(pokemonData => {
+                    clearPokemonResults();
+                    renderPokemon(pokemonData);
+                })
+                .catch(error => renderFetchError());
         }
     });
 }
 
 function renderStartingPokemons(totalPokemonsToRender = 10) {
+    const array = [];
     clearPokemonResults();
 
     for (let id = 1; id <= totalPokemonsToRender; id++) {
         fetchPokemon(id)
-            .then(pokemonData => renderPokemon(pokemonData))
+            .then(pokemonData => {
+                array.push(pokemonData);
+
+                if (array.length === totalPokemonsToRender) {
+                    console.log(array);
+                    array.sort((a,b) => a.id - b.id);
+                    console.log(array);
+                    array.forEach(pokemonData => renderPokemon(pokemonData));
+                }
+            })
             .catch(error => console.log(error));
-    }
+    }   
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     addEventToSearchInput();
-    renderStartingPokemons();
+    // renderStartingPokemons(50);
 });
