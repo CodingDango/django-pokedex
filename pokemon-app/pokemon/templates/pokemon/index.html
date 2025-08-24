@@ -1,6 +1,16 @@
-{% extends 'pokemon/base.html' %} {% load static %} {% block head %}
-<script src="{% static 'pokemon/js/home.js' %}"></script>
-{% endblock %} {% block title %} Homepage {% endblock %} {% block content %}
+{% extends 'pokemon/base.html' %} 
+{% load static %} 
+
+{% block head %}
+  <script type="module" src="{% static 'pokemon/js/main.js' %}"></script>
+{% endblock %} 
+{% block title %} Homepage {% endblock %} {% block content %}
+<div class="bg_img__wrapper">
+  <div class="bg_img__wrapper-wrapper">
+    <img class="bg_img" src="/static/pokemon/images/pokeball2.svg">
+  </div>
+</div>
+
 <div class="content_wrapper_wrapper">
   <div class="content_wrapper">
     <!-- Search bar -->
@@ -18,7 +28,7 @@
           type="text"
           placeholder="Search your pokemon!"
         />
-        <button class="search__button">
+        <button id="search-btn" class="search__button">
           <img src="{% static 'pokemon/images/pokeball.svg' %}" />
         </button>
       </div>
@@ -26,9 +36,16 @@
 
     <!-- Pokemon results -->
     <section class="results">
-      <div id="results-container" class="results__grid"></div>
+      <div id="results-container" class="results__grid">
+        <!-- <article class="pokemon loading">
+          <div class="indicator__wrapper">
+            <span class="indicator"></span>
+          </div>
+        </article> -->
+      </div>
+
       <div class="load-more">
-        <button class="load-more__button">Load More</button>
+        <button id="load-more-btn" class="load-more__button">Load More</button>
       </div>
     </section>
   </div>

@@ -1,0 +1,16 @@
+@mixin interactive-hover {
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin interactive-darken {
+  cursor: pointer;
+
+  &:hover, &:focus {
+    filter: brightness(85%);
+  }
+}

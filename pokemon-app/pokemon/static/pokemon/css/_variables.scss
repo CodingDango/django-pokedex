@@ -2,21 +2,31 @@ $main-font: 'Inter', sans-serif;
 $creamy-white: #F7F7F7;
 $primary-red: #FB2C36;
 $text-color: #1D293D;
+$text-light: oklch(70.7% 0.022 261.325);
 
 $drop-shadow-properties: 0px 4px 12px 0px; // offset-x = 0, offset-y = 4, blur = 8, spread = 0? right?
+$xs-drop-shadow: 0px 4px 4px 0px; // offset-x = 0, offset-y = 4, blur = 8, spread = 0? right?
 $drop-shadow-color: rgba(#1D293D, 0.2);
 
-// Card colors for pokemons
-$leaf-card: #5ed0b58e;
-$fire-card: #fa74748e;
-$water-card: #8cc7fa88;
-$electric-card: #f9d9788e;
-$flying-card: oklch(86.209% 0.07075 249.972 / 0.521);;
+$pokemon-types: (
+  // "name-of-type": (card-color, indicator-color, text-color='white')
+  "grass":    ( #5ed0b573, #5ED0B5),
+  "fire":     ( #fa731371, #FA7213 ),
+  "water":    ( #8cc7fa7e, #8CC7FA ),
+  "electric": ( #fcd52977,#FCD429, $text-color),
+  "flying":   ( #a991fe79, #A991FE ),
+  "normal":   ( #abab8c60, #ABAB8C),
+  "bug":   ( #a9d31e6e, #A8D31E),
+  "poison":   ( #ac06c64d, #AB06C6),
+  "ground":   ( #e5bb6165, #E5BB61),
+  "rock":   ( #c4900162, #C48F01),
+  "ice":   ( #43defd6e, #43defd6e, $text-color),
+  "dragon": (#6621ef5e, #6721EF),
+  'steel': (#9e9fba67, #9E9FBA),
+  'fighting': (#cc000054, #CC0001),
+  'ghost': (#6b3e9567, #6B3E95),
+  'dark': (#48484852, #484848),
+  'psychic': (#fd519965, #FD519A, white),
+)
 
-// Type indicator bg colors
-$leaf-type-indicator: #5fd6ba;
-$fire-type-indicator: #fb2c36;
-$water-type-indicator: #5baff8;  
-$electric-type-indicator: #dbab1b;
-$flying-type-indicator:  oklch(76.903% 0.12105 252.704);
-$normal-type-indicator: oklch(86.9% 0.005 56.366);
+  // "normal":   ( oklch(86.428% 0.00167 66.472), oklch(70.9% 0.01 56.259)),
