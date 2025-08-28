@@ -44,6 +44,11 @@
   z-index: 5;
 }
 
+.search__btns-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
 .search {
   display: flex;
   flex-direction: column;
@@ -97,7 +102,7 @@
   box-shadow: 0px 0px 8px 0px rgba(251, 44, 54, 0.5);
   cursor: pointer;
 }
-.search .search__input-wrapper .search__button:hover, .search .search__input-wrapper .search__button:focus {
+.search .search__input-wrapper .search__button:hover {
   filter: brightness(85%);
 }
 
@@ -161,7 +166,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.pokemon:hover, .pokemon:focus {
+.pokemon:hover {
   transform: translateY(-2px);
 }
 .pokemon.grass {
@@ -231,7 +236,7 @@
 .pokemon .pokemon__content-wrapper .pokemon__types {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   list-style: none;
 }
 .pokemon .pokemon__content-wrapper .pokemon__sprite {
@@ -240,104 +245,84 @@
   z-index: 5;
 }
 
-.pokemon__type {
+.pokemon__types {
   color: #1D293D;
   font-weight: 500;
   border: none;
 }
-.pokemon__type span {
+.pokemon__types span {
   padding: 4px 10px;
   border-radius: 20px;
   background-color: white;
   display: inline-block;
 }
-.pokemon__type.grass span {
+.pokemon__types li.grass span {
   background-color: #5ED0B5;
   color: white;
 }
-.pokemon__type.fire span {
+.pokemon__types li.fire span {
   background-color: #FA7213;
   color: white;
 }
-.pokemon__type.water span {
+.pokemon__types li.water span {
   background-color: #8CC7FA;
   color: white;
 }
-.pokemon__type.electric span {
+.pokemon__types li.electric span {
   background-color: #FCD429;
   color: #1D293D;
 }
-.pokemon__type.flying span {
+.pokemon__types li.flying span {
   background-color: #A991FE;
   color: white;
 }
-.pokemon__type.normal span {
+.pokemon__types li.normal span {
   background-color: #ABAB8C;
   color: white;
 }
-.pokemon__type.bug span {
+.pokemon__types li.bug span {
   background-color: #A8D31E;
-  color: white;
+  color: black;
 }
-.pokemon__type.poison span {
+.pokemon__types li.poison span {
   background-color: #AB06C6;
   color: white;
 }
-.pokemon__type.ground span {
+.pokemon__types li.ground span {
   background-color: #E5BB61;
   color: white;
 }
-.pokemon__type.rock span {
+.pokemon__types li.rock span {
   background-color: #C48F01;
   color: white;
 }
-.pokemon__type.ice span {
+.pokemon__types li.ice span {
   background-color: rgba(67, 222, 253, 0.431372549);
   color: #1D293D;
 }
-.pokemon__type.dragon span {
+.pokemon__types li.dragon span {
   background-color: #6721EF;
   color: white;
 }
-.pokemon__type.steel span {
+.pokemon__types li.steel span {
   background-color: #9E9FBA;
   color: white;
 }
-.pokemon__type.fighting span {
+.pokemon__types li.fighting span {
   background-color: #CC0001;
   color: white;
 }
-.pokemon__type.ghost span {
+.pokemon__types li.ghost span {
   background-color: #6B3E95;
   color: white;
 }
-.pokemon__type.dark span {
+.pokemon__types li.dark span {
   background-color: #484848;
   color: white;
 }
-.pokemon__type.psychic span {
+.pokemon__types li.psychic span {
   background-color: #FD519A;
   color: white;
-}
-
-.load-more__button {
-  display: inline-block;
-  text-align: center;
-  padding: 16px 24px;
-  font-size: 1rem;
-  background-color: #FB2C36;
-  color: white;
-  border-radius: 10px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-.load-more__button.hidden {
-  display: none;
-}
-.load-more__button:hover, .load-more__button:focus {
-  filter: brightness(85%);
 }
 
 .bg_img__wrapper {
@@ -347,6 +332,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -5;
 }
 
 .bg_img__wrapper_wrapper {
@@ -363,6 +349,47 @@
   right: -100px;
   filter: invert(1) opacity(5%);
   z-index: -5;
+}
+
+.center-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#filter-btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#filter-btn:hover {
+  background-color: rgba(29, 41, 61, 0.1);
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  filter: brightness(85%);
+}
+
+.button--primary {
+  background-color: #FB2C36;
+  color: white;
+}
+
+.button--hidden {
+  display: none;
 }
 
 body {

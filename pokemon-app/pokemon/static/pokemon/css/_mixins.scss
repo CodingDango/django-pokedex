@@ -2,7 +2,7 @@
   transition: transform 0.2s ease-out;
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover {
     transform: translateY(-2px);
   }
 }
@@ -10,7 +10,7 @@
 @mixin interactive-darken {
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover {
     filter: brightness(85%);
   }
 }

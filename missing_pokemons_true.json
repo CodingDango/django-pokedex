@@ -1,0 +1,135 @@
+[
+  {
+    "id": 32,
+    "name": "nidoran♂",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "id": 474,
+    "name": "porygon-z",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "id": 786,
+    "name": "tapu lele",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/786.png",
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "id": 787,
+    "name": "tapu bulu",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png",
+    "types": [
+      "grass",
+      "fairy"
+    ]
+  },
+  {
+    "id": 788,
+    "name": "tapu fini",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/788.png",
+    "types": [
+      "water",
+      "fairy"
+    ]
+  },
+  {
+    "id": 866,
+    "name": "mr. rime",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png",
+    "types": [
+      "ice",
+      "psychic"
+    ]
+  },
+  {
+    "id": 991,
+    "name": "iron bundle",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png",
+    "types": [
+      "ice",
+      "water"
+    ]
+  },
+  {
+    "id": 992,
+    "name": "iron hands",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png",
+    "types": [
+      "fighting",
+      "electric"
+    ]
+  },
+  {
+    "id": 993,
+    "name": "iron jugulis",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png",
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "id": 994,
+    "name": "iron moth",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png",
+    "types": [
+      "fire",
+      "poison"
+    ]
+  },
+  {
+    "id": 995,
+    "name": "iron thorns",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png",
+    "types": [
+      "rock",
+      "electric"
+    ]
+  },
+  {
+    "id": 1006,
+    "name": "iron valiant",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png",
+    "types": [
+      "fairy",
+      "fighting"
+    ]
+  },
+  {
+    "id": 1010,
+    "name": "iron leaves",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png",
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "id": 1022,
+    "name": "iron boulder",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png",
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "id": 1023,
+    "name": "iron crown",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png",
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  }
+]

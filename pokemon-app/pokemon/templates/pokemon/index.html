@@ -28,24 +28,26 @@
           type="text"
           placeholder="Search your pokemon!"
         />
-        <button id="search-btn" class="search__button">
-          <img src="{% static 'pokemon/images/pokeball.svg' %}" />
-        </button>
+        <div class="search__btns-wrapper">
+          <button id="search-btn" class="search__button">
+            <img src="{% static 'pokemon/images/pokeball.svg' %}" />
+          </button>
+          <button id="filter-btn">
+            <span class="center-icon">
+              <i class="fa-solid fa-sliders"></i>
+            </span>
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- Pokemon results -->
     <section class="results">
       <div id="results-container" class="results__grid">
-        <!-- <article class="pokemon loading">
-          <div class="indicator__wrapper">
-            <span class="indicator"></span>
-          </div>
-        </article> -->
       </div>
 
       <div class="load-more">
-        <button id="load-more-btn" class="load-more__button">Load More</button>
+        <button id="load-more" class="button button--primary">Load More</button>
       </div>
     </section>
   </div>

@@ -32,11 +32,12 @@
     justify-content: center;
     align-items: baseline;
     z-index: 5;
-
-    
-
-
   }
+}
+
+.search__btns-wrapper {
+  display: flex;
+  gap: 1rem;
 }
 
 
