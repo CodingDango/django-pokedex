@@ -13,25 +13,23 @@ export function setLoadMoreBtnVisiblity(show) {
 
 export function createPokemonCardElement(pokemonData) {
     const htmlToRender = `
-        <article data-nat-dex=${pokemonData.id} class="pokemon ${pokemonData.types[0]}">
-          <img class='pokemon__ball' src='/static/pokemon/images/pokeball2.svg'>
-          <header class="pokemon__header">
-            <h2 class="pokemon__name">${capitalize(pokemonData.name)}</h2>
-            <p class="pokemon__id">#${formatId(pokemonData.id)}</p>
+        <article data-nat-dex=${pokemonData.id} class="pokemon-card pokemon-card--${pokemonData.types[0]}">
+          <img class='pokemon-card__ball' src='/static/pokemon/images/pokeball2.svg'>
+          <header class="pokemon-card__header">
+            <h2 class="pokemon-card__name">${capitalize(pokemonData.name)}</h2>
+            <p class="pokemon-card__id">#${formatId(pokemonData.id)}</p>
           </header>
-          <div class="pokemon__content-wrapper">
-            <ul class="pokemon__types">
+          <div class="pokemon-card__content-wrapper">
+            <ul class="pokemon-card__types">
                 ${
                     pokemonData.types.reduce((listItemStr, type) => 
                         listItemStr += 
-                            `<li class='${type}'>
-                                <span>${capitalize(type)}</span>
-                            <li>`
+                            `<li><span class='pokemon-card__type pokemon-card__type--${type}'>${capitalize(type)}</span><li>`
                         , ''
                     )
                 }
             </ul>
-            <img class="pokemon__sprite" src="${pokemonData.imageUrl}"> 
+            <img class="pokemon-card__sprite" src="${pokemonData.imageUrl}"> 
           </div>
         </article>`;
 
@@ -39,7 +37,8 @@ export function createPokemonCardElement(pokemonData) {
 }
 
 export function loadAndRenderPokemon(pokemonData) {
-    const placeholderCard = getPokemonResultsContainer().querySelector(`#pokemon-placeholder-${pokemonData.id}`)    
+    const placeholderCard = getPokemonCardsContainer()
+        .querySelector(`[data-nat-dex="${pokemonData.id}"]`)    
 
     if (placeholderCard) {
         placeholderCard.outerHTML = createPokemonCardElement(pokemonData);
@@ -48,7 +47,7 @@ export function loadAndRenderPokemon(pokemonData) {
 
 export function renderSearchError() {
     clearPokemonResults();
-    getPokemonResultsContainer().innerHTML = `
+    getPokemonCardsContainer().innerHTML = `
         <div class='results__grid__not_found'>
             <span>Pokemon not found...</span>
             <img class='results__grid__not_found__image' src='/static/pokemon/images/sadpika.png'>
@@ -89,16 +88,16 @@ export function loadQueriedPokemonsView(pokemons) {
 
 export function createLoadingCardElement(natDexId) {
     return `
-        <div data-nat-dex=${natDexId} id='pokemon-placeholder-${natDexId}' class="pokemon loading">
-          <div class="indicator__wrapper">
-            <span class="indicator"></span>
+        <div data-nat-dex=${natDexId} class="pokemon-card pokemon-card--loading">
+          <div class="pokemon-card__loader-wrapper">
+            <span class="pokemon-card__loader"></span>
           </div>
         </div>
     `;
 }
 
 export function renderLoadingCardElement(natDexId) {
-    getPokemonResultsContainer()
+    getPokemonCardsContainer()
         ?.insertAdjacentHTML('beforeend', createLoadingCardElement(natDexId));
 }
 
@@ -110,9 +109,9 @@ export function renderPokemons(pokemons) {
 }
 
 export function clearPokemonResults() {
-    getPokemonResultsContainer().innerHTML = '';
+    getPokemonCardsContainer().innerHTML = '';
 }
 
-export function getPokemonResultsContainer() {
-    return document.getElementById('results-container');
+export function getPokemonCardsContainer() {
+    return document.getElementById('pokemon-cards-container');
 }

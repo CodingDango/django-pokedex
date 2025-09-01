@@ -1,1 +1,0 @@
-print('melloete-aria'.split('-')[0])

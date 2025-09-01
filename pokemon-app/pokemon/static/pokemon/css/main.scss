@@ -2,9 +2,11 @@
 @use 'resets.scss';
 @use 'layout.scss';
 @use 'components.scss';
+@use 'utils.scss';
 
 body {
   background-color: var.$creamy-white;
   font-family: var.$main-font;
   color: var.$text-color;
+  padding: 0px 16px;
 }

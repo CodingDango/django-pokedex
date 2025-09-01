@@ -1,74 +1,68 @@
 @use 'variables' as var;
 @use 'mixins' as mix;
 @use 'sass:list';
+@use "sass:color";
 
 .search {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   z-index: 10;
+}
 
-  .search-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.search__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .search__header {
-      font-weight: bold;
-      font-size: 36px;
-    }
+.search__header {
+  font-weight: bold;
+  font-size: 36px;
+}
 
-    .search__text {
-      font-size: 18px;
-    }
-  }
+.search__text {
+  font-size: 18px;
+}
 
-  .search__input-wrapper {
-    width: 100%;
-    background-color: white;
-    display: grid;
-    // This is correct! 1fr = take all remaining space, auto = fit the content.
-    grid-template-columns: 1fr auto; 
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
-    border-radius: 10px;
-    gap: 16px;
+.search__input-wrapper {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  
+  grid-template-columns: 1fr auto; 
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+  border-radius: 10px;
+  gap: 16px;
+}
 
-    .search__input {
-      height: 20px;
-      border: 0;
-      font-size: 16px;
-      background: none; // Good practice to make sure it's transparent
-      outline: none;
+.search__input {
+  height: 20px;
+  border: 0;
+  font-size: 16px;
+  background: none; // Good practice to make sure it's transparent
+  outline: none;
 
-      &::placeholder {
-        color: rgba(var.$text-color, 0.5);
-      }
-    }
-
-    .search__button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      padding: 5px;
-      background-color: var.$primary-red;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0px 0px 8px 0px rgba(var.$primary-red, 0.5);
-
-      @include mix.interactive-darken;
-    }
+  &::placeholder {
+    color: rgba(var.$text-color, 0.5);
   }
 }
 
-.results {
-  .results__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-  }
+.search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  background-color: var.$primary-red;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgba(var.$primary-red, 0.5);
+
+  @include mix.interactive-darken;
 }
 
 @keyframes loading {
@@ -76,49 +70,7 @@
   100% { transform: rotate(360deg); }
 }
 
-.pokemon {
-
-  .pokemon__ball {
-    position: absolute;
-    bottom: -15px;
-    right: -15px;
-    width: 125px;
-    height: 125px;
-    filter: opacity(25%);
-  }
-
-  &.loading {
-    background-color: rgba(var.$text-color, 0.1);
-    width: 100%;
-    box-shadow: none;
-    cursor: default;
-    transition: none;
-
-    .indicator__wrapper {
-      height: 165px; // I had to play around with this, size is similar to the original card i guess
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .indicator {
-        border-radius: 50%;
-        border: 5px solid var.$primary-red;
-        border-top-color: transparent;
-        width: 40px;
-        height: 40px;
-        animation-name: loading;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-    }
-
-  }
-
-
-  @include mix.interactive-hover();
-
+.pokemon-card {
   position: relative;
   color: black;
   display: flex;
@@ -128,69 +80,108 @@
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
+  @include mix.interactive-hover();
+
+  &--loading {
+    background-color: rgba(var.$text-color, 0.1);
+    width: 100%;
+    box-shadow: none;
+    cursor: default;
+    transition: none;
+  }
+
+  &__loader-wrapper {
+    height: 165px; // I had to play around with this, size is similar to the original card i guess
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__loader {
+    border-radius: 50%;
+    border: 5px solid var.$primary-red;
+    border-top-color: transparent;
+    width: 40px;
+    height: 40px;
+    animation-name: loading;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 
   @each $type, $colors in var.$pokemon-types {
     $card-color: list.nth($colors, 1);
-    &.#{$type} {
+    &--#{$type} {
       background-color: $card-color;
     }
   }
 
-  .pokemon__header {
+  &__ball {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 125px;
+    height: 125px;
+    filter: opacity(25%);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
+    user-select: none;
 
-    .pokemon__id {
-      font-size: 14px;
-      color: rgba($color: var.$text-color, $alpha: 0.5);
-    }
+  }
+  
+  &__id {
+    font-size: 14px;
+    color: rgba($color: var.$text-color, $alpha: 0.5);
   }
 
-  .pokemon__content-wrapper {
+  &__content-wrapper {
     display: flex;
     justify-content: space-between;
 
-    .pokemon__types {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      list-style: none;
-    }
-
-    .pokemon__sprite {
-      max-width: 140px;
-      max-height: 140px;
-      z-index: 5;
-    }
   }
-}
+  
+  &__sprite {
+    max-width: 140px;
+    max-height: 140px;
+    z-index: 5;
+  }
+  
+  &__types {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+  }
 
-.pokemon__types {
-  color: var.$text-color;
-  font-weight: 500;
-  border: none;
-
-  & span {
+  &__type {
     padding: 4px 10px;
     border-radius: 20px;
     background-color: white;
     display: inline-block;
+    color: var.$text-color;
+    font-weight: 500;
+    pointer-events: none;
+    user-select: none;
 
-  }
+    @each $type, $colors in var.$pokemon-types {
+      $type-indicator-color: list.nth($colors, 2);
+      $type-indicator-text-color: if(list.length($colors) >= 3, list.nth($colors, 3), white);
 
-  @each $type, $colors in var.$pokemon-types {
-    $type-indicator-color: list.nth($colors, 2);
-    $type-indicator-text-color: if(list.length($colors) >= 3, list.nth($colors, 3), white);
-
-   li.#{$type} span {
-      background-color: $type-indicator-color;
-      color: $type-indicator-text-color;
+      &--#{$type} {
+        background-color: $type-indicator-color;
+        color: $type-indicator-text-color;
+      }
     }
   }
 }
-
-
 
 .bg_img__wrapper {
   position: absolute; 
@@ -200,7 +191,6 @@
   height: 100%;
   overflow: hidden;
   z-index: -5;
-
 }
 
 .bg_img__wrapper_wrapper {
@@ -217,26 +207,30 @@
   z-index: -5;
 }
 
-.center-icon {
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-}
-
-#filter-btn {
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: rgba(var.$text-color, 0.1);
+  
+  &--sm {
+    font-size: 1rem;
+    max-width: 1rem;
   }
 
-}
+  &--md {
+    font-size: 18px;
+    max-width: 18px;
+  }
 
+  &--lg {
+    font-size: 20px;
+    max-width: 20px;
+  }
+
+  &--white {
+    color: white;
+  }
+}
 
 .button {
   display: inline-block;
@@ -245,16 +239,196 @@
   font-size: 1rem;
   border-radius: 10px;
   font-weight: bold;
+  font-family: var.$main-font;
+  color: var.$text-color;
   border: none;
-
+  cursor: pointer;
   @include mix.interactive-darken();
+
+  &--primary {
+    background-color: var.$primary-red;
+    color: white;
+  }
+
+  &--light {
+    background-color: rgba(var.$text-color, 0.8);
+  }
+
+  &--hidden {
+    display: none
+  }
+
+  &--ghost {
+    background-color: transparent;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px;
+  }
+
+  &--no-hover {
+    &:hover {
+      background-color: none;
+      filter: none;
+    }
+    
+  }
 }
 
-.button--primary {
-  background-color: var.$primary-red;
+.filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.filters__input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid var.$text-color;
+  max-width: 5rem;
+}
+
+.filters__btn-container {
+  display: flex;
+  gap: 1rem
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.filters__btn {
+  width: 100%;
+  background-color: white;
+  border: none;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var.$text-light;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters__refresh {
+  padding: 0px 12px;
+  border-radius: 10px;
+  background-color: rgba(var.$text-color, 0.8);
   color: white;
+  border: none;
 }
 
-.button--hidden {
-  display: none
+.rounded {
+  border-radius: 50%;
+  background-color: rgba(var.$text-color, 0.8);
+  padding: 4px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__target {
+  border: 1px solid rgba(var.$text-color, 0.5);
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+  width: 100%;
+  top: 100%;
+  z-index: 10;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+}
+
+.dropdown__target--open {
+  visibility: visible;
+}
+
+.visiblity__target {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.select__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__item {
+  padding: 1rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  border-top: 1px solid color.change(oklch(70.4% 0.04 256.788deg), $alpha: 0.4);
+
+  &:hover {
+    background-color: color.change(oklch(70.4% 0.04 256.788deg), $alpha: 0.2);
+  }
+}
+
+.select__item--no-hover {
+  &:hover {
+    background-color: rgba(var.$text-color, 0); // invisible;
+  }
+}
+
+#filter-type-options {
+  max-height: 500px;
+  max-width: 250px;
+  width: 150%;
+  overflow-y: scroll;
+  font-size: 1rem;
+}
+
+.toggle__ui {
+  position: relative;
+  background-color: rgba(var.$text-color, $alpha: 0.4);
+  border-radius: 999px;
+  height: 26px;
+  width: 50px;
+  display: inline-block;
+
+  transition: background-color 0.1s ease-in-out;
+}
+
+.toggle__ui::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.toggle__ui::before {
+  transition: transform 0.1s ease-in-out;
+}
+
+.toggle__input {
+  appearance: none;
+  position: absolute;
+}
+
+.toggle__input:checked + .toggle__ui {
+  background-color: var.$primary-red;
+}
+
+.toggle__input:checked + .toggle__ui::before {
+  transform: translateX(24px);
 }

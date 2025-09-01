@@ -1,0 +1,58 @@
+@use 'variables.scss' as var;
+
+$spacing-values: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40; // in px
+
+@each $space in $spacing-values {
+  .u-gap-#{$space} {
+    gap: #{$space}px;
+  }
+
+  .u-px-#{$space} {
+    padding-left: ($space / 2) + px;
+    padding-right: ($space / 2) + px;
+  }
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-items-center {
+  align-items: center;
+}
+
+.u-justify-center {
+  justify-content: center;
+}
+
+.u-flex-col {
+  flex-direction: column;
+}
+
+.u-justify-between {
+  justify-content: space-between;
+}
+
+.u-w-full {
+  width: 100%;
+}
+
+.u-p-0 {
+  padding: 0;
+}
+
+.u-font-bold {
+  font-weight: bold;
+}
+
+.u-font-normal {
+  font-weight: normal;
+}
+
+.u-text-light {
+  color: var.$text-light;
+}
+
+.u-border--light {
+  border: rgba(var.$text-color, 0.8); 
+}
