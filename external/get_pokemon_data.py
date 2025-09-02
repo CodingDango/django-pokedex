@@ -90,10 +90,12 @@ if __name__ == "__main__":
     
     print(f"Fetching details for {len(all_pokemons_info)} Pokémon concurrently...")
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
-        results = list(tqdm(executor.map(fetch_and_process_pokemon, all_pokemons_info), total=len(all_pokemons_info)))
+    
+        
+    # with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+    #     results = list(tqdm(executor.map(fetch_and_process_pokemon, all_pokemons_info), total=len(all_pokemons_info)))
 
-    processed_pokemons = filterDuplicatePokemonNames(results)
+
 
     print(f"\nSaving {len(processed_pokemons)} Pokémon to pokemon_list.json...")
     with open('pokemon_list.json', 'w') as f:

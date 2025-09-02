@@ -1,4 +1,5 @@
-import POKEMON_LIST from '../DATA/pokemon_list.json' with { type: 'json' };
+import POKEMON_LIST from '../data/pokemon_list.json' with { type: 'json' };
+import ABILITY_LIST from '../data/abilities.json' with { type: 'json' };
 
 const pokeApiUrl = `https://pokeapi.co/api/v2/pokemon/`;
 const localPokemonList = POKEMON_LIST;
@@ -43,3 +44,21 @@ export function getPokemonFromLocal(nameOrId) {
 
     return undefined;
 }   
+
+export function getAllAbilityNames() {
+    return {
+        [Symbol.iterator]: function() {
+            return {
+                currentIdx : 0,
+
+                next() {
+                    if (this.currentIdx < ABILITY_LIST.length) {
+                        return {value: ABILITY_LIST[this.currentIdx++].name, done: false};
+                    } else {
+                        return {done: true};
+                    }
+                }
+            }
+        }    
+    }
+}

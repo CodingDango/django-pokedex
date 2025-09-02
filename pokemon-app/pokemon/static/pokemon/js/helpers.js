@@ -1,5 +1,7 @@
 export function capitalize(str) {
-    const capitalizedWords = str.split(' ').map(word => 
+    const delimeter = (str.includes('-')) ? '-' : ' ';
+
+    const capitalizedWords = str.split(delimeter).map(word => 
         word[0].toUpperCase() + word.slice(1)
     );
 

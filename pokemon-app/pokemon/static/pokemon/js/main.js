@@ -1,5 +1,5 @@
 import { handleSearchSubmit, getPokemonCardsContainer, renderPokemons, loadHomepageView, setLoadMoreBtnVisiblity} from "./ui.js";
-import { getListOfPokemonsLocal } from "./api.js" ;
+import { getListOfPokemonsLocal, getAllAbilityNames } from "./api.js" ;
 import { capitalize } from "./helpers.js";
 
 const filterState = {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSearchListeners(defaultPokemonAmountOnLoad);
     addEventToLoadBtn(defaultPokemonAmountOnLoad);
     handleClickEvents();
-    createFilterTypeOptions();
+    loadFilterOptions();
 });
 
 function setupSearchListeners(defAmtToLoad) {
@@ -130,7 +130,7 @@ function handleSortByClicks(event) {
     filterState.sort = chosenSort;
 }
 
-function createFilterTypeOptions() {
+function loadFilterTypeOptions() {
     const allPokemonTypes = [
         "normal",
         'fighting',
@@ -152,23 +152,45 @@ function createFilterTypeOptions() {
         'fairy'
     ].sort(); // sort alphabetically.
 
-    const optionContainer = document.getElementById('filter-type-options');
+    const typesContainer = document.getElementById('filter-type-options');
+    const weaknessContainer = document.getElementById('filter-weakness-options');
+    
+    if (!typesContainer || !weaknessContainer) return;
 
-    if (!optionContainer) return;
-
-    allPokemonTypes.forEach(pokemonType => 
-        optionContainer.insertAdjacentHTML(
-            'beforeend', createFilterTypeOptionHTML(pokemonType)
-    ));
+    allPokemonTypes.forEach(pokemonType => {
+        const optionHTML =  createFilterTypeOptionHTML(pokemonType)
+        typesContainer.insertAdjacentHTML('beforeend', optionHTML);
+        weaknessContainer.insertAdjacentHTML('beforeend', optionHTML);
+    });
 }
 
 function createFilterTypeOptionHTML(type) {
     return `
-        <label class="select__item select__item--no-hover u-flex u-justify-between">
+        <label class="u-flex u-gap-16">
             <span class="pokemon-card__type pokemon-card__type--${type}">${capitalize(type)}</span>
             <span class="toggle">
                 <input class="toggle__input" value="${type}" type="checkbox"/>
                 <span class="toggle__ui"></span>
             </span>
         </label>`;
+}
+
+function loadAbilityOptions() {
+    const abilityNames = getAllAbilityNames();
+    const container = document.getElementById('filter-ability-options');
+
+    if (!container) return;
+
+    for (const name of abilityNames) {
+        const itemHTML = `
+            <button data-value="${name}" class="select__item">
+              <span>${capitalize(name)}</span>
+            </button>`;
+        container.insertAdjacentHTML('beforeend', itemHTML);
+    }
+}
+
+function loadFilterOptions() {
+    loadFilterTypeOptions();
+    loadAbilityOptions();
 }

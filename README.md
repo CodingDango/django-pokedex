@@ -1,5 +1,4 @@
-- [x] When clicking on a select item inside sort by options. print its sorting type value of the button.
-- [x] after clicking, set the text of the sort by to the value.
-- [x] prepopulate the types inside Type dropdown through javascript.
-- [x] give each a checkbox.
-- [ ] make the checkboxes look good..
+- [x] Fix weird bug where type options aren't loading properly
+- [x] Add type optionsto weaknesses dropdown too.
+- [x] add abilities to pokemon_list
+- [ ] redesign the filters view. rather than many dropdowns. incorporate all of them into one rectangle.

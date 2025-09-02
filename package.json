@@ -1,0 +1,29 @@
+{
+  "name": "pokemonapp",
+  "version": "1.0.0",
+  "description": "- [x] When clicking on a select item inside sort by options. print its sorting type value of the button.\r - [x] after clicking, set the text of the sort by to the value.\r - [x] prepopulate the types inside Type dropdown through javascript.\r - [x] give each a checkbox.\r - [x] make the checkboxes look good..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingDango/django-pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CodingDango/django-pokedex/issues"
+  },
+  "homepage": "https://github.com/CodingDango/django-pokedex#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

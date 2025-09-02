@@ -252,6 +252,8 @@
 .pokemon-card__type {
   padding: 4px 10px;
   border-radius: 20px;
+  width: 5rem;
+  text-align: center;
   background-color: white;
   display: inline-block;
   color: #1D293D;
@@ -514,7 +516,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   border-top: 1px solid oklch(70.4% 0.04 256.788deg / 0.4);
 }
@@ -526,8 +528,8 @@
   background-color: rgba(29, 41, 61, 0);
 }
 
-#filter-type-options {
-  max-height: 500px;
+.filter_options {
+  max-height: 400px;
   max-width: 250px;
   width: 150%;
   overflow-y: scroll;
@@ -539,13 +541,16 @@
   background-color: rgba(29, 41, 61, 0.4);
   border-radius: 999px;
   height: 26px;
-  width: 50px;
+  width: 26px;
   display: inline-block;
   transition: background-color 0.1s ease-in-out;
 }
 
 .toggle__ui::before {
-  content: "";
+  content: "T";
+  color: rgba(29, 41, 61, 0.4);
+  font-weight: bold;
+  text-align: center;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -553,10 +558,7 @@
   position: absolute;
   top: 3px;
   left: 3px;
-}
-
-.toggle__ui::before {
-  transition: transform 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
 .toggle__input {
@@ -571,7 +573,14 @@
 }
 
 .toggle__input:checked + .toggle__ui::before {
-  transform: translateX(24px);
+  color: #FF5350;
+}
+
+#filter-controls {
+  background-color: white;
+  box-shadow: 0px 4px 12px 0px rgba(29, 41, 61, 0.1);
+  padding: 24px 16px;
+  border-radius: 10px;
 }
 
 .u-gap-4 {
@@ -676,6 +685,10 @@
   justify-content: center;
 }
 
+.u-items-end {
+  align-items: end;
+}
+
 .u-flex-col {
   flex-direction: column;
 }
@@ -706,6 +719,110 @@
 
 .u-border--light {
   border: rgba(29, 41, 61, 0.8);
+}
+
+.u-grid {
+  display: grid;
+}
+
+.u-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.u-rows-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.u-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.u-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.u-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.u-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.u-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.u-rows-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.u-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.u-rows-5 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.u-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.u-rows-6 {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.u-cols-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.u-rows-7 {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.u-cols-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.u-rows-8 {
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.u-cols-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.u-rows-9 {
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.u-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.u-rows-10 {
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.u-cols-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.u-rows-11 {
+  grid-template-rows: repeat(11, 1fr);
+}
+
+.u-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.u-rows-12 {
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.u-max-w-half {
+  max-width: 50%;
 }
 
 body {
