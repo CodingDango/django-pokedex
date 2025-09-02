@@ -408,7 +408,7 @@
 }
 
 .toggle__ui::before {
-  content: "T";
+  content: "";
   color: rgba(var.$text-color, $alpha: 0.4);;
   font-weight: bold;
   text-align: center;
@@ -420,6 +420,14 @@
   top: 3px;
   left: 3px;
   transition: color 0.1s ease-in-out;
+}
+
+.toggle__ui--type::before {
+  content: 'T';
+}
+
+.toggle__ui--weakness::before {
+  content: 'W';
 }
 
 .toggle__input {

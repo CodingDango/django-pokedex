@@ -166,13 +166,19 @@ function loadFilterTypeOptions() {
 
 function createFilterTypeOptionHTML(type) {
     return `
-        <label class="u-flex u-gap-16">
+        <div class="u-flex u-gap-16">
             <span class="pokemon-card__type pokemon-card__type--${type}">${capitalize(type)}</span>
-            <span class="toggle">
-                <input class="toggle__input" value="${type}" type="checkbox"/>
-                <span class="toggle__ui"></span>
+            <span class='u-flex u-gap-8'>
+                <label class="toggle">
+                    <input class="toggle__input" data-filter='type' value="${type}" type="checkbox"/>
+                    <span class="toggle__ui toggle__ui--type"></span>
+                </label>
+                <label class="toggle">
+                    <input class="toggle__input" data-filter='weakness' value="${type}" type="checkbox"/>
+                    <span class="toggle__ui toggle__ui--weakness"></span>
+                </label>
             </span>
-        </label>`;
+        </div>`;
 }
 
 function loadAbilityOptions() {
