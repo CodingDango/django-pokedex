@@ -32,7 +32,7 @@
 
   <!-- Filter controls -->
   <section class="filters">
-    <div class="u-flex">
+    <div class="u-flex u-justify-between">
       <button
         data-target="#filter-controls"
         class="visiblity__toggle u-flex u-items-center u-gap-8 button button--ghost u-p-0 button--no-hover"
@@ -44,175 +44,129 @@
           </span>
         </span>
       </button>
-    </div>
 
-    <div id="filter-controls" class="visiblity__target u-flex u-flex-col u-gap-28">
-      <div class="u-max-w-half u-grid u-grid-cols-2">
-        <div class="u-flex u-flex-col u-gap-20">
-          <h2>Type & Weaknesses</h2>
-          <div id="filter-type-options" class="u-grid u-cols-2 u-rows-9 u-gap-8">
-            
-          </div>
-        </div>
-
-        <div class="u-flex u-flex-col u-gap-24">
-          <div>
-            <h2>Ability</h2>
-            <input>
-          </div>
-          <div>
-            <h2>Height</h2>
-            <input>
-          </div>
-          <div>
-            <h2>Weight</h2>
-            <input>
-          </div>
-        </div>
-      </div>
-
-      <div class="filters__btn-container">
-        <div class="dropdown flex-item">
-          <button 
-            class="dropdown__toggle filters__btn"
-          >
-            <span class="u-flex u-gap-8">
-              <span class="icon icon--sm">
-                <i class="fa-solid fa-bullseye"></i>
-              </span>
-              <span>Type</span>
-            </span>
-            <span class="icon icon--sm">
-              <i class="fa-solid fa-chevron-down"></i>
-            </span>
-          </button>
-
-          <div id="filter-type-options" class="filter_options dropdown__target select__container">
-            <!-- Will be populated through js -->
-          </div>
-        </div>
-
-        <div class="dropdown flex-item">
-          <button class="dropdown__toggle filters__btn">
-            <span class="u-flex u-gap-8">
-              <span class="icon icon--sm">
-                <i class="fa-solid fa-circle-half-stroke"></i>
-              </span>
-              <span>Weakness</span>
-            </span>
-            <span class="icon icon--sm">
-              <i class="fa-solid fa-chevron-down"></i>
-            </span>
-          </button>
-
-          <div id="filter-weakness-options" class="filter_options dropdown__target select__container">
-            <!-- Will be populated through js -->
-          </div>
-        </div>
-
-        <div class="dropdown flex-item">
-          <button class="dropdown__toggle filters__btn">
-            <span class="u-flex u-gap-8">
-              <span>
-                <img
-                  class="icon icon--md"
-                  src="/static/pokemon/images/pokeball-light.svg"
-                />
-              </span>
-              <span>Ability</span>
-            </span>
-            <span class="icon icon--sm">
-              <i class="fa-solid fa-chevron-down"></i>
-            </span>
-          </button>
-          <div id="filter-ability-options" class="filter_options dropdown__target">
-            
-          </div>
-        </div>
-
-        <div class="dropdown flex-item">
-          <button class="dropdown__toggle filters__btn">
-            <span class="u-flex u-gap-8">
-              <span class="icon icon--sm">
-                <i class="fa-solid fa-egg"></i>
-              </span>
-              <span>Height</span>
-            </span>
-            <span class="icon icon--sm">
-              <i class="fa-solid fa-chevron-down"></i>
-            </span>
-          </button>
-
-          <div class="dropdown__target">
-            Boom!
-          </div>
-
-        </div>
-
-        <div class="dropdown flex-item">
-          <button class="dropdown__toggle filters__btn">
-            <span class="u-flex u-gap-8">
-              <span class="icon icon--sm">
-                <i class="fa-solid fa-weight-hanging"></i>
-              </span>
-              <span>Weight</span>
-            </span>
-            <span class="icon icon--sm">
-              <i class="fa-solid fa-chevron-down"></i>
-            </span>
-          </button>
-
-          <div class="dropdown__target">Weight kg!</div>
-        </div>          
-
-        <button class="button filters__refresh">
-          <span class="icon icon--lg">
-            <i class="fa-solid fa-rotate-right"></i>
-          </span>
-        </button>
-        <!-- Will be a reset icon -->
-      </div>
-
-              <span class="u-flex u-gap-8">
-          <span>
-            <label class="u-font-bold">from</label>
-            <input class="filters__input" />
-          </span>
-          <span>
-            <label class="u-font-bold">to</label>
-            <input class="filters__input" />
-          </span>
+      <div class="u-flex u-items-center u-gap-8">
+        <span>
+          <h4 class="u-text-light">Sort by:</h4>
         </span>
-
-    </div>
-
-          <div class="u-flex u-justify-between u-w-full">
-        <div class="dropdown u-flex">
-
-          <button
-            class="dropdown__toggle u-flex u-items-center u-gap-8 button button--ghost u-p-0 button--no-hover"
-          >
-            <span class="u-flex">
-              <span class="u-text-light">Sort by:</span>
-            </span>
+        <span class="dropdown click-and-replace-text">
+          <button class="dropdown__toggle dropdown__toggle--w-sm" >
             <span class="u-flex u-gap-8">
-              <span id="active-sort-text">Ascending</span>
+              <span id="active-sort-text" class="click-and-replace-text__text">Ascending</span>
               <span class="icon icon--md">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
             </span>
           </button>
+
           <div id="sorting-options" class="dropdown__target select__container">
-            <button data-value="ascending" class="select__item">
+            <button data-value="ascending" class="select__item click-and-replace-text__toggle">
               <span>Ascending</span>
             </button>
-            <button data-value="descending" class="select__item">
+            <button data-value="descending" class="select__item click-and-replace-text__toggle">
               <span>Descending</span>
             </button>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div id="filter-controls" class="visiblity__target u-flex u-flex-col u-gap-28">
+      <div class="u-grid u-grid-cols-2 u-justify-end">
+        <div class="u-flex u-flex-col u-gap-20">
+          <h2>Type & Weaknesses</h2>
+          <div id="filter-type-options" class="u-grid u-cols-2 u-rows-9 u-gap-8"></div>
+        </div>
+
+        <div class="u-col-2 u-flex u-flex-col u-items-end u-gap-32">
+          <div class="u-flex u-flex-col u-gap-20">
+            <h2>Ability</h2>
+            <div class="dropdown click-and-replace-text">
+              <button class="dropdown__toggle dropdown__toggle--w-md">
+                <span class="u-flex u-gap-8">
+                  <span class="icon icon--sm">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </span>
+                  <span class="click-and-replace-text__text">All</span>
+                </span>
+                <span class="icon icon--sm">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div id="filter-ability-options" class="filter_options dropdown__target add-all">
+              </div>
+            </div>
+          </div>
+
+          <div class="u-flex u-flex-col u-gap-20">
+            <h2>Height</h2>
+            <div class="dropdown click-and-replace-text">
+              <button class="dropdown__toggle dropdown__toggle--w-md">
+                <span class="u-flex u-gap-8">
+                  <span class="icon icon--sm">
+                    <i class="fa-solid fa-egg"></i>
+                  </span>
+                  <span class="click-and-replace-text__text">All</span>
+                </span>
+                <span class="icon icon--sm">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div class="dropdown__target add-all">
+              </div>
+            </div>
+          </div>
+          <div class="u-flex u-flex-col u-gap-20  ">
+            <h2>Weight</h2>
+            <div class="dropdown click-and-replace-text">
+              <button class="dropdown__toggle dropdown__toggle--w-md">
+                <span class="u-flex u-gap-8">
+                  <span class="icon icon--sm">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                  </span>
+                  <span class="click-and-replace-text__text">All</span>
+                </span>
+                <span class="icon icon--sm">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="dropdown__target add-all">
+
+              </div>
+            </div>   
           </div>
         </div>
       </div>
 
+      <div class="u-flex u-justify-between">
+        <div class="u-flex u-gap-20">
+          <h2>ID Range</h2>
+          <span class="u-flex u-gap-8">
+            <span>
+              <label class="u-font-bold">from</label>
+              <input class="filters__input" />
+            </span>
+            <span>
+              <label class="u-font-bold">to</label>
+              <input class="filters__input" />
+            </span>
+          </span>
+        </div>
+
+        <div class="u-flex u-gap-8">
+          <button class="button">
+            <span class="icon icon--lg">
+              <i class="fa-solid fa-rotate-right"></i>
+            </span>
+          </button>
+          <button class="button button--primary">
+            <span class="icon icon--lg">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </button>
+        </div>
+      </div>
   </section>
 
   <!-- Pokemon results -->

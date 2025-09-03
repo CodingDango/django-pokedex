@@ -4,7 +4,9 @@ import { capitalize } from "./helpers.js";
 
 const filterState = {
     'sort' : 'ascending',
-    'types' : [] // empty means all. while ['fire'] means only types fire types.
+    'types' : [], // empty means all. while ['fire'] means only types fire types.
+    'weaknesses' : [],
+    'abilities' : []
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,7 +51,8 @@ function handleClickEvents() {
     document.addEventListener('click', (event) => {
         delegateDropdowns(event);
         delegateToggleVisiblity(event);
-        handleSortByClicks(event);
+        // handleSortByClicks(event);
+        delegateClickAndReplaceText(event);
     });
 
 }
@@ -115,19 +118,30 @@ function delegateToggleVisiblity(event) {
     targetToToggleVisiblity.classList.toggle('visiblity__target');
 }
 
-function handleSortByClicks(event) {
-    const sortingOptions = event.target.closest('#sorting-options');
+function handleFilterClicksStateUpdate() {
+    // idk, update the state? check the uh. clicked elements and stuff. and
+}
 
-    if (!sortingOptions) return;
+function delegateClickAndReplaceText(event) {
+    const componentContainer = event.target.closest('.click-and-replace-text');
 
-    const clickedOption = event.target.closest('button');
+    if (!componentContainer) {
+        return;
+    }
 
-    if (!clickedOption) return;
+    const clickedElement = event.target.closest('.click-and-replace-text__toggle') ;
 
-    const chosenSort = clickedOption.getAttribute('data-value')?.toLowerCase();
+    if (!clickedElement) {
+        return;
+    }
 
-    document.getElementById('active-sort-text').innerText = capitalize(chosenSort);
-    filterState.sort = chosenSort;
+    const elementToReplaceText = componentContainer.querySelector('.click-and-replace-text__text');
+
+    if (!elementToReplaceText) {
+        return;
+    }
+
+    elementToReplaceText.innerText = capitalize(clickedElement.innerText);
 }
 
 function loadFilterTypeOptions() {
@@ -153,14 +167,12 @@ function loadFilterTypeOptions() {
     ].sort(); // sort alphabetically.
 
     const typesContainer = document.getElementById('filter-type-options');
-    const weaknessContainer = document.getElementById('filter-weakness-options');
     
-    if (!typesContainer || !weaknessContainer) return;
+    if (!typesContainer) return;
 
     allPokemonTypes.forEach(pokemonType => {
         const optionHTML =  createFilterTypeOptionHTML(pokemonType)
         typesContainer.insertAdjacentHTML('beforeend', optionHTML);
-        weaknessContainer.insertAdjacentHTML('beforeend', optionHTML);
     });
 }
 
@@ -181,6 +193,18 @@ function createFilterTypeOptionHTML(type) {
         </div>`;
 }
 
+function createSelectItemHTML(text, dataValue, ...extraClasses) {
+    return `<button data-value='${dataValue}' class='select__item ${extraClasses.join(' ')}'>${capitalize(text)}</button>`
+}
+
+function loadAllFilterOptionToDropdowns() {
+    const dropdownTargets = document.querySelectorAll('.dropdown__target.add-all');
+
+    for (const dropdown of dropdownTargets) {
+        dropdown.insertAdjacentHTML('afterbegin', createSelectItemHTML('all', 'all', 'click-and-replace-text__toggle'));
+    }
+}
+
 function loadAbilityOptions() {
     const abilityNames = getAllAbilityNames();
     const container = document.getElementById('filter-ability-options');
@@ -188,15 +212,13 @@ function loadAbilityOptions() {
     if (!container) return;
 
     for (const name of abilityNames) {
-        const itemHTML = `
-            <button data-value="${name}" class="select__item">
-              <span>${capitalize(name)}</span>
-            </button>`;
+        const itemHTML = createSelectItemHTML(name, name, 'click-and-replace-text__toggle')
         container.insertAdjacentHTML('beforeend', itemHTML);
     }
 }
 
 function loadFilterOptions() {
+    loadAllFilterOptionToDropdowns();   
     loadFilterTypeOptions();
     loadAbilityOptions();
 }

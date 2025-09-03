@@ -303,27 +303,12 @@
 }
 
 .filters__btn {
-  width: 100%;
-  background-color: white;
-  border: none;
-  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
-  border-radius: 10px;
-  padding: 10px 20px;
-  color: var.$text-light;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.filters__refresh {
   padding: 0px 12px;
   border-radius: 10px;
-  background-color: rgba(var.$text-color, 0.8);
+  background-color: rgba(var.$text-color, 0.9);
   color: white;
   border: none;
-}
+} 
 
 .rounded {
   border-radius: 50%;
@@ -335,17 +320,51 @@
   position: relative;
 }
 
+.dropdown__toggle {
+  width: 100% ;
+  background-color: var.$dark-grey;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Handle long text with "..." */
+.click-and-replace-text__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown__toggle--w-sm {
+  width: 150px;
+}
+
+.dropdown__toggle--w-md {
+  width: 250px;
+}
+
 .dropdown__target {
-  border: 1px solid rgba(var.$text-color, 0.5);
   position: absolute;
   visibility: hidden;
-  background-color: white;
+  background-color: var.$lighter-dark-color;
+  color: white;
+  max-width: 320px;
   width: 100%;
   top: 100%;
+  left: 0%;
   z-index: 10;
   margin-top: 8px;
-  border-radius: 5px;
-  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(var.$text-color, 0.3);
 }
 
 .dropdown__target--open {
@@ -366,14 +385,16 @@
 }
 
 .select__item {
+  color: white;
   padding: 1rem 1rem;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   border: none;
-  font-weight: 600;
+  text-align: start;
+  font-weight: 500;
   cursor: pointer;
   border-top: 1px solid color.change(oklch(70.4% 0.04 256.788deg), $alpha: 0.4);
 
@@ -390,36 +411,36 @@
 
 .filter_options {
   max-height: 400px;
-  max-width: 250px;
-  width: 150%;
   overflow-y: scroll;
-  font-size: 1rem;
 }
 
 .toggle__ui {
   position: relative;
-  background-color: rgba(var.$text-color, $alpha: 0.4);
-  border-radius: 999px;
-  height: 26px;
-  width: 26px;
-  display: inline-block;
-
-  transition: background-color 0.1s ease-in-out;
+  display: block;
+  width: 33px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .toggle__ui::before {
   content: "";
-  color: rgba(var.$text-color, $alpha: 0.4);;
+  color: rgba(var.$text-color, $alpha: 0.5);
   font-weight: bold;
-  text-align: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  border: 2px solid rgba(var.$text-color, $alpha: 0.5);
   transition: color 0.1s ease-in-out;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+
 }
 
 .toggle__ui--type::before {
@@ -435,17 +456,19 @@
   position: absolute;
 }
 
-.toggle__input:checked + .toggle__ui {
-  background-color: var.$primary-red;
-}
-
 .toggle__input:checked + .toggle__ui::before {
   color: var.$primary-red;
+  border-color: var.$primary-red;
+}
+
+.toggle__input:focus + .toggle__ui::before {
+  outline: solid black;
+  filter: brightness(0.95);
 }
 
 #filter-controls {
   background-color: white;
   box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;  
-  padding: 24px 16px;
+  padding: 30px 40px;
   border-radius: 10px;
 }
