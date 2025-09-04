@@ -59,11 +59,11 @@
             </span>
           </button>
 
-          <div id="sorting-options" class="dropdown__target select__container">
-            <button data-value="ascending" class="select__item click-and-replace-text__toggle">
+          <div id="sorting-options" data-filter-property="sort" class="dropdown__target select__container filter-state-container filter-state-container--select">
+            <button data-filter="ascending" class="select__item click-and-replace-text__toggle filter-state-select">
               <span>Ascending</span>
             </button>
-            <button data-value="descending" class="select__item click-and-replace-text__toggle">
+            <button data-filter="descending" class="select__item click-and-replace-text__toggle filter-state-select">
               <span>Descending</span>
             </button>
           </div>
@@ -75,12 +75,14 @@
       <div class="u-grid u-grid-cols-2 u-justify-end">
         <div class="u-flex u-flex-col u-gap-20">
           <h2>Type & Weaknesses</h2>
-          <div id="filter-type-options" class="u-grid u-cols-2 u-rows-9 u-gap-8"></div>
+          <div id="filter-type-options" class="filter-state-container filter-state-container--checkboxes u-grid u-cols-2 u-rows-9 u-gap-8">
+          </div>
         </div>
 
         <div class="u-col-2 u-flex u-flex-col u-items-end u-gap-32">
           <div class="u-flex u-flex-col u-gap-20">
             <h2>Ability</h2>
+
             <div class="dropdown click-and-replace-text">
               <button class="dropdown__toggle dropdown__toggle--w-md">
                 <span class="u-flex u-gap-8">
@@ -93,7 +95,8 @@
                   <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </button>
-              <div id="filter-ability-options" class="filter_options dropdown__target add-all">
+
+              <div id="filter-ability-options" data-filter-property="ability" class="filter_options dropdown__target add-all filter-state-container filter-state-container--select">
               </div>
             </div>
           </div>
@@ -113,10 +116,11 @@
                 </span>
               </button>
 
-              <div class="dropdown__target add-all">
+              <div data-filter-property="height" class="dropdown__target add-all filter-state-container filter-state-container--select">
               </div>
             </div>
           </div>
+
           <div class="u-flex u-flex-col u-gap-20  ">
             <h2>Weight</h2>
             <div class="dropdown click-and-replace-text">
@@ -131,7 +135,7 @@
                   <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </button>
-              <div class="dropdown__target add-all">
+              <div data-filter-property="weight" class="dropdown__target add-all filter-state-container filter-state-container--select">
 
               </div>
             </div>   

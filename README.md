@@ -1,4 +1,8 @@
-- [x] Fix weird bug where type options aren't loading properly
-- [x] Add type optionsto weaknesses dropdown too.
-- [x] add abilities to pokemon_list
-- [ ] redesign the filters view. rather than many dropdowns. incorporate all of them into one rectangle.
+- [ ] Chevron should be justified between on the `Sort By` dropdown
+- [ ] Fix type and weakness checkboxes becoming outlined when clicked. shouldo only be outlined when using Tab.
+- [ ] Delegate click events which update the filter state.
+  - checks if clicked element is inside the class filter-state-container
+  - check if clicked element is inside an element which has a class of filter-state-select
+  - grab the data-value of filter-state-select.
+  - grab the data-filter-name of filter-state-container
+  - update the global object filterState, and assign the property name of data-filter-name to data-value of filter-state-select

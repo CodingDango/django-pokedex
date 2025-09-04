@@ -6,7 +6,11 @@ const filterState = {
     'sort' : 'ascending',
     'types' : [], // empty means all. while ['fire'] means only types fire types.
     'weaknesses' : [],
-    'abilities' : []
+    'ability' : null
+}
+
+function updateFilterState(property, value) {
+    filterState[property] = value;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,7 +37,7 @@ function setupSearchListeners(defAmtToLoad) {
 function addEventToLoadBtn(defPokemonToLoad) {
     // get the id of the last element..?
     document.getElementById('load-more').addEventListener('click', () => {
-        const lastNatIdx = Number(getPokemonCardsContainer().lastElementChild.getAttribute('data-nat-dex'));
+        const lastNatIdx = Number(getPokemonCardsContainer().lastElementChild.getAttribute('data--dex'));
         const pokemonsToLoad = getListOfPokemonsLocal(
             {amount: defPokemonToLoad, offset: lastNatIdx}
         );
@@ -51,8 +55,8 @@ function handleClickEvents() {
     document.addEventListener('click', (event) => {
         delegateDropdowns(event);
         delegateToggleVisiblity(event);
-        // handleSortByClicks(event);
         delegateClickAndReplaceText(event);
+        handleFilterClicksStateUpdate(event);
     });
 
 }
@@ -118,8 +122,73 @@ function delegateToggleVisiblity(event) {
     targetToToggleVisiblity.classList.toggle('visiblity__target');
 }
 
-function handleFilterClicksStateUpdate() {
-    // idk, update the state? check the uh. clicked elements and stuff. and
+function handleFilterClicksStateUpdate(event) {
+    const container = event.target.closest('.filter-state-container');
+
+    if (!container) {
+        return;
+    }
+    
+    const modifierFuncs = {
+        'filter-state-container--select' : handleFilterStateSelect,
+        'filter-state-container--checkboxes' : handleFilterStateCheckboxes
+    };
+
+   for (const [containerClassName, func] of Object.entries(modifierFuncs)) {
+        if (container.classList.contains(containerClassName)) {
+            func(event, container);
+            break;
+        }
+   }
+}
+
+function handleFilterStateSelect(event, container) {
+    const selectedFilter = event.target.closest('.filter-state-select');
+
+    if (!selectedFilter) {
+        return;
+    }
+
+    const filterValue = selectedFilter.getAttribute('data-filter');
+    const filterProperty = container.getAttribute('data-filter-property');
+
+    updateFilterState(filterProperty, filterValue);
+}
+
+function handleFilterStateCheckboxes(event, container) {
+    // Key will be filter property.
+    // value will be values to add to the filter property.
+    const tracker = new Map();
+    const filterKeys = new Set();
+    const toggledCheckboxes = container.querySelectorAll('input:checked');
+    const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+
+    // prepopulate filterKeys
+    for (const checkbox of checkboxes) {
+        filterKeys.add(checkbox.dataset.filter);
+    }
+
+    // Clear all the filterKeys inside contiainer
+    for (const filterKey of filterKeys) {
+        updateFilterState(filterKey, []);
+    }
+
+    for (const checkbox of toggledCheckboxes) {
+        const filterKey = checkbox.dataset.filter;
+        const filterValue = checkbox.dataset.value;
+
+        if (tracker.has(filterKey)) {
+            tracker.get(filterKey).push(filterValue);
+        } else {
+            tracker.set(filterKey, [filterValue]);
+        }
+    }
+
+    Array.from(tracker.keys()).forEach(key => 
+        updateFilterState(key, tracker.get(key))
+    );
+
+    console.log(filterState);
 }
 
 function delegateClickAndReplaceText(event) {
@@ -182,11 +251,11 @@ function createFilterTypeOptionHTML(type) {
             <span class="pokemon-card__type pokemon-card__type--${type}">${capitalize(type)}</span>
             <span class='u-flex u-gap-8'>
                 <label class="toggle">
-                    <input class="toggle__input" data-filter='type' value="${type}" type="checkbox"/>
+                    <input class="toggle__input" data-filter='types' data-value="${type}" type="checkbox"/>
                     <span class="toggle__ui toggle__ui--type"></span>
                 </label>
                 <label class="toggle">
-                    <input class="toggle__input" data-filter='weakness' value="${type}" type="checkbox"/>
+                    <input class="toggle__input" data-filter='weaknesses' data-value="${type}" type="checkbox"/>
                     <span class="toggle__ui toggle__ui--weakness"></span>
                 </label>
             </span>
@@ -194,14 +263,14 @@ function createFilterTypeOptionHTML(type) {
 }
 
 function createSelectItemHTML(text, dataValue, ...extraClasses) {
-    return `<button data-value='${dataValue}' class='select__item ${extraClasses.join(' ')}'>${capitalize(text)}</button>`
+    return `<button data-filter='${dataValue}' class='select__item ${extraClasses.join(' ')}'>${capitalize(text)}</button>`
 }
 
 function loadAllFilterOptionToDropdowns() {
     const dropdownTargets = document.querySelectorAll('.dropdown__target.add-all');
 
     for (const dropdown of dropdownTargets) {
-        dropdown.insertAdjacentHTML('afterbegin', createSelectItemHTML('all', 'all', 'click-and-replace-text__toggle'));
+        dropdown.insertAdjacentHTML('afterbegin', createSelectItemHTML('all', 'all', 'click-and-replace-text__toggle', 'filter-state-select'));
     }
 }
 
@@ -212,7 +281,7 @@ function loadAbilityOptions() {
     if (!container) return;
 
     for (const name of abilityNames) {
-        const itemHTML = createSelectItemHTML(name, name, 'click-and-replace-text__toggle')
+        const itemHTML = createSelectItemHTML(name, name, 'click-and-replace-text__toggle', 'filter-state-select')
         container.insertAdjacentHTML('beforeend', itemHTML);
     }
 }
