@@ -4,7 +4,7 @@ import aiohttp
 
 # --- Configuration ---
 INPUT_FILE = 'pokemon_list.json'
-OUTPUT_FILE = 'abilities.json'
+OUTPUT_FILE = 'new.json'
 MAX_CONCURRENT_REQUESTS = 50 # Limit to 50 requests at a time to be kind to the API
 MAX_RETRIES = 3 # Try a failing request up to 3 times
 
@@ -36,23 +36,19 @@ async def process_pokemon(session, semaphore, pokemon):
     """
     # --- This makes the script RESUMABLE! ---
     # If the 'ability' key already exists and is not None, skip the network request.
-    if 'ability' in pokemon and pokemon.get('ability'):
-        print(f"Skipping Pokémon ID {pokemon['id']} (already has data).")
-        return pokemon
-
     async with semaphore: # This will wait if all 50 "slots" are full
         fetched_data = await fetch_pokemon_data(session, pokemon['id'])
         
         if not fetched_data:
-            pokemon['ability'] = None # Mark as failed
             pokemon['error'] = 'Failed to fetch data'
+            pokemon['weight'] = None
+            pokemon['height'] = None
             return pokemon
 
         # Find the first visible ability
-        visible_ability = next((a for a in fetched_data['abilities'] if not a['is_hidden']), None)
-        
-        pokemon['ability'] = visible_ability['ability'] if visible_ability else None
-        print(f"Processed Pokémon ID: {pokemon['id']}, Ability: {pokemon['ability']['name'] if pokemon['ability'] else 'None'}")
+        pokemon['weight'] = fetched_data['weight'] / 10
+        pokemon['height'] = fetched_data['height'] / 10
+        print(f"Processed Pokémon ID: {pokemon['id']}, Weight: {pokemon['weight']}")
         
     return pokemon
 

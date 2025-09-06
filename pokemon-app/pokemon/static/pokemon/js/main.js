@@ -1,5 +1,5 @@
 import { handleSearchSubmit, getPokemonCardsContainer, renderPokemons, loadHomepageView, setLoadMoreBtnVisiblity} from "./ui.js";
-import { getListOfPokemonsLocal, getAllAbilityNames } from "./api.js" ;
+import { getListOfPokemonsLocal, getAllAbilityNames, getHeightCategories, getWeightCategories} from "./api.js" ;
 import { capitalize } from "./helpers.js";
 
 const filterState = {
@@ -14,14 +14,20 @@ function updateFilterState(property, value) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultPokemonAmountOnLoad = 12;
+    const defaultPokemonAmountOnLoad = 15;
 
     loadHomepageView(defaultPokemonAmountOnLoad); 
     setupSearchListeners(defaultPokemonAmountOnLoad);
     addEventToLoadBtn(defaultPokemonAmountOnLoad);
+    handleKeyboardInputs();
     handleClickEvents();
     loadFilterOptions();
+
+    // at the start, reset all filter states
+    resetFilterComponents();
+
 });
+
 
 function setupSearchListeners(defAmtToLoad) {
     const searchInput = document.getElementById('search-input');
@@ -37,7 +43,7 @@ function setupSearchListeners(defAmtToLoad) {
 function addEventToLoadBtn(defPokemonToLoad) {
     // get the id of the last element..?
     document.getElementById('load-more').addEventListener('click', () => {
-        const lastNatIdx = Number(getPokemonCardsContainer().lastElementChild.getAttribute('data--dex'));
+        const lastNatIdx = Number(getPokemonCardsContainer().lastElementChild.getAttribute('data-nat-dex'));
         const pokemonsToLoad = getListOfPokemonsLocal(
             {amount: defPokemonToLoad, offset: lastNatIdx}
         );
@@ -57,8 +63,15 @@ function handleClickEvents() {
         delegateToggleVisiblity(event);
         delegateClickAndReplaceText(event);
         handleFilterClicksStateUpdate(event);
+        handleClickToResetFilters(event);
     });
+}
 
+function handleKeyboardInputs() {
+    document.addEventListener('input', (event) => {
+        setupNumberInputsValidation(event);
+        handleFilterInputStateUpdate(event);
+    });
 }
 
 function delegateDropdowns(event) {
@@ -131,7 +144,26 @@ function handleFilterClicksStateUpdate(event) {
     
     const modifierFuncs = {
         'filter-state-container--select' : handleFilterStateSelect,
-        'filter-state-container--checkboxes' : handleFilterStateCheckboxes
+        'filter-state-container--checkboxes' : handleFilterStateCheckboxes,
+    };
+
+   for (const [containerClassName, func] of Object.entries(modifierFuncs)) {
+        if (container.classList.contains(containerClassName)) {
+            func(event, container);
+            break;
+        }
+   }
+}
+
+function handleFilterInputStateUpdate(event) {
+    const container = event.target.closest('.filter-state-container');
+
+    if (!container) {
+        return;
+    }
+
+    const modifierFuncs = {
+        'filter-state-container--inputs' : handleFilterStateInputs
     };
 
    for (const [containerClassName, func] of Object.entries(modifierFuncs)) {
@@ -187,8 +219,14 @@ function handleFilterStateCheckboxes(event, container) {
     Array.from(tracker.keys()).forEach(key => 
         updateFilterState(key, tracker.get(key))
     );
+}
 
-    console.log(filterState);
+function handleFilterStateInputs(event, container) {
+    const inputs = container.querySelectorAll('input[type="number"], input[type="text"]');
+
+    for (const input of inputs) {
+        updateFilterState(input.dataset.filter, input.value)   
+    }
 }
 
 function delegateClickAndReplaceText(event) {
@@ -266,11 +304,18 @@ function createSelectItemHTML(text, dataValue, ...extraClasses) {
     return `<button data-filter='${dataValue}' class='select__item ${extraClasses.join(' ')}'>${capitalize(text)}</button>`
 }
 
-function loadAllFilterOptionToDropdowns() {
+function addAllOptionToDropdowns() {
     const dropdownTargets = document.querySelectorAll('.dropdown__target.add-all');
 
     for (const dropdown of dropdownTargets) {
-        dropdown.insertAdjacentHTML('afterbegin', createSelectItemHTML('all', 'all', 'click-and-replace-text__toggle', 'filter-state-select'));
+        const optionHTML = createSelectItemHTML('all', 'all', 'click-and-replace-text__toggle', 'filter-state-select');
+        dropdown.insertAdjacentHTML('afterbegin', optionHTML);
+
+        const newlyAddedOption = dropdown.firstElementChild;
+
+        if (newlyAddedOption) {
+            newlyAddedOption.dataset.default = true;
+        }
     }
 }
 
@@ -287,7 +332,111 @@ function loadAbilityOptions() {
 }
 
 function loadFilterOptions() {
-    loadAllFilterOptionToDropdowns();   
+    addAllOptionToDropdowns();   
     loadFilterTypeOptions();
     loadAbilityOptions();
+    addCategoriesToHeight();
+    addCategoriesToWeight();
+}
+
+function handleClickToResetFilters(event) {
+    const resetBtn = event.target.closest('#reset-filters');
+
+    if (!resetBtn) return;
+
+    resetFilterComponents();
+}
+
+function resetFilterComponents() {
+    resetDropdownFilters();   
+    resetCheckboxFilters();
+    resetInputFilters();
+}
+
+function resetDropdownFilters() {
+    const filtersContainer = document.getElementById('filters');
+    const dropdownsToReset = filtersContainer.querySelectorAll('.dropdown');
+
+    for (const dropdown of dropdownsToReset) {
+        const defaultOption = dropdown.querySelector('[data-default=true]');
+        const dropdownTarget = dropdown.querySelector('.dropdown__target')
+
+        const defaultFilter = defaultOption.dataset.filter;
+        const filterProperty = dropdownTarget.getAttribute('data-filter-property');
+
+        updateFilterState(filterProperty, defaultFilter);
+
+        const textToUpdate = dropdown.querySelector('.click-and-replace-text__text');
+
+        if (textToUpdate) {
+            textToUpdate.innerText = capitalize(defaultFilter);
+        }
+    }
+}
+
+function resetCheckboxFilters() {
+    const filtersContainer = document.getElementById('filters');
+    const allCheckboxes = filtersContainer.querySelectorAll('input[type="checkbox"]');
+    
+    const map = new Map();
+
+    for (const checkbox of allCheckboxes) {
+        const filterProperty = checkbox.dataset.filter;
+        const filterValue = checkbox.dataset.value;
+
+        if (!map.has(filterProperty)) {
+            map.set(filterProperty, []);
+        }
+
+        if (checkbox.dataset.default && map.has(filterProperty)) {
+            map.get(filterProperty).push(filterValue);
+        } else {
+            checkbox.checked = false;
+        }
+    }
+
+    for (const [property, defaultValues] of map.entries()) {
+        updateFilterState(property, defaultValues);
+    }
+}   
+
+function resetInputFilters() {
+    const filtersContainer = document.getElementById('filters');
+    const allInputs = filtersContainer.querySelectorAll('input[type="number"], input[type="text"]');
+
+    for (const input of allInputs) {
+        updateFilterState(input.dataset.filter, input.dataset.default);
+        input.value = input.dataset.default;
+    }
+}
+
+function setupNumberInputsValidation(event) {
+    const input = event.target;
+
+    if (!input || !input.classList.contains('validate__number-input')) return;
+
+    const min = parseFloat(input.min);
+    const max = parseFloat(input.max);
+    const value = parseFloat(input.value);
+
+    const clampedValue = Math.min(Math.max(value, min), max);
+    input.value = clampedValue;
+}
+
+function addCategoriesToWeight() {
+    const weightCategoriesContainer = document.getElementById('weight-categories');
+
+    getWeightCategories().forEach(category => {
+        const optionHTML = createSelectItemHTML(capitalize(category), category, 'click-and-replace-text__toggle', 'filter-state-select');
+        weightCategoriesContainer.insertAdjacentHTML('beforeend', optionHTML);
+    });
+}
+
+function addCategoriesToHeight() {
+    const weightCategoriesContainer = document.getElementById('height-categories');
+
+    getHeightCategories().forEach(category => {
+        const optionHTML = createSelectItemHTML(capitalize(category), category, 'click-and-replace-text__toggle', 'filter-state-select');
+        weightCategoriesContainer.insertAdjacentHTML('beforeend', optionHTML);
+    });
 }

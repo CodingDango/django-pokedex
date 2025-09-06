@@ -62,3 +62,40 @@ export function getAllAbilityNames() {
         }    
     }
 }
+
+export function getWeightCategories() {
+    return ['light', 'medium', 'heavy'];
+}
+
+export function getHeightCategories() {
+    return ['small', 'medium', 'large'];
+}
+
+export function getHeightCategoryOfPokemon(pokemon) {
+    const categories = getHeightCategories();
+    const smallHeightMeters = 1;
+    const averageHeightMeters = 3;
+
+    if (pokemon.height < smallHeightMeters) {
+        return categories[0];
+    } else if (pokemon.height < averageHeightMeters) {
+        return categories[1];
+    } else {
+        return categories[2];
+    }
+}
+
+export function getWeightCategoryOfPokemon(pokemon) {
+    const categories = getWeightCategories();
+    const lightMaxKg = 13;  // in kg
+    const mediumMaxKg = 50; // kg
+
+    if (pokemon.weight < lightMaxKg) {
+        return categories[0];
+    } else if (pokemon.weight < mediumMaxKg) {
+        return categories[1];
+    } else {
+        return categories[2];
+    }
+}
+
