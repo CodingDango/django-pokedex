@@ -8,7 +8,8 @@
       "poison"
     ],
     "weight": 6.9,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "overgrow"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "poison"
     ],
     "weight": 13.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "overgrow"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
       "poison"
     ],
     "weight": 100.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "overgrow"
   },
   {
     "id": 4,
@@ -40,7 +43,8 @@
       "fire"
     ],
     "weight": 8.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "blaze"
   },
   {
     "id": 5,
@@ -50,7 +54,8 @@
       "fire"
     ],
     "weight": 19.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "blaze"
   },
   {
     "id": 6,
@@ -61,7 +66,8 @@
       "flying"
     ],
     "weight": 90.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "blaze"
   },
   {
     "id": 7,
@@ -71,7 +77,8 @@
       "water"
     ],
     "weight": 9.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "torrent"
   },
   {
     "id": 8,
@@ -81,7 +88,8 @@
       "water"
     ],
     "weight": 22.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "torrent"
   },
   {
     "id": 9,
@@ -91,7 +99,8 @@
       "water"
     ],
     "weight": 85.5,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "torrent"
   },
   {
     "id": 10,
@@ -101,7 +110,8 @@
       "bug"
     ],
     "weight": 2.9,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shield-dust"
   },
   {
     "id": 11,
@@ -111,7 +121,8 @@
       "bug"
     ],
     "weight": 9.9,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "shed-skin"
   },
   {
     "id": 12,
@@ -122,7 +133,8 @@
       "flying"
     ],
     "weight": 32.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "compound-eyes"
   },
   {
     "id": 13,
@@ -133,7 +145,8 @@
       "poison"
     ],
     "weight": 3.2,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shield-dust"
   },
   {
     "id": 14,
@@ -144,7 +157,8 @@
       "poison"
     ],
     "weight": 10.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "shed-skin"
   },
   {
     "id": 15,
@@ -155,7 +169,8 @@
       "poison"
     ],
     "weight": 29.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 16,
@@ -166,7 +181,8 @@
       "flying"
     ],
     "weight": 1.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "keen-eye"
   },
   {
     "id": 17,
@@ -177,7 +193,8 @@
       "flying"
     ],
     "weight": 30.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "keen-eye"
   },
   {
     "id": 18,
@@ -188,7 +205,8 @@
       "flying"
     ],
     "weight": 39.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "keen-eye"
   },
   {
     "id": 19,
@@ -198,7 +216,8 @@
       "normal"
     ],
     "weight": 3.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "run-away"
   },
   {
     "id": 20,
@@ -208,7 +227,8 @@
       "normal"
     ],
     "weight": 18.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "run-away"
   },
   {
     "id": 21,
@@ -219,7 +239,8 @@
       "flying"
     ],
     "weight": 2.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "keen-eye"
   },
   {
     "id": 22,
@@ -230,7 +251,8 @@
       "flying"
     ],
     "weight": 38.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "keen-eye"
   },
   {
     "id": 23,
@@ -240,7 +262,8 @@
       "poison"
     ],
     "weight": 6.9,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "intimidate"
   },
   {
     "id": 24,
@@ -250,7 +273,8 @@
       "poison"
     ],
     "weight": 65.0,
-    "height": 3.5
+    "height": 3.5,
+    "ability": "intimidate"
   },
   {
     "id": 25,
@@ -260,7 +284,8 @@
       "electric"
     ],
     "weight": 6.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "static"
   },
   {
     "id": 26,
@@ -270,7 +295,8 @@
       "electric"
     ],
     "weight": 30.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "static"
   },
   {
     "id": 27,
@@ -280,7 +306,8 @@
       "ground"
     ],
     "weight": 12.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "sand-veil"
   },
   {
     "id": 28,
@@ -290,7 +317,8 @@
       "ground"
     ],
     "weight": 29.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "sand-veil"
   },
   {
     "id": 29,
@@ -300,7 +328,8 @@
       "poison"
     ],
     "weight": 7.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "poison-point"
   },
   {
     "id": 30,
@@ -310,7 +339,8 @@
       "poison"
     ],
     "weight": 20.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "poison-point"
   },
   {
     "id": 31,
@@ -321,7 +351,8 @@
       "ground"
     ],
     "weight": 60.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "poison-point"
   },
   {
     "id": 32,
@@ -331,7 +362,8 @@
       "poison"
     ],
     "weight": 9.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "poison-point"
   },
   {
     "id": 33,
@@ -341,7 +373,8 @@
       "poison"
     ],
     "weight": 19.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "poison-point"
   },
   {
     "id": 34,
@@ -352,7 +385,8 @@
       "ground"
     ],
     "weight": 62.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "poison-point"
   },
   {
     "id": 35,
@@ -362,7 +396,8 @@
       "fairy"
     ],
     "weight": 7.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "cute-charm"
   },
   {
     "id": 36,
@@ -372,7 +407,8 @@
       "fairy"
     ],
     "weight": 40.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "cute-charm"
   },
   {
     "id": 37,
@@ -382,7 +418,8 @@
       "fire"
     ],
     "weight": 9.9,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "flash-fire"
   },
   {
     "id": 38,
@@ -392,7 +429,8 @@
       "fire"
     ],
     "weight": 19.9,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "flash-fire"
   },
   {
     "id": 39,
@@ -403,7 +441,8 @@
       "fairy"
     ],
     "weight": 5.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "cute-charm"
   },
   {
     "id": 40,
@@ -414,7 +453,8 @@
       "fairy"
     ],
     "weight": 12.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "cute-charm"
   },
   {
     "id": 41,
@@ -425,7 +465,8 @@
       "flying"
     ],
     "weight": 7.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "inner-focus"
   },
   {
     "id": 42,
@@ -436,7 +477,8 @@
       "flying"
     ],
     "weight": 55.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "inner-focus"
   },
   {
     "id": 43,
@@ -447,7 +489,8 @@
       "poison"
     ],
     "weight": 5.4,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "chlorophyll"
   },
   {
     "id": 44,
@@ -458,7 +501,8 @@
       "poison"
     ],
     "weight": 8.6,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "chlorophyll"
   },
   {
     "id": 45,
@@ -469,7 +513,8 @@
       "poison"
     ],
     "weight": 18.6,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "chlorophyll"
   },
   {
     "id": 46,
@@ -480,7 +525,8 @@
       "grass"
     ],
     "weight": 5.4,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "effect-spore"
   },
   {
     "id": 47,
@@ -491,7 +537,8 @@
       "grass"
     ],
     "weight": 29.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "effect-spore"
   },
   {
     "id": 48,
@@ -502,7 +549,8 @@
       "poison"
     ],
     "weight": 30.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "compound-eyes"
   },
   {
     "id": 49,
@@ -513,7 +561,8 @@
       "poison"
     ],
     "weight": 12.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "shield-dust"
   },
   {
     "id": 50,
@@ -523,7 +572,8 @@
       "ground"
     ],
     "weight": 0.8,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "sand-veil"
   },
   {
     "id": 51,
@@ -533,7 +583,8 @@
       "ground"
     ],
     "weight": 33.3,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "sand-veil"
   },
   {
     "id": 52,
@@ -543,7 +594,8 @@
       "normal"
     ],
     "weight": 4.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "pickup"
   },
   {
     "id": 53,
@@ -553,7 +605,8 @@
       "normal"
     ],
     "weight": 32.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "limber"
   },
   {
     "id": 54,
@@ -563,7 +616,8 @@
       "water"
     ],
     "weight": 19.6,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "damp"
   },
   {
     "id": 55,
@@ -573,7 +627,8 @@
       "water"
     ],
     "weight": 76.6,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "damp"
   },
   {
     "id": 56,
@@ -583,7 +638,8 @@
       "fighting"
     ],
     "weight": 28.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "vital-spirit"
   },
   {
     "id": 57,
@@ -593,7 +649,8 @@
       "fighting"
     ],
     "weight": 32.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "vital-spirit"
   },
   {
     "id": 58,
@@ -603,7 +660,8 @@
       "fire"
     ],
     "weight": 19.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "intimidate"
   },
   {
     "id": 59,
@@ -613,7 +671,8 @@
       "fire"
     ],
     "weight": 155.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "intimidate"
   },
   {
     "id": 60,
@@ -623,7 +682,8 @@
       "water"
     ],
     "weight": 12.4,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "water-absorb"
   },
   {
     "id": 61,
@@ -633,7 +693,8 @@
       "water"
     ],
     "weight": 20.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "water-absorb"
   },
   {
     "id": 62,
@@ -644,7 +705,8 @@
       "fighting"
     ],
     "weight": 54.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "water-absorb"
   },
   {
     "id": 63,
@@ -654,7 +716,8 @@
       "psychic"
     ],
     "weight": 19.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "synchronize"
   },
   {
     "id": 64,
@@ -664,7 +727,8 @@
       "psychic"
     ],
     "weight": 56.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "synchronize"
   },
   {
     "id": 65,
@@ -674,7 +738,8 @@
       "psychic"
     ],
     "weight": 48.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "synchronize"
   },
   {
     "id": 66,
@@ -684,7 +749,8 @@
       "fighting"
     ],
     "weight": 19.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "guts"
   },
   {
     "id": 67,
@@ -694,7 +760,8 @@
       "fighting"
     ],
     "weight": 70.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "guts"
   },
   {
     "id": 68,
@@ -704,7 +771,8 @@
       "fighting"
     ],
     "weight": 130.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "guts"
   },
   {
     "id": 69,
@@ -715,7 +783,8 @@
       "poison"
     ],
     "weight": 4.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "chlorophyll"
   },
   {
     "id": 70,
@@ -726,7 +795,8 @@
       "poison"
     ],
     "weight": 6.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 71,
@@ -737,7 +807,8 @@
       "poison"
     ],
     "weight": 15.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "chlorophyll"
   },
   {
     "id": 72,
@@ -748,7 +819,8 @@
       "poison"
     ],
     "weight": 45.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "clear-body"
   },
   {
     "id": 73,
@@ -759,7 +831,8 @@
       "poison"
     ],
     "weight": 55.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "clear-body"
   },
   {
     "id": 74,
@@ -770,7 +843,8 @@
       "ground"
     ],
     "weight": 20.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "rock-head"
   },
   {
     "id": 75,
@@ -781,7 +855,8 @@
       "ground"
     ],
     "weight": 105.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "rock-head"
   },
   {
     "id": 76,
@@ -792,7 +867,8 @@
       "ground"
     ],
     "weight": 300.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "rock-head"
   },
   {
     "id": 77,
@@ -802,7 +878,8 @@
       "fire"
     ],
     "weight": 30.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "run-away"
   },
   {
     "id": 78,
@@ -812,7 +889,8 @@
       "fire"
     ],
     "weight": 95.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "run-away"
   },
   {
     "id": 79,
@@ -823,7 +901,8 @@
       "psychic"
     ],
     "weight": 36.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "oblivious"
   },
   {
     "id": 80,
@@ -834,7 +913,8 @@
       "psychic"
     ],
     "weight": 78.5,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "oblivious"
   },
   {
     "id": 81,
@@ -845,7 +925,8 @@
       "steel"
     ],
     "weight": 6.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "magnet-pull"
   },
   {
     "id": 82,
@@ -856,7 +937,8 @@
       "steel"
     ],
     "weight": 60.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "magnet-pull"
   },
   {
     "id": 83,
@@ -867,7 +949,8 @@
       "flying"
     ],
     "weight": 15.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "keen-eye"
   },
   {
     "id": 84,
@@ -878,7 +961,8 @@
       "flying"
     ],
     "weight": 39.2,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "run-away"
   },
   {
     "id": 85,
@@ -889,7 +973,8 @@
       "flying"
     ],
     "weight": 85.2,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "run-away"
   },
   {
     "id": 86,
@@ -899,7 +984,8 @@
       "water"
     ],
     "weight": 90.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "thick-fat"
   },
   {
     "id": 87,
@@ -910,7 +996,8 @@
       "ice"
     ],
     "weight": 120.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "thick-fat"
   },
   {
     "id": 88,
@@ -920,7 +1007,8 @@
       "poison"
     ],
     "weight": 30.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "stench"
   },
   {
     "id": 89,
@@ -930,7 +1018,8 @@
       "poison"
     ],
     "weight": 30.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "stench"
   },
   {
     "id": 90,
@@ -940,7 +1029,8 @@
       "water"
     ],
     "weight": 4.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shell-armor"
   },
   {
     "id": 91,
@@ -951,7 +1041,8 @@
       "ice"
     ],
     "weight": 132.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "shell-armor"
   },
   {
     "id": 92,
@@ -962,7 +1053,8 @@
       "poison"
     ],
     "weight": 0.1,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "levitate"
   },
   {
     "id": 93,
@@ -973,7 +1065,8 @@
       "poison"
     ],
     "weight": 0.1,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "levitate"
   },
   {
     "id": 94,
@@ -984,7 +1077,8 @@
       "poison"
     ],
     "weight": 40.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "cursed-body"
   },
   {
     "id": 95,
@@ -995,7 +1089,8 @@
       "ground"
     ],
     "weight": 210.0,
-    "height": 8.8
+    "height": 8.8,
+    "ability": "rock-head"
   },
   {
     "id": 96,
@@ -1005,7 +1100,8 @@
       "psychic"
     ],
     "weight": 32.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "insomnia"
   },
   {
     "id": 97,
@@ -1015,7 +1111,8 @@
       "psychic"
     ],
     "weight": 75.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "insomnia"
   },
   {
     "id": 98,
@@ -1025,7 +1122,8 @@
       "water"
     ],
     "weight": 6.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "hyper-cutter"
   },
   {
     "id": 99,
@@ -1035,7 +1133,8 @@
       "water"
     ],
     "weight": 60.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "hyper-cutter"
   },
   {
     "id": 100,
@@ -1045,7 +1144,8 @@
       "electric"
     ],
     "weight": 10.4,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "soundproof"
   },
   {
     "id": 101,
@@ -1055,7 +1155,8 @@
       "electric"
     ],
     "weight": 66.6,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "soundproof"
   },
   {
     "id": 102,
@@ -1066,7 +1167,8 @@
       "psychic"
     ],
     "weight": 2.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "chlorophyll"
   },
   {
     "id": 103,
@@ -1077,7 +1179,8 @@
       "psychic"
     ],
     "weight": 120.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 104,
@@ -1087,7 +1190,8 @@
       "ground"
     ],
     "weight": 6.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "rock-head"
   },
   {
     "id": 105,
@@ -1097,7 +1201,8 @@
       "ground"
     ],
     "weight": 45.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "rock-head"
   },
   {
     "id": 106,
@@ -1107,7 +1212,8 @@
       "fighting"
     ],
     "weight": 49.8,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "limber"
   },
   {
     "id": 107,
@@ -1117,7 +1223,8 @@
       "fighting"
     ],
     "weight": 50.2,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "keen-eye"
   },
   {
     "id": 108,
@@ -1127,7 +1234,8 @@
       "normal"
     ],
     "weight": 65.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "own-tempo"
   },
   {
     "id": 109,
@@ -1137,7 +1245,8 @@
       "poison"
     ],
     "weight": 1.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "levitate"
   },
   {
     "id": 110,
@@ -1147,7 +1256,8 @@
       "poison"
     ],
     "weight": 9.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "levitate"
   },
   {
     "id": 111,
@@ -1158,7 +1268,8 @@
       "rock"
     ],
     "weight": 115.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "lightning-rod"
   },
   {
     "id": 112,
@@ -1169,7 +1280,8 @@
       "rock"
     ],
     "weight": 120.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "lightning-rod"
   },
   {
     "id": 113,
@@ -1179,7 +1291,8 @@
       "normal"
     ],
     "weight": 34.6,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "natural-cure"
   },
   {
     "id": 114,
@@ -1189,7 +1302,8 @@
       "grass"
     ],
     "weight": 35.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 115,
@@ -1199,7 +1313,8 @@
       "normal"
     ],
     "weight": 80.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "early-bird"
   },
   {
     "id": 116,
@@ -1209,7 +1324,8 @@
       "water"
     ],
     "weight": 8.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swift-swim"
   },
   {
     "id": 117,
@@ -1219,7 +1335,8 @@
       "water"
     ],
     "weight": 25.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "poison-point"
   },
   {
     "id": 118,
@@ -1229,7 +1346,8 @@
       "water"
     ],
     "weight": 15.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "swift-swim"
   },
   {
     "id": 119,
@@ -1239,7 +1357,8 @@
       "water"
     ],
     "weight": 39.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "swift-swim"
   },
   {
     "id": 120,
@@ -1249,7 +1368,8 @@
       "water"
     ],
     "weight": 34.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "illuminate"
   },
   {
     "id": 121,
@@ -1260,7 +1380,8 @@
       "psychic"
     ],
     "weight": 80.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "illuminate"
   },
   {
     "id": 122,
@@ -1271,7 +1392,8 @@
       "fairy"
     ],
     "weight": 54.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "soundproof"
   },
   {
     "id": 123,
@@ -1282,7 +1404,8 @@
       "flying"
     ],
     "weight": 56.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "swarm"
   },
   {
     "id": 124,
@@ -1293,7 +1416,8 @@
       "psychic"
     ],
     "weight": 40.6,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "oblivious"
   },
   {
     "id": 125,
@@ -1303,7 +1427,8 @@
       "electric"
     ],
     "weight": 30.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "static"
   },
   {
     "id": 126,
@@ -1313,7 +1438,8 @@
       "fire"
     ],
     "weight": 44.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "flame-body"
   },
   {
     "id": 127,
@@ -1323,7 +1449,8 @@
       "bug"
     ],
     "weight": 55.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "hyper-cutter"
   },
   {
     "id": 128,
@@ -1333,7 +1460,8 @@
       "normal"
     ],
     "weight": 88.4,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "intimidate"
   },
   {
     "id": 129,
@@ -1343,7 +1471,8 @@
       "water"
     ],
     "weight": 10.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "swift-swim"
   },
   {
     "id": 130,
@@ -1354,7 +1483,8 @@
       "flying"
     ],
     "weight": 235.0,
-    "height": 6.5
+    "height": 6.5,
+    "ability": "intimidate"
   },
   {
     "id": 131,
@@ -1365,7 +1495,8 @@
       "ice"
     ],
     "weight": 220.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "water-absorb"
   },
   {
     "id": 132,
@@ -1375,7 +1506,8 @@
       "normal"
     ],
     "weight": 4.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "limber"
   },
   {
     "id": 133,
@@ -1385,7 +1517,8 @@
       "normal"
     ],
     "weight": 6.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "run-away"
   },
   {
     "id": 134,
@@ -1395,7 +1528,8 @@
       "water"
     ],
     "weight": 29.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "water-absorb"
   },
   {
     "id": 135,
@@ -1405,7 +1539,8 @@
       "electric"
     ],
     "weight": 24.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "volt-absorb"
   },
   {
     "id": 136,
@@ -1415,7 +1550,8 @@
       "fire"
     ],
     "weight": 25.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "flash-fire"
   },
   {
     "id": 137,
@@ -1425,7 +1561,8 @@
       "normal"
     ],
     "weight": 36.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "trace"
   },
   {
     "id": 138,
@@ -1436,7 +1573,8 @@
       "water"
     ],
     "weight": 7.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swift-swim"
   },
   {
     "id": 139,
@@ -1447,7 +1585,8 @@
       "water"
     ],
     "weight": 35.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swift-swim"
   },
   {
     "id": 140,
@@ -1458,7 +1597,8 @@
       "water"
     ],
     "weight": 11.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swift-swim"
   },
   {
     "id": 141,
@@ -1469,7 +1609,8 @@
       "water"
     ],
     "weight": 40.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "swift-swim"
   },
   {
     "id": 142,
@@ -1480,7 +1621,8 @@
       "flying"
     ],
     "weight": 59.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "rock-head"
   },
   {
     "id": 143,
@@ -1490,7 +1632,8 @@
       "normal"
     ],
     "weight": 460.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "immunity"
   },
   {
     "id": 144,
@@ -1501,7 +1644,8 @@
       "flying"
     ],
     "weight": 55.4,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "pressure"
   },
   {
     "id": 145,
@@ -1512,7 +1656,8 @@
       "flying"
     ],
     "weight": 52.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "pressure"
   },
   {
     "id": 146,
@@ -1523,7 +1668,8 @@
       "flying"
     ],
     "weight": 60.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "pressure"
   },
   {
     "id": 147,
@@ -1533,7 +1679,8 @@
       "dragon"
     ],
     "weight": 3.3,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "shed-skin"
   },
   {
     "id": 148,
@@ -1543,7 +1690,8 @@
       "dragon"
     ],
     "weight": 16.5,
-    "height": 4.0
+    "height": 4.0,
+    "ability": "shed-skin"
   },
   {
     "id": 149,
@@ -1554,7 +1702,8 @@
       "flying"
     ],
     "weight": 210.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "inner-focus"
   },
   {
     "id": 150,
@@ -1564,7 +1713,8 @@
       "psychic"
     ],
     "weight": 122.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "pressure"
   },
   {
     "id": 151,
@@ -1574,7 +1724,8 @@
       "psychic"
     ],
     "weight": 4.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "synchronize"
   },
   {
     "id": 152,
@@ -1584,7 +1735,8 @@
       "grass"
     ],
     "weight": 6.4,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "overgrow"
   },
   {
     "id": 153,
@@ -1594,7 +1746,8 @@
       "grass"
     ],
     "weight": 15.8,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "overgrow"
   },
   {
     "id": 154,
@@ -1604,7 +1757,8 @@
       "grass"
     ],
     "weight": 100.5,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "overgrow"
   },
   {
     "id": 155,
@@ -1614,7 +1768,8 @@
       "fire"
     ],
     "weight": 7.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "blaze"
   },
   {
     "id": 156,
@@ -1624,7 +1779,8 @@
       "fire"
     ],
     "weight": 19.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "blaze"
   },
   {
     "id": 157,
@@ -1634,7 +1790,8 @@
       "fire"
     ],
     "weight": 79.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "blaze"
   },
   {
     "id": 158,
@@ -1644,7 +1801,8 @@
       "water"
     ],
     "weight": 9.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "torrent"
   },
   {
     "id": 159,
@@ -1654,7 +1812,8 @@
       "water"
     ],
     "weight": 25.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "torrent"
   },
   {
     "id": 160,
@@ -1664,7 +1823,8 @@
       "water"
     ],
     "weight": 88.8,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "torrent"
   },
   {
     "id": 161,
@@ -1674,7 +1834,8 @@
       "normal"
     ],
     "weight": 6.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "run-away"
   },
   {
     "id": 162,
@@ -1684,7 +1845,8 @@
       "normal"
     ],
     "weight": 32.5,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "run-away"
   },
   {
     "id": 163,
@@ -1695,7 +1857,8 @@
       "flying"
     ],
     "weight": 21.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "insomnia"
   },
   {
     "id": 164,
@@ -1706,7 +1869,8 @@
       "flying"
     ],
     "weight": 40.8,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "insomnia"
   },
   {
     "id": 165,
@@ -1717,7 +1881,8 @@
       "flying"
     ],
     "weight": 10.8,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 166,
@@ -1728,7 +1893,8 @@
       "flying"
     ],
     "weight": 35.6,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "swarm"
   },
   {
     "id": 167,
@@ -1739,7 +1905,8 @@
       "poison"
     ],
     "weight": 8.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swarm"
   },
   {
     "id": 168,
@@ -1750,7 +1917,8 @@
       "poison"
     ],
     "weight": 33.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "swarm"
   },
   {
     "id": 169,
@@ -1761,7 +1929,8 @@
       "flying"
     ],
     "weight": 75.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "inner-focus"
   },
   {
     "id": 170,
@@ -1772,7 +1941,8 @@
       "electric"
     ],
     "weight": 12.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "volt-absorb"
   },
   {
     "id": 171,
@@ -1783,7 +1953,8 @@
       "electric"
     ],
     "weight": 22.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "volt-absorb"
   },
   {
     "id": 172,
@@ -1793,7 +1964,8 @@
       "electric"
     ],
     "weight": 2.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "static"
   },
   {
     "id": 173,
@@ -1803,7 +1975,8 @@
       "fairy"
     ],
     "weight": 3.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "cute-charm"
   },
   {
     "id": 174,
@@ -1814,7 +1987,8 @@
       "fairy"
     ],
     "weight": 1.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "cute-charm"
   },
   {
     "id": 175,
@@ -1824,7 +1998,8 @@
       "fairy"
     ],
     "weight": 1.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "hustle"
   },
   {
     "id": 176,
@@ -1835,7 +2010,8 @@
       "flying"
     ],
     "weight": 3.2,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hustle"
   },
   {
     "id": 177,
@@ -1846,7 +2022,8 @@
       "flying"
     ],
     "weight": 2.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "synchronize"
   },
   {
     "id": 178,
@@ -1857,7 +2034,8 @@
       "flying"
     ],
     "weight": 15.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "synchronize"
   },
   {
     "id": 179,
@@ -1867,7 +2045,8 @@
       "electric"
     ],
     "weight": 7.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "static"
   },
   {
     "id": 180,
@@ -1877,7 +2056,8 @@
       "electric"
     ],
     "weight": 13.3,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "static"
   },
   {
     "id": 181,
@@ -1887,7 +2067,8 @@
       "electric"
     ],
     "weight": 61.5,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "static"
   },
   {
     "id": 182,
@@ -1897,7 +2078,8 @@
       "grass"
     ],
     "weight": 5.8,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "chlorophyll"
   },
   {
     "id": 183,
@@ -1908,7 +2090,8 @@
       "fairy"
     ],
     "weight": 8.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "thick-fat"
   },
   {
     "id": 184,
@@ -1919,7 +2102,8 @@
       "fairy"
     ],
     "weight": 28.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "thick-fat"
   },
   {
     "id": 185,
@@ -1929,7 +2113,8 @@
       "rock"
     ],
     "weight": 38.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "sturdy"
   },
   {
     "id": 186,
@@ -1939,7 +2124,8 @@
       "water"
     ],
     "weight": 33.9,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "water-absorb"
   },
   {
     "id": 187,
@@ -1950,7 +2136,8 @@
       "flying"
     ],
     "weight": 0.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "chlorophyll"
   },
   {
     "id": 188,
@@ -1961,7 +2148,8 @@
       "flying"
     ],
     "weight": 1.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "chlorophyll"
   },
   {
     "id": 189,
@@ -1972,7 +2160,8 @@
       "flying"
     ],
     "weight": 3.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "chlorophyll"
   },
   {
     "id": 190,
@@ -1982,7 +2171,8 @@
       "normal"
     ],
     "weight": 11.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "run-away"
   },
   {
     "id": 191,
@@ -1992,7 +2182,8 @@
       "grass"
     ],
     "weight": 1.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "chlorophyll"
   },
   {
     "id": 192,
@@ -2002,7 +2193,8 @@
       "grass"
     ],
     "weight": 8.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "chlorophyll"
   },
   {
     "id": 193,
@@ -2013,7 +2205,8 @@
       "flying"
     ],
     "weight": 38.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "speed-boost"
   },
   {
     "id": 194,
@@ -2024,7 +2217,8 @@
       "ground"
     ],
     "weight": 8.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "damp"
   },
   {
     "id": 195,
@@ -2035,7 +2229,8 @@
       "ground"
     ],
     "weight": 75.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "damp"
   },
   {
     "id": 196,
@@ -2045,7 +2240,8 @@
       "psychic"
     ],
     "weight": 26.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "synchronize"
   },
   {
     "id": 197,
@@ -2055,7 +2251,8 @@
       "dark"
     ],
     "weight": 27.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "synchronize"
   },
   {
     "id": 198,
@@ -2066,7 +2263,8 @@
       "flying"
     ],
     "weight": 2.1,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "insomnia"
   },
   {
     "id": 199,
@@ -2077,7 +2275,8 @@
       "psychic"
     ],
     "weight": 79.5,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "oblivious"
   },
   {
     "id": 200,
@@ -2087,7 +2286,8 @@
       "ghost"
     ],
     "weight": 1.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "levitate"
   },
   {
     "id": 201,
@@ -2097,7 +2297,8 @@
       "psychic"
     ],
     "weight": 5.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "levitate"
   },
   {
     "id": 202,
@@ -2107,7 +2308,8 @@
       "psychic"
     ],
     "weight": 28.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "shadow-tag"
   },
   {
     "id": 203,
@@ -2118,7 +2320,8 @@
       "psychic"
     ],
     "weight": 41.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "inner-focus"
   },
   {
     "id": 204,
@@ -2128,7 +2331,8 @@
       "bug"
     ],
     "weight": 7.2,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "sturdy"
   },
   {
     "id": 205,
@@ -2139,7 +2343,8 @@
       "steel"
     ],
     "weight": 125.8,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "sturdy"
   },
   {
     "id": 206,
@@ -2149,7 +2354,8 @@
       "normal"
     ],
     "weight": 14.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "serene-grace"
   },
   {
     "id": 207,
@@ -2160,7 +2366,8 @@
       "flying"
     ],
     "weight": 64.8,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "hyper-cutter"
   },
   {
     "id": 208,
@@ -2171,7 +2378,8 @@
       "ground"
     ],
     "weight": 400.0,
-    "height": 9.2
+    "height": 9.2,
+    "ability": "rock-head"
   },
   {
     "id": 209,
@@ -2181,7 +2389,8 @@
       "fairy"
     ],
     "weight": 7.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "intimidate"
   },
   {
     "id": 210,
@@ -2191,7 +2400,8 @@
       "fairy"
     ],
     "weight": 48.7,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "intimidate"
   },
   {
     "id": 211,
@@ -2202,7 +2412,8 @@
       "poison"
     ],
     "weight": 3.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "poison-point"
   },
   {
     "id": 212,
@@ -2213,7 +2424,8 @@
       "steel"
     ],
     "weight": 118.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "swarm"
   },
   {
     "id": 213,
@@ -2224,7 +2436,8 @@
       "rock"
     ],
     "weight": 20.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "sturdy"
   },
   {
     "id": 214,
@@ -2235,7 +2448,8 @@
       "fighting"
     ],
     "weight": 54.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "swarm"
   },
   {
     "id": 215,
@@ -2246,7 +2460,8 @@
       "ice"
     ],
     "weight": 28.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "inner-focus"
   },
   {
     "id": 216,
@@ -2256,7 +2471,8 @@
       "normal"
     ],
     "weight": 8.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "pickup"
   },
   {
     "id": 217,
@@ -2266,7 +2482,8 @@
       "normal"
     ],
     "weight": 125.8,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "guts"
   },
   {
     "id": 218,
@@ -2276,7 +2493,8 @@
       "fire"
     ],
     "weight": 35.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "magma-armor"
   },
   {
     "id": 219,
@@ -2287,7 +2505,8 @@
       "rock"
     ],
     "weight": 55.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "magma-armor"
   },
   {
     "id": 220,
@@ -2298,7 +2517,8 @@
       "ground"
     ],
     "weight": 6.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "oblivious"
   },
   {
     "id": 221,
@@ -2309,7 +2529,8 @@
       "ground"
     ],
     "weight": 55.8,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "oblivious"
   },
   {
     "id": 222,
@@ -2320,7 +2541,8 @@
       "rock"
     ],
     "weight": 5.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hustle"
   },
   {
     "id": 223,
@@ -2330,7 +2552,8 @@
       "water"
     ],
     "weight": 12.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hustle"
   },
   {
     "id": 224,
@@ -2340,7 +2563,8 @@
       "water"
     ],
     "weight": 28.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "suction-cups"
   },
   {
     "id": 225,
@@ -2351,7 +2575,8 @@
       "flying"
     ],
     "weight": 16.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "vital-spirit"
   },
   {
     "id": 226,
@@ -2362,7 +2587,8 @@
       "flying"
     ],
     "weight": 220.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "swift-swim"
   },
   {
     "id": 227,
@@ -2373,7 +2599,8 @@
       "flying"
     ],
     "weight": 50.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "keen-eye"
   },
   {
     "id": 228,
@@ -2384,7 +2611,8 @@
       "fire"
     ],
     "weight": 10.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "early-bird"
   },
   {
     "id": 229,
@@ -2395,7 +2623,8 @@
       "fire"
     ],
     "weight": 35.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "early-bird"
   },
   {
     "id": 230,
@@ -2406,7 +2635,8 @@
       "dragon"
     ],
     "weight": 152.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "swift-swim"
   },
   {
     "id": 231,
@@ -2416,7 +2646,8 @@
       "ground"
     ],
     "weight": 33.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "pickup"
   },
   {
     "id": 232,
@@ -2426,7 +2657,8 @@
       "ground"
     ],
     "weight": 120.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "sturdy"
   },
   {
     "id": 233,
@@ -2436,7 +2668,8 @@
       "normal"
     ],
     "weight": 32.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "trace"
   },
   {
     "id": 234,
@@ -2446,7 +2679,8 @@
       "normal"
     ],
     "weight": 71.2,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "intimidate"
   },
   {
     "id": 235,
@@ -2456,7 +2690,8 @@
       "normal"
     ],
     "weight": 58.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "own-tempo"
   },
   {
     "id": 236,
@@ -2466,7 +2701,8 @@
       "fighting"
     ],
     "weight": 21.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "guts"
   },
   {
     "id": 237,
@@ -2476,7 +2712,8 @@
       "fighting"
     ],
     "weight": 48.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "intimidate"
   },
   {
     "id": 238,
@@ -2487,7 +2724,8 @@
       "psychic"
     ],
     "weight": 6.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "oblivious"
   },
   {
     "id": 239,
@@ -2497,7 +2735,8 @@
       "electric"
     ],
     "weight": 23.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "static"
   },
   {
     "id": 240,
@@ -2507,7 +2746,8 @@
       "fire"
     ],
     "weight": 21.4,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "flame-body"
   },
   {
     "id": 241,
@@ -2517,7 +2757,8 @@
       "normal"
     ],
     "weight": 75.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "thick-fat"
   },
   {
     "id": 242,
@@ -2527,7 +2768,8 @@
       "normal"
     ],
     "weight": 46.8,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "natural-cure"
   },
   {
     "id": 243,
@@ -2537,7 +2779,8 @@
       "electric"
     ],
     "weight": 178.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "pressure"
   },
   {
     "id": 244,
@@ -2547,7 +2790,8 @@
       "fire"
     ],
     "weight": 198.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "pressure"
   },
   {
     "id": 245,
@@ -2557,7 +2801,8 @@
       "water"
     ],
     "weight": 187.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "pressure"
   },
   {
     "id": 246,
@@ -2568,7 +2813,8 @@
       "ground"
     ],
     "weight": 72.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "guts"
   },
   {
     "id": 247,
@@ -2579,7 +2825,8 @@
       "ground"
     ],
     "weight": 152.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "shed-skin"
   },
   {
     "id": 248,
@@ -2590,7 +2837,8 @@
       "dark"
     ],
     "weight": 202.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "sand-stream"
   },
   {
     "id": 249,
@@ -2601,7 +2849,8 @@
       "flying"
     ],
     "weight": 216.0,
-    "height": 5.2
+    "height": 5.2,
+    "ability": "pressure"
   },
   {
     "id": 250,
@@ -2612,7 +2861,8 @@
       "flying"
     ],
     "weight": 199.0,
-    "height": 3.8
+    "height": 3.8,
+    "ability": "pressure"
   },
   {
     "id": 251,
@@ -2623,7 +2873,8 @@
       "grass"
     ],
     "weight": 5.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "natural-cure"
   },
   {
     "id": 252,
@@ -2633,7 +2884,8 @@
       "grass"
     ],
     "weight": 5.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "overgrow"
   },
   {
     "id": 253,
@@ -2643,7 +2895,8 @@
       "grass"
     ],
     "weight": 21.6,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "overgrow"
   },
   {
     "id": 254,
@@ -2653,7 +2906,8 @@
       "grass"
     ],
     "weight": 52.2,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "overgrow"
   },
   {
     "id": 255,
@@ -2663,7 +2917,8 @@
       "fire"
     ],
     "weight": 2.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "blaze"
   },
   {
     "id": 256,
@@ -2674,7 +2929,8 @@
       "fighting"
     ],
     "weight": 19.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "blaze"
   },
   {
     "id": 257,
@@ -2685,7 +2941,8 @@
       "fighting"
     ],
     "weight": 52.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "blaze"
   },
   {
     "id": 258,
@@ -2695,7 +2952,8 @@
       "water"
     ],
     "weight": 7.6,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "torrent"
   },
   {
     "id": 259,
@@ -2706,7 +2964,8 @@
       "ground"
     ],
     "weight": 28.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "torrent"
   },
   {
     "id": 260,
@@ -2717,7 +2976,8 @@
       "ground"
     ],
     "weight": 81.9,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "torrent"
   },
   {
     "id": 261,
@@ -2727,7 +2987,8 @@
       "dark"
     ],
     "weight": 13.6,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "run-away"
   },
   {
     "id": 262,
@@ -2737,7 +2998,8 @@
       "dark"
     ],
     "weight": 37.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "intimidate"
   },
   {
     "id": 263,
@@ -2747,7 +3009,8 @@
       "normal"
     ],
     "weight": 17.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "pickup"
   },
   {
     "id": 264,
@@ -2757,7 +3020,8 @@
       "normal"
     ],
     "weight": 32.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "pickup"
   },
   {
     "id": 265,
@@ -2767,7 +3031,8 @@
       "bug"
     ],
     "weight": 3.6,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shield-dust"
   },
   {
     "id": 266,
@@ -2777,7 +3042,8 @@
       "bug"
     ],
     "weight": 10.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "shed-skin"
   },
   {
     "id": 267,
@@ -2788,7 +3054,8 @@
       "flying"
     ],
     "weight": 28.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 268,
@@ -2798,7 +3065,8 @@
       "bug"
     ],
     "weight": 11.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "shed-skin"
   },
   {
     "id": 269,
@@ -2809,7 +3077,8 @@
       "poison"
     ],
     "weight": 31.6,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "shield-dust"
   },
   {
     "id": 270,
@@ -2820,7 +3089,8 @@
       "grass"
     ],
     "weight": 2.6,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swift-swim"
   },
   {
     "id": 271,
@@ -2831,7 +3101,8 @@
       "grass"
     ],
     "weight": 32.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "swift-swim"
   },
   {
     "id": 272,
@@ -2842,7 +3113,8 @@
       "grass"
     ],
     "weight": 55.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "swift-swim"
   },
   {
     "id": 273,
@@ -2852,7 +3124,8 @@
       "grass"
     ],
     "weight": 4.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "chlorophyll"
   },
   {
     "id": 274,
@@ -2863,7 +3136,8 @@
       "dark"
     ],
     "weight": 28.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 275,
@@ -2874,7 +3148,8 @@
       "dark"
     ],
     "weight": 59.6,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "chlorophyll"
   },
   {
     "id": 276,
@@ -2885,7 +3160,8 @@
       "flying"
     ],
     "weight": 2.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "guts"
   },
   {
     "id": 277,
@@ -2896,7 +3172,8 @@
       "flying"
     ],
     "weight": 19.8,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "guts"
   },
   {
     "id": 278,
@@ -2907,7 +3184,8 @@
       "flying"
     ],
     "weight": 9.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "keen-eye"
   },
   {
     "id": 279,
@@ -2918,7 +3196,8 @@
       "flying"
     ],
     "weight": 28.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "keen-eye"
   },
   {
     "id": 280,
@@ -2929,7 +3208,8 @@
       "fairy"
     ],
     "weight": 6.6,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "synchronize"
   },
   {
     "id": 281,
@@ -2940,7 +3220,8 @@
       "fairy"
     ],
     "weight": 20.2,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "synchronize"
   },
   {
     "id": 282,
@@ -2951,7 +3232,8 @@
       "fairy"
     ],
     "weight": 48.4,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "synchronize"
   },
   {
     "id": 283,
@@ -2962,7 +3244,8 @@
       "water"
     ],
     "weight": 1.7,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swift-swim"
   },
   {
     "id": 284,
@@ -2973,7 +3256,8 @@
       "flying"
     ],
     "weight": 3.6,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "intimidate"
   },
   {
     "id": 285,
@@ -2983,7 +3267,8 @@
       "grass"
     ],
     "weight": 4.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "effect-spore"
   },
   {
     "id": 286,
@@ -2994,7 +3279,8 @@
       "fighting"
     ],
     "weight": 39.2,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "effect-spore"
   },
   {
     "id": 287,
@@ -3004,7 +3290,8 @@
       "normal"
     ],
     "weight": 24.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "truant"
   },
   {
     "id": 288,
@@ -3014,7 +3301,8 @@
       "normal"
     ],
     "weight": 46.5,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "vital-spirit"
   },
   {
     "id": 289,
@@ -3024,7 +3312,8 @@
       "normal"
     ],
     "weight": 130.5,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "truant"
   },
   {
     "id": 290,
@@ -3035,7 +3324,8 @@
       "ground"
     ],
     "weight": 5.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "compound-eyes"
   },
   {
     "id": 291,
@@ -3046,7 +3336,8 @@
       "flying"
     ],
     "weight": 12.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "speed-boost"
   },
   {
     "id": 292,
@@ -3057,7 +3348,8 @@
       "ghost"
     ],
     "weight": 1.2,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "wonder-guard"
   },
   {
     "id": 293,
@@ -3067,7 +3359,8 @@
       "normal"
     ],
     "weight": 16.3,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "soundproof"
   },
   {
     "id": 294,
@@ -3077,7 +3370,8 @@
       "normal"
     ],
     "weight": 40.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "soundproof"
   },
   {
     "id": 295,
@@ -3087,7 +3381,8 @@
       "normal"
     ],
     "weight": 84.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "soundproof"
   },
   {
     "id": 296,
@@ -3097,7 +3392,8 @@
       "fighting"
     ],
     "weight": 86.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "thick-fat"
   },
   {
     "id": 297,
@@ -3107,7 +3403,8 @@
       "fighting"
     ],
     "weight": 253.8,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "thick-fat"
   },
   {
     "id": 298,
@@ -3118,7 +3415,8 @@
       "fairy"
     ],
     "weight": 2.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "thick-fat"
   },
   {
     "id": 299,
@@ -3128,7 +3426,8 @@
       "rock"
     ],
     "weight": 97.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "sturdy"
   },
   {
     "id": 300,
@@ -3138,7 +3437,8 @@
       "normal"
     ],
     "weight": 11.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "cute-charm"
   },
   {
     "id": 301,
@@ -3148,7 +3448,8 @@
       "normal"
     ],
     "weight": 32.6,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "cute-charm"
   },
   {
     "id": 302,
@@ -3159,7 +3460,8 @@
       "ghost"
     ],
     "weight": 11.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "keen-eye"
   },
   {
     "id": 303,
@@ -3170,7 +3472,8 @@
       "fairy"
     ],
     "weight": 11.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hyper-cutter"
   },
   {
     "id": 304,
@@ -3181,7 +3484,8 @@
       "rock"
     ],
     "weight": 60.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "sturdy"
   },
   {
     "id": 305,
@@ -3192,7 +3496,8 @@
       "rock"
     ],
     "weight": 120.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "sturdy"
   },
   {
     "id": 306,
@@ -3203,7 +3508,8 @@
       "rock"
     ],
     "weight": 360.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "sturdy"
   },
   {
     "id": 307,
@@ -3214,7 +3520,8 @@
       "psychic"
     ],
     "weight": 11.2,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "pure-power"
   },
   {
     "id": 308,
@@ -3225,7 +3532,8 @@
       "psychic"
     ],
     "weight": 31.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "pure-power"
   },
   {
     "id": 309,
@@ -3235,7 +3543,8 @@
       "electric"
     ],
     "weight": 15.2,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "static"
   },
   {
     "id": 310,
@@ -3245,7 +3554,8 @@
       "electric"
     ],
     "weight": 40.2,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "static"
   },
   {
     "id": 311,
@@ -3255,7 +3565,8 @@
       "electric"
     ],
     "weight": 4.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "plus"
   },
   {
     "id": 312,
@@ -3265,7 +3576,8 @@
       "electric"
     ],
     "weight": 4.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "minus"
   },
   {
     "id": 313,
@@ -3275,7 +3587,8 @@
       "bug"
     ],
     "weight": 17.7,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "illuminate"
   },
   {
     "id": 314,
@@ -3285,7 +3598,8 @@
       "bug"
     ],
     "weight": 17.7,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "oblivious"
   },
   {
     "id": 315,
@@ -3296,7 +3610,8 @@
       "poison"
     ],
     "weight": 2.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "natural-cure"
   },
   {
     "id": 316,
@@ -3306,7 +3621,8 @@
       "poison"
     ],
     "weight": 10.3,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "liquid-ooze"
   },
   {
     "id": 317,
@@ -3316,7 +3632,8 @@
       "poison"
     ],
     "weight": 80.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "liquid-ooze"
   },
   {
     "id": 318,
@@ -3327,7 +3644,8 @@
       "dark"
     ],
     "weight": 20.8,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "rough-skin"
   },
   {
     "id": 319,
@@ -3338,7 +3656,8 @@
       "dark"
     ],
     "weight": 88.8,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "rough-skin"
   },
   {
     "id": 320,
@@ -3348,7 +3667,8 @@
       "water"
     ],
     "weight": 130.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "water-veil"
   },
   {
     "id": 321,
@@ -3358,7 +3678,8 @@
       "water"
     ],
     "weight": 398.0,
-    "height": 14.5
+    "height": 14.5,
+    "ability": "water-veil"
   },
   {
     "id": 322,
@@ -3369,7 +3690,8 @@
       "ground"
     ],
     "weight": 24.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "oblivious"
   },
   {
     "id": 323,
@@ -3380,7 +3702,8 @@
       "ground"
     ],
     "weight": 220.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "magma-armor"
   },
   {
     "id": 324,
@@ -3390,7 +3713,8 @@
       "fire"
     ],
     "weight": 80.4,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "white-smoke"
   },
   {
     "id": 325,
@@ -3400,7 +3724,8 @@
       "psychic"
     ],
     "weight": 30.6,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "thick-fat"
   },
   {
     "id": 326,
@@ -3410,7 +3735,8 @@
       "psychic"
     ],
     "weight": 71.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "thick-fat"
   },
   {
     "id": 327,
@@ -3420,7 +3746,8 @@
       "normal"
     ],
     "weight": 5.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "own-tempo"
   },
   {
     "id": 328,
@@ -3430,7 +3757,8 @@
       "ground"
     ],
     "weight": 15.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "hyper-cutter"
   },
   {
     "id": 329,
@@ -3441,7 +3769,8 @@
       "dragon"
     ],
     "weight": 15.3,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "levitate"
   },
   {
     "id": 330,
@@ -3452,7 +3781,8 @@
       "dragon"
     ],
     "weight": 82.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "levitate"
   },
   {
     "id": 331,
@@ -3462,7 +3792,8 @@
       "grass"
     ],
     "weight": 51.3,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "sand-veil"
   },
   {
     "id": 332,
@@ -3473,7 +3804,8 @@
       "dark"
     ],
     "weight": 77.4,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "sand-veil"
   },
   {
     "id": 333,
@@ -3484,7 +3816,8 @@
       "flying"
     ],
     "weight": 1.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "natural-cure"
   },
   {
     "id": 334,
@@ -3495,7 +3828,8 @@
       "flying"
     ],
     "weight": 20.6,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "natural-cure"
   },
   {
     "id": 335,
@@ -3505,7 +3839,8 @@
       "normal"
     ],
     "weight": 40.3,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "immunity"
   },
   {
     "id": 336,
@@ -3515,7 +3850,8 @@
       "poison"
     ],
     "weight": 52.5,
-    "height": 2.7
+    "height": 2.7,
+    "ability": "shed-skin"
   },
   {
     "id": 337,
@@ -3526,7 +3862,8 @@
       "psychic"
     ],
     "weight": 168.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "levitate"
   },
   {
     "id": 338,
@@ -3537,7 +3874,8 @@
       "psychic"
     ],
     "weight": 154.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "levitate"
   },
   {
     "id": 339,
@@ -3548,7 +3886,8 @@
       "ground"
     ],
     "weight": 1.9,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "oblivious"
   },
   {
     "id": 340,
@@ -3559,7 +3898,8 @@
       "ground"
     ],
     "weight": 23.6,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "oblivious"
   },
   {
     "id": 341,
@@ -3569,7 +3909,8 @@
       "water"
     ],
     "weight": 11.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hyper-cutter"
   },
   {
     "id": 342,
@@ -3580,7 +3921,8 @@
       "dark"
     ],
     "weight": 32.8,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "hyper-cutter"
   },
   {
     "id": 343,
@@ -3591,7 +3933,8 @@
       "psychic"
     ],
     "weight": 21.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "levitate"
   },
   {
     "id": 344,
@@ -3602,7 +3945,8 @@
       "psychic"
     ],
     "weight": 108.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "levitate"
   },
   {
     "id": 345,
@@ -3613,7 +3957,8 @@
       "grass"
     ],
     "weight": 23.8,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "suction-cups"
   },
   {
     "id": 346,
@@ -3624,7 +3969,8 @@
       "grass"
     ],
     "weight": 60.4,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "suction-cups"
   },
   {
     "id": 347,
@@ -3635,7 +3981,8 @@
       "bug"
     ],
     "weight": 12.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "battle-armor"
   },
   {
     "id": 348,
@@ -3646,7 +3993,8 @@
       "bug"
     ],
     "weight": 68.2,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "battle-armor"
   },
   {
     "id": 349,
@@ -3656,7 +4004,8 @@
       "water"
     ],
     "weight": 7.4,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "swift-swim"
   },
   {
     "id": 350,
@@ -3666,7 +4015,8 @@
       "water"
     ],
     "weight": 162.0,
-    "height": 6.2
+    "height": 6.2,
+    "ability": "marvel-scale"
   },
   {
     "id": 351,
@@ -3676,7 +4026,8 @@
       "normal"
     ],
     "weight": 0.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "forecast"
   },
   {
     "id": 352,
@@ -3686,7 +4037,8 @@
       "normal"
     ],
     "weight": 22.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "color-change"
   },
   {
     "id": 353,
@@ -3696,7 +4048,8 @@
       "ghost"
     ],
     "weight": 2.3,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "insomnia"
   },
   {
     "id": 354,
@@ -3706,7 +4059,8 @@
       "ghost"
     ],
     "weight": 12.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "insomnia"
   },
   {
     "id": 355,
@@ -3716,7 +4070,8 @@
       "ghost"
     ],
     "weight": 15.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "levitate"
   },
   {
     "id": 356,
@@ -3726,7 +4081,8 @@
       "ghost"
     ],
     "weight": 30.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "pressure"
   },
   {
     "id": 357,
@@ -3737,7 +4093,8 @@
       "flying"
     ],
     "weight": 100.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 358,
@@ -3747,7 +4104,8 @@
       "psychic"
     ],
     "weight": 1.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "levitate"
   },
   {
     "id": 359,
@@ -3757,7 +4115,8 @@
       "dark"
     ],
     "weight": 47.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "pressure"
   },
   {
     "id": 360,
@@ -3767,7 +4126,8 @@
       "psychic"
     ],
     "weight": 14.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "shadow-tag"
   },
   {
     "id": 361,
@@ -3777,7 +4137,8 @@
       "ice"
     ],
     "weight": 16.8,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "inner-focus"
   },
   {
     "id": 362,
@@ -3787,7 +4148,8 @@
       "ice"
     ],
     "weight": 256.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "inner-focus"
   },
   {
     "id": 363,
@@ -3798,7 +4160,8 @@
       "water"
     ],
     "weight": 39.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "thick-fat"
   },
   {
     "id": 364,
@@ -3809,7 +4172,8 @@
       "water"
     ],
     "weight": 87.6,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "thick-fat"
   },
   {
     "id": 365,
@@ -3820,7 +4184,8 @@
       "water"
     ],
     "weight": 150.6,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "thick-fat"
   },
   {
     "id": 366,
@@ -3830,7 +4195,8 @@
       "water"
     ],
     "weight": 52.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "shell-armor"
   },
   {
     "id": 367,
@@ -3840,7 +4206,8 @@
       "water"
     ],
     "weight": 27.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "swift-swim"
   },
   {
     "id": 368,
@@ -3850,7 +4217,8 @@
       "water"
     ],
     "weight": 22.6,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "swift-swim"
   },
   {
     "id": 369,
@@ -3861,7 +4229,8 @@
       "rock"
     ],
     "weight": 23.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swift-swim"
   },
   {
     "id": 370,
@@ -3871,7 +4240,8 @@
       "water"
     ],
     "weight": 8.7,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "swift-swim"
   },
   {
     "id": 371,
@@ -3881,7 +4251,8 @@
       "dragon"
     ],
     "weight": 42.1,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "rock-head"
   },
   {
     "id": 372,
@@ -3891,7 +4262,8 @@
       "dragon"
     ],
     "weight": 110.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "rock-head"
   },
   {
     "id": 373,
@@ -3902,7 +4274,8 @@
       "flying"
     ],
     "weight": 102.6,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "intimidate"
   },
   {
     "id": 374,
@@ -3913,7 +4286,8 @@
       "psychic"
     ],
     "weight": 95.2,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "clear-body"
   },
   {
     "id": 375,
@@ -3924,7 +4298,8 @@
       "psychic"
     ],
     "weight": 202.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "clear-body"
   },
   {
     "id": 376,
@@ -3935,7 +4310,8 @@
       "psychic"
     ],
     "weight": 550.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "clear-body"
   },
   {
     "id": 377,
@@ -3945,7 +4321,8 @@
       "rock"
     ],
     "weight": 230.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "clear-body"
   },
   {
     "id": 378,
@@ -3955,7 +4332,8 @@
       "ice"
     ],
     "weight": 175.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "clear-body"
   },
   {
     "id": 379,
@@ -3965,7 +4343,8 @@
       "steel"
     ],
     "weight": 205.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "clear-body"
   },
   {
     "id": 380,
@@ -3976,7 +4355,8 @@
       "psychic"
     ],
     "weight": 40.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "levitate"
   },
   {
     "id": 381,
@@ -3987,7 +4367,8 @@
       "psychic"
     ],
     "weight": 60.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "levitate"
   },
   {
     "id": 382,
@@ -3997,7 +4378,8 @@
       "water"
     ],
     "weight": 352.0,
-    "height": 4.5
+    "height": 4.5,
+    "ability": "drizzle"
   },
   {
     "id": 383,
@@ -4007,7 +4389,8 @@
       "ground"
     ],
     "weight": 950.0,
-    "height": 3.5
+    "height": 3.5,
+    "ability": "drought"
   },
   {
     "id": 384,
@@ -4018,7 +4401,8 @@
       "flying"
     ],
     "weight": 206.5,
-    "height": 7.0
+    "height": 7.0,
+    "ability": "air-lock"
   },
   {
     "id": 385,
@@ -4029,7 +4413,8 @@
       "psychic"
     ],
     "weight": 1.1,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "serene-grace"
   },
   {
     "id": 386,
@@ -4039,7 +4424,8 @@
       "psychic"
     ],
     "weight": 60.8,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "pressure"
   },
   {
     "id": 387,
@@ -4049,7 +4435,8 @@
       "grass"
     ],
     "weight": 10.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "overgrow"
   },
   {
     "id": 388,
@@ -4059,7 +4446,8 @@
       "grass"
     ],
     "weight": 97.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "overgrow"
   },
   {
     "id": 389,
@@ -4070,7 +4458,8 @@
       "ground"
     ],
     "weight": 310.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "overgrow"
   },
   {
     "id": 390,
@@ -4080,7 +4469,8 @@
       "fire"
     ],
     "weight": 6.2,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "blaze"
   },
   {
     "id": 391,
@@ -4091,7 +4481,8 @@
       "fighting"
     ],
     "weight": 22.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "blaze"
   },
   {
     "id": 392,
@@ -4102,7 +4493,8 @@
       "fighting"
     ],
     "weight": 55.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "blaze"
   },
   {
     "id": 393,
@@ -4112,7 +4504,8 @@
       "water"
     ],
     "weight": 5.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "torrent"
   },
   {
     "id": 394,
@@ -4122,7 +4515,8 @@
       "water"
     ],
     "weight": 23.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "torrent"
   },
   {
     "id": 395,
@@ -4133,7 +4527,8 @@
       "steel"
     ],
     "weight": 84.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "torrent"
   },
   {
     "id": 396,
@@ -4144,7 +4539,8 @@
       "flying"
     ],
     "weight": 2.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "keen-eye"
   },
   {
     "id": 397,
@@ -4155,7 +4551,8 @@
       "flying"
     ],
     "weight": 15.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "intimidate"
   },
   {
     "id": 398,
@@ -4166,7 +4563,8 @@
       "flying"
     ],
     "weight": 24.9,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "intimidate"
   },
   {
     "id": 399,
@@ -4176,7 +4574,8 @@
       "normal"
     ],
     "weight": 20.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "simple"
   },
   {
     "id": 400,
@@ -4187,7 +4586,8 @@
       "water"
     ],
     "weight": 31.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "simple"
   },
   {
     "id": 401,
@@ -4197,7 +4597,8 @@
       "bug"
     ],
     "weight": 2.2,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shed-skin"
   },
   {
     "id": 402,
@@ -4207,7 +4608,8 @@
       "bug"
     ],
     "weight": 25.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 403,
@@ -4217,7 +4619,8 @@
       "electric"
     ],
     "weight": 9.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "rivalry"
   },
   {
     "id": 404,
@@ -4227,7 +4630,8 @@
       "electric"
     ],
     "weight": 30.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "rivalry"
   },
   {
     "id": 405,
@@ -4237,7 +4641,8 @@
       "electric"
     ],
     "weight": 42.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "rivalry"
   },
   {
     "id": 406,
@@ -4248,7 +4653,8 @@
       "poison"
     ],
     "weight": 1.2,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "natural-cure"
   },
   {
     "id": 407,
@@ -4259,7 +4665,8 @@
       "poison"
     ],
     "weight": 14.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "natural-cure"
   },
   {
     "id": 408,
@@ -4269,7 +4676,8 @@
       "rock"
     ],
     "weight": 31.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "mold-breaker"
   },
   {
     "id": 409,
@@ -4279,7 +4687,8 @@
       "rock"
     ],
     "weight": 102.5,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "mold-breaker"
   },
   {
     "id": 410,
@@ -4290,7 +4699,8 @@
       "steel"
     ],
     "weight": 57.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "sturdy"
   },
   {
     "id": 411,
@@ -4301,7 +4711,8 @@
       "steel"
     ],
     "weight": 149.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "sturdy"
   },
   {
     "id": 412,
@@ -4311,7 +4722,8 @@
       "bug"
     ],
     "weight": 3.4,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "shed-skin"
   },
   {
     "id": 413,
@@ -4322,7 +4734,8 @@
       "grass"
     ],
     "weight": 6.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "anticipation"
   },
   {
     "id": 414,
@@ -4333,7 +4746,8 @@
       "flying"
     ],
     "weight": 23.3,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "swarm"
   },
   {
     "id": 415,
@@ -4344,7 +4758,8 @@
       "flying"
     ],
     "weight": 5.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "honey-gather"
   },
   {
     "id": 416,
@@ -4355,7 +4770,8 @@
       "flying"
     ],
     "weight": 38.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "pressure"
   },
   {
     "id": 417,
@@ -4365,7 +4781,8 @@
       "electric"
     ],
     "weight": 3.9,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "run-away"
   },
   {
     "id": 418,
@@ -4375,7 +4792,8 @@
       "water"
     ],
     "weight": 29.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "swift-swim"
   },
   {
     "id": 419,
@@ -4385,7 +4803,8 @@
       "water"
     ],
     "weight": 33.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "swift-swim"
   },
   {
     "id": 420,
@@ -4395,7 +4814,8 @@
       "grass"
     ],
     "weight": 3.3,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "chlorophyll"
   },
   {
     "id": 421,
@@ -4405,7 +4825,8 @@
       "grass"
     ],
     "weight": 9.3,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "flower-gift"
   },
   {
     "id": 422,
@@ -4415,7 +4836,8 @@
       "water"
     ],
     "weight": 6.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "sticky-hold"
   },
   {
     "id": 423,
@@ -4426,7 +4848,8 @@
       "ground"
     ],
     "weight": 29.9,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "sticky-hold"
   },
   {
     "id": 424,
@@ -4436,7 +4859,8 @@
       "normal"
     ],
     "weight": 20.3,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "technician"
   },
   {
     "id": 425,
@@ -4447,7 +4871,8 @@
       "flying"
     ],
     "weight": 1.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "aftermath"
   },
   {
     "id": 426,
@@ -4458,7 +4883,8 @@
       "flying"
     ],
     "weight": 15.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "aftermath"
   },
   {
     "id": 427,
@@ -4468,7 +4894,8 @@
       "normal"
     ],
     "weight": 5.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "run-away"
   },
   {
     "id": 428,
@@ -4478,7 +4905,8 @@
       "normal"
     ],
     "weight": 33.3,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "cute-charm"
   },
   {
     "id": 429,
@@ -4488,7 +4916,8 @@
       "ghost"
     ],
     "weight": 4.4,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "levitate"
   },
   {
     "id": 430,
@@ -4499,7 +4928,8 @@
       "flying"
     ],
     "weight": 27.3,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "insomnia"
   },
   {
     "id": 431,
@@ -4509,7 +4939,8 @@
       "normal"
     ],
     "weight": 3.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "limber"
   },
   {
     "id": 432,
@@ -4519,7 +4950,8 @@
       "normal"
     ],
     "weight": 43.8,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "thick-fat"
   },
   {
     "id": 433,
@@ -4529,7 +4961,8 @@
       "psychic"
     ],
     "weight": 0.6,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "levitate"
   },
   {
     "id": 434,
@@ -4540,7 +4973,8 @@
       "dark"
     ],
     "weight": 19.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "stench"
   },
   {
     "id": 435,
@@ -4551,7 +4985,8 @@
       "dark"
     ],
     "weight": 38.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "stench"
   },
   {
     "id": 436,
@@ -4562,7 +4997,8 @@
       "psychic"
     ],
     "weight": 60.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "levitate"
   },
   {
     "id": 437,
@@ -4573,7 +5009,8 @@
       "psychic"
     ],
     "weight": 187.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "levitate"
   },
   {
     "id": 438,
@@ -4583,7 +5020,8 @@
       "rock"
     ],
     "weight": 15.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "sturdy"
   },
   {
     "id": 439,
@@ -4594,7 +5032,8 @@
       "fairy"
     ],
     "weight": 13.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "soundproof"
   },
   {
     "id": 440,
@@ -4604,7 +5043,8 @@
       "normal"
     ],
     "weight": 24.4,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "natural-cure"
   },
   {
     "id": 441,
@@ -4615,7 +5055,8 @@
       "flying"
     ],
     "weight": 1.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "keen-eye"
   },
   {
     "id": 442,
@@ -4626,7 +5067,8 @@
       "dark"
     ],
     "weight": 108.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "pressure"
   },
   {
     "id": 443,
@@ -4637,7 +5079,8 @@
       "ground"
     ],
     "weight": 20.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "sand-veil"
   },
   {
     "id": 444,
@@ -4648,7 +5091,8 @@
       "ground"
     ],
     "weight": 56.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "sand-veil"
   },
   {
     "id": 445,
@@ -4659,7 +5103,8 @@
       "ground"
     ],
     "weight": 95.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "sand-veil"
   },
   {
     "id": 446,
@@ -4669,7 +5114,8 @@
       "normal"
     ],
     "weight": 105.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "pickup"
   },
   {
     "id": 447,
@@ -4679,7 +5125,8 @@
       "fighting"
     ],
     "weight": 20.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "steadfast"
   },
   {
     "id": 448,
@@ -4690,7 +5137,8 @@
       "steel"
     ],
     "weight": 54.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "steadfast"
   },
   {
     "id": 449,
@@ -4700,7 +5148,8 @@
       "ground"
     ],
     "weight": 49.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "sand-stream"
   },
   {
     "id": 450,
@@ -4710,7 +5159,8 @@
       "ground"
     ],
     "weight": 300.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "sand-stream"
   },
   {
     "id": 451,
@@ -4721,7 +5171,8 @@
       "bug"
     ],
     "weight": 12.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "battle-armor"
   },
   {
     "id": 452,
@@ -4732,7 +5183,8 @@
       "dark"
     ],
     "weight": 61.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "battle-armor"
   },
   {
     "id": 453,
@@ -4743,7 +5195,8 @@
       "fighting"
     ],
     "weight": 23.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "anticipation"
   },
   {
     "id": 454,
@@ -4754,7 +5207,8 @@
       "fighting"
     ],
     "weight": 44.4,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "anticipation"
   },
   {
     "id": 455,
@@ -4764,7 +5218,8 @@
       "grass"
     ],
     "weight": 27.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "levitate"
   },
   {
     "id": 456,
@@ -4774,7 +5229,8 @@
       "water"
     ],
     "weight": 7.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swift-swim"
   },
   {
     "id": 457,
@@ -4784,7 +5240,8 @@
       "water"
     ],
     "weight": 24.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "swift-swim"
   },
   {
     "id": 458,
@@ -4795,7 +5252,8 @@
       "flying"
     ],
     "weight": 65.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swift-swim"
   },
   {
     "id": 459,
@@ -4806,7 +5264,8 @@
       "ice"
     ],
     "weight": 50.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "snow-warning"
   },
   {
     "id": 460,
@@ -4817,7 +5276,8 @@
       "ice"
     ],
     "weight": 135.5,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "snow-warning"
   },
   {
     "id": 461,
@@ -4828,7 +5288,8 @@
       "ice"
     ],
     "weight": 34.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "pressure"
   },
   {
     "id": 462,
@@ -4839,7 +5300,8 @@
       "steel"
     ],
     "weight": 180.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "magnet-pull"
   },
   {
     "id": 463,
@@ -4849,7 +5311,8 @@
       "normal"
     ],
     "weight": 140.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "own-tempo"
   },
   {
     "id": 464,
@@ -4860,7 +5323,8 @@
       "rock"
     ],
     "weight": 282.8,
-    "height": 2.4
+    "height": 2.4,
+    "ability": "lightning-rod"
   },
   {
     "id": 465,
@@ -4870,7 +5334,8 @@
       "grass"
     ],
     "weight": 128.6,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "chlorophyll"
   },
   {
     "id": 466,
@@ -4880,7 +5345,8 @@
       "electric"
     ],
     "weight": 138.6,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "motor-drive"
   },
   {
     "id": 467,
@@ -4890,7 +5356,8 @@
       "fire"
     ],
     "weight": 68.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "flame-body"
   },
   {
     "id": 468,
@@ -4901,7 +5368,8 @@
       "flying"
     ],
     "weight": 38.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "hustle"
   },
   {
     "id": 469,
@@ -4912,7 +5380,8 @@
       "flying"
     ],
     "weight": 51.5,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "speed-boost"
   },
   {
     "id": 470,
@@ -4922,7 +5391,8 @@
       "grass"
     ],
     "weight": 25.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "leaf-guard"
   },
   {
     "id": 471,
@@ -4932,7 +5402,8 @@
       "ice"
     ],
     "weight": 25.9,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "snow-cloak"
   },
   {
     "id": 472,
@@ -4943,7 +5414,8 @@
       "flying"
     ],
     "weight": 42.5,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "hyper-cutter"
   },
   {
     "id": 473,
@@ -4954,7 +5426,8 @@
       "ground"
     ],
     "weight": 291.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "oblivious"
   },
   {
     "id": 474,
@@ -4964,7 +5437,8 @@
       "normal"
     ],
     "weight": 34.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "adaptability"
   },
   {
     "id": 475,
@@ -4975,7 +5449,8 @@
       "fighting"
     ],
     "weight": 52.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "steadfast"
   },
   {
     "id": 476,
@@ -4986,7 +5461,8 @@
       "steel"
     ],
     "weight": 340.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "sturdy"
   },
   {
     "id": 477,
@@ -4996,7 +5472,8 @@
       "ghost"
     ],
     "weight": 106.6,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "pressure"
   },
   {
     "id": 478,
@@ -5007,7 +5484,8 @@
       "ghost"
     ],
     "weight": 26.6,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "snow-cloak"
   },
   {
     "id": 479,
@@ -5018,7 +5496,8 @@
       "ghost"
     ],
     "weight": 0.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "levitate"
   },
   {
     "id": 480,
@@ -5028,7 +5507,8 @@
       "psychic"
     ],
     "weight": 0.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "levitate"
   },
   {
     "id": 481,
@@ -5038,7 +5518,8 @@
       "psychic"
     ],
     "weight": 0.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "levitate"
   },
   {
     "id": 482,
@@ -5048,7 +5529,8 @@
       "psychic"
     ],
     "weight": 0.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "levitate"
   },
   {
     "id": 483,
@@ -5059,7 +5541,8 @@
       "dragon"
     ],
     "weight": 683.0,
-    "height": 5.4
+    "height": 5.4,
+    "ability": "pressure"
   },
   {
     "id": 484,
@@ -5070,7 +5553,8 @@
       "dragon"
     ],
     "weight": 336.0,
-    "height": 4.2
+    "height": 4.2,
+    "ability": "pressure"
   },
   {
     "id": 485,
@@ -5081,7 +5565,8 @@
       "steel"
     ],
     "weight": 430.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "flash-fire"
   },
   {
     "id": 486,
@@ -5091,7 +5576,8 @@
       "normal"
     ],
     "weight": 420.0,
-    "height": 3.7
+    "height": 3.7,
+    "ability": "slow-start"
   },
   {
     "id": 487,
@@ -5102,7 +5588,8 @@
       "dragon"
     ],
     "weight": 750.0,
-    "height": 4.5
+    "height": 4.5,
+    "ability": "pressure"
   },
   {
     "id": 488,
@@ -5112,7 +5599,8 @@
       "psychic"
     ],
     "weight": 85.6,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "levitate"
   },
   {
     "id": 489,
@@ -5122,7 +5610,8 @@
       "water"
     ],
     "weight": 3.1,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "hydration"
   },
   {
     "id": 490,
@@ -5132,7 +5621,8 @@
       "water"
     ],
     "weight": 1.4,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "hydration"
   },
   {
     "id": 491,
@@ -5142,7 +5632,8 @@
       "dark"
     ],
     "weight": 50.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "bad-dreams"
   },
   {
     "id": 492,
@@ -5152,7 +5643,8 @@
       "grass"
     ],
     "weight": 2.1,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "natural-cure"
   },
   {
     "id": 493,
@@ -5162,7 +5654,8 @@
       "normal"
     ],
     "weight": 320.0,
-    "height": 3.2
+    "height": 3.2,
+    "ability": "multitype"
   },
   {
     "id": 494,
@@ -5173,7 +5666,8 @@
       "fire"
     ],
     "weight": 4.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "victory-star"
   },
   {
     "id": 495,
@@ -5183,7 +5677,8 @@
       "grass"
     ],
     "weight": 8.1,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "overgrow"
   },
   {
     "id": 496,
@@ -5193,7 +5688,8 @@
       "grass"
     ],
     "weight": 16.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "overgrow"
   },
   {
     "id": 497,
@@ -5203,7 +5699,8 @@
       "grass"
     ],
     "weight": 63.0,
-    "height": 3.3
+    "height": 3.3,
+    "ability": "overgrow"
   },
   {
     "id": 498,
@@ -5213,7 +5710,8 @@
       "fire"
     ],
     "weight": 9.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "blaze"
   },
   {
     "id": 499,
@@ -5224,7 +5722,8 @@
       "fighting"
     ],
     "weight": 55.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "blaze"
   },
   {
     "id": 500,
@@ -5235,7 +5734,8 @@
       "fighting"
     ],
     "weight": 150.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "blaze"
   },
   {
     "id": 501,
@@ -5245,7 +5745,8 @@
       "water"
     ],
     "weight": 5.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "torrent"
   },
   {
     "id": 502,
@@ -5255,7 +5756,8 @@
       "water"
     ],
     "weight": 24.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "torrent"
   },
   {
     "id": 503,
@@ -5265,7 +5767,8 @@
       "water"
     ],
     "weight": 94.6,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "torrent"
   },
   {
     "id": 504,
@@ -5275,7 +5778,8 @@
       "normal"
     ],
     "weight": 11.6,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "run-away"
   },
   {
     "id": 505,
@@ -5285,7 +5789,8 @@
       "normal"
     ],
     "weight": 27.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "illuminate"
   },
   {
     "id": 506,
@@ -5295,7 +5800,8 @@
       "normal"
     ],
     "weight": 4.1,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "vital-spirit"
   },
   {
     "id": 507,
@@ -5305,7 +5811,8 @@
       "normal"
     ],
     "weight": 14.7,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "intimidate"
   },
   {
     "id": 508,
@@ -5315,7 +5822,8 @@
       "normal"
     ],
     "weight": 61.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "intimidate"
   },
   {
     "id": 509,
@@ -5325,7 +5833,8 @@
       "dark"
     ],
     "weight": 10.1,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "limber"
   },
   {
     "id": 510,
@@ -5335,7 +5844,8 @@
       "dark"
     ],
     "weight": 37.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "limber"
   },
   {
     "id": 511,
@@ -5345,7 +5855,8 @@
       "grass"
     ],
     "weight": 10.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "gluttony"
   },
   {
     "id": 512,
@@ -5355,7 +5866,8 @@
       "grass"
     ],
     "weight": 30.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "gluttony"
   },
   {
     "id": 513,
@@ -5365,7 +5877,8 @@
       "fire"
     ],
     "weight": 11.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "gluttony"
   },
   {
     "id": 514,
@@ -5375,7 +5888,8 @@
       "fire"
     ],
     "weight": 28.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "gluttony"
   },
   {
     "id": 515,
@@ -5385,7 +5899,8 @@
       "water"
     ],
     "weight": 13.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "gluttony"
   },
   {
     "id": 516,
@@ -5395,7 +5910,8 @@
       "water"
     ],
     "weight": 29.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "gluttony"
   },
   {
     "id": 517,
@@ -5405,7 +5921,8 @@
       "psychic"
     ],
     "weight": 23.3,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "forewarn"
   },
   {
     "id": 518,
@@ -5415,7 +5932,8 @@
       "psychic"
     ],
     "weight": 60.5,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "forewarn"
   },
   {
     "id": 519,
@@ -5426,7 +5944,8 @@
       "flying"
     ],
     "weight": 2.1,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "big-pecks"
   },
   {
     "id": 520,
@@ -5437,7 +5956,8 @@
       "flying"
     ],
     "weight": 15.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "big-pecks"
   },
   {
     "id": 521,
@@ -5448,7 +5968,8 @@
       "flying"
     ],
     "weight": 29.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "big-pecks"
   },
   {
     "id": 522,
@@ -5458,7 +5979,8 @@
       "electric"
     ],
     "weight": 29.8,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "lightning-rod"
   },
   {
     "id": 523,
@@ -5468,7 +5990,8 @@
       "electric"
     ],
     "weight": 79.5,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "lightning-rod"
   },
   {
     "id": 524,
@@ -5478,7 +6001,8 @@
       "rock"
     ],
     "weight": 18.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "sturdy"
   },
   {
     "id": 525,
@@ -5488,7 +6012,8 @@
       "rock"
     ],
     "weight": 102.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "sturdy"
   },
   {
     "id": 526,
@@ -5498,7 +6023,8 @@
       "rock"
     ],
     "weight": 260.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "sturdy"
   },
   {
     "id": 527,
@@ -5509,7 +6035,8 @@
       "flying"
     ],
     "weight": 2.1,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "unaware"
   },
   {
     "id": 528,
@@ -5520,7 +6047,8 @@
       "flying"
     ],
     "weight": 10.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "unaware"
   },
   {
     "id": 529,
@@ -5530,7 +6058,8 @@
       "ground"
     ],
     "weight": 8.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "sand-rush"
   },
   {
     "id": 530,
@@ -5541,7 +6070,8 @@
       "steel"
     ],
     "weight": 40.4,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "sand-rush"
   },
   {
     "id": 531,
@@ -5551,7 +6081,8 @@
       "normal"
     ],
     "weight": 31.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "healer"
   },
   {
     "id": 532,
@@ -5561,7 +6092,8 @@
       "fighting"
     ],
     "weight": 12.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "guts"
   },
   {
     "id": 533,
@@ -5571,7 +6103,8 @@
       "fighting"
     ],
     "weight": 40.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "guts"
   },
   {
     "id": 534,
@@ -5581,7 +6114,8 @@
       "fighting"
     ],
     "weight": 87.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "guts"
   },
   {
     "id": 535,
@@ -5591,7 +6125,8 @@
       "water"
     ],
     "weight": 4.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swift-swim"
   },
   {
     "id": 536,
@@ -5602,7 +6137,8 @@
       "ground"
     ],
     "weight": 17.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "swift-swim"
   },
   {
     "id": 537,
@@ -5613,7 +6149,8 @@
       "ground"
     ],
     "weight": 62.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "swift-swim"
   },
   {
     "id": 538,
@@ -5623,7 +6160,8 @@
       "fighting"
     ],
     "weight": 55.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "guts"
   },
   {
     "id": 539,
@@ -5633,7 +6171,8 @@
       "fighting"
     ],
     "weight": 51.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "sturdy"
   },
   {
     "id": 540,
@@ -5644,7 +6183,8 @@
       "grass"
     ],
     "weight": 2.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "swarm"
   },
   {
     "id": 541,
@@ -5655,7 +6195,8 @@
       "grass"
     ],
     "weight": 7.3,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "leaf-guard"
   },
   {
     "id": 542,
@@ -5666,7 +6207,8 @@
       "grass"
     ],
     "weight": 20.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "swarm"
   },
   {
     "id": 543,
@@ -5677,7 +6219,8 @@
       "poison"
     ],
     "weight": 5.3,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "poison-point"
   },
   {
     "id": 544,
@@ -5688,7 +6231,8 @@
       "poison"
     ],
     "weight": 58.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "poison-point"
   },
   {
     "id": 545,
@@ -5699,7 +6243,8 @@
       "poison"
     ],
     "weight": 200.5,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "poison-point"
   },
   {
     "id": 546,
@@ -5710,7 +6255,8 @@
       "fairy"
     ],
     "weight": 0.6,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "prankster"
   },
   {
     "id": 547,
@@ -5721,7 +6267,8 @@
       "fairy"
     ],
     "weight": 6.6,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "prankster"
   },
   {
     "id": 548,
@@ -5731,7 +6278,8 @@
       "grass"
     ],
     "weight": 6.6,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "chlorophyll"
   },
   {
     "id": 549,
@@ -5741,7 +6289,8 @@
       "grass"
     ],
     "weight": 16.3,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "chlorophyll"
   },
   {
     "id": 550,
@@ -5751,7 +6300,8 @@
       "water"
     ],
     "weight": 18.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "reckless"
   },
   {
     "id": 551,
@@ -5762,7 +6312,8 @@
       "dark"
     ],
     "weight": 15.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "intimidate"
   },
   {
     "id": 552,
@@ -5773,7 +6324,8 @@
       "dark"
     ],
     "weight": 33.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "intimidate"
   },
   {
     "id": 553,
@@ -5784,7 +6336,8 @@
       "dark"
     ],
     "weight": 96.3,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "intimidate"
   },
   {
     "id": 554,
@@ -5794,7 +6347,8 @@
       "fire"
     ],
     "weight": 37.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hustle"
   },
   {
     "id": 555,
@@ -5804,7 +6358,8 @@
       "fire"
     ],
     "weight": 92.9,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "sheer-force"
   },
   {
     "id": 556,
@@ -5814,7 +6369,8 @@
       "grass"
     ],
     "weight": 28.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "water-absorb"
   },
   {
     "id": 557,
@@ -5825,7 +6381,8 @@
       "rock"
     ],
     "weight": 14.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "sturdy"
   },
   {
     "id": 558,
@@ -5836,7 +6393,8 @@
       "rock"
     ],
     "weight": 200.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "sturdy"
   },
   {
     "id": 559,
@@ -5847,7 +6405,8 @@
       "fighting"
     ],
     "weight": 11.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "shed-skin"
   },
   {
     "id": 560,
@@ -5858,7 +6417,8 @@
       "fighting"
     ],
     "weight": 30.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "shed-skin"
   },
   {
     "id": 561,
@@ -5869,7 +6429,8 @@
       "flying"
     ],
     "weight": 14.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "wonder-skin"
   },
   {
     "id": 562,
@@ -5879,7 +6440,8 @@
       "ghost"
     ],
     "weight": 1.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "mummy"
   },
   {
     "id": 563,
@@ -5889,7 +6451,8 @@
       "ghost"
     ],
     "weight": 76.5,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "mummy"
   },
   {
     "id": 564,
@@ -5900,7 +6463,8 @@
       "rock"
     ],
     "weight": 16.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "solid-rock"
   },
   {
     "id": 565,
@@ -5911,7 +6475,8 @@
       "rock"
     ],
     "weight": 81.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "solid-rock"
   },
   {
     "id": 566,
@@ -5922,7 +6487,8 @@
       "flying"
     ],
     "weight": 9.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "defeatist"
   },
   {
     "id": 567,
@@ -5933,7 +6499,8 @@
       "flying"
     ],
     "weight": 32.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "defeatist"
   },
   {
     "id": 568,
@@ -5943,7 +6510,8 @@
       "poison"
     ],
     "weight": 31.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "stench"
   },
   {
     "id": 569,
@@ -5953,7 +6521,8 @@
       "poison"
     ],
     "weight": 107.3,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "stench"
   },
   {
     "id": 570,
@@ -5963,7 +6532,8 @@
       "dark"
     ],
     "weight": 12.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "illusion"
   },
   {
     "id": 571,
@@ -5973,7 +6543,8 @@
       "dark"
     ],
     "weight": 81.1,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "illusion"
   },
   {
     "id": 572,
@@ -5983,7 +6554,8 @@
       "normal"
     ],
     "weight": 5.8,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "cute-charm"
   },
   {
     "id": 573,
@@ -5993,7 +6565,8 @@
       "normal"
     ],
     "weight": 7.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "cute-charm"
   },
   {
     "id": 574,
@@ -6003,7 +6576,8 @@
       "psychic"
     ],
     "weight": 5.8,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "frisk"
   },
   {
     "id": 575,
@@ -6013,7 +6587,8 @@
       "psychic"
     ],
     "weight": 18.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "frisk"
   },
   {
     "id": 576,
@@ -6023,7 +6598,8 @@
       "psychic"
     ],
     "weight": 44.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "frisk"
   },
   {
     "id": 577,
@@ -6033,7 +6609,8 @@
       "psychic"
     ],
     "weight": 1.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "overcoat"
   },
   {
     "id": 578,
@@ -6043,7 +6620,8 @@
       "psychic"
     ],
     "weight": 8.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "overcoat"
   },
   {
     "id": 579,
@@ -6053,7 +6631,8 @@
       "psychic"
     ],
     "weight": 20.1,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "overcoat"
   },
   {
     "id": 580,
@@ -6064,7 +6643,8 @@
       "flying"
     ],
     "weight": 5.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "keen-eye"
   },
   {
     "id": 581,
@@ -6075,7 +6655,8 @@
       "flying"
     ],
     "weight": 24.2,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "keen-eye"
   },
   {
     "id": 582,
@@ -6085,7 +6666,8 @@
       "ice"
     ],
     "weight": 5.7,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "ice-body"
   },
   {
     "id": 583,
@@ -6095,7 +6677,8 @@
       "ice"
     ],
     "weight": 41.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "ice-body"
   },
   {
     "id": 584,
@@ -6105,7 +6688,8 @@
       "ice"
     ],
     "weight": 57.5,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "ice-body"
   },
   {
     "id": 585,
@@ -6116,7 +6700,8 @@
       "grass"
     ],
     "weight": 19.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "chlorophyll"
   },
   {
     "id": 586,
@@ -6127,7 +6712,8 @@
       "grass"
     ],
     "weight": 92.5,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "chlorophyll"
   },
   {
     "id": 587,
@@ -6138,7 +6724,8 @@
       "flying"
     ],
     "weight": 5.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "static"
   },
   {
     "id": 588,
@@ -6148,7 +6735,8 @@
       "bug"
     ],
     "weight": 5.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swarm"
   },
   {
     "id": 589,
@@ -6159,7 +6747,8 @@
       "steel"
     ],
     "weight": 33.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 590,
@@ -6170,7 +6759,8 @@
       "poison"
     ],
     "weight": 1.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "effect-spore"
   },
   {
     "id": 591,
@@ -6181,7 +6771,8 @@
       "poison"
     ],
     "weight": 10.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "effect-spore"
   },
   {
     "id": 592,
@@ -6192,7 +6783,8 @@
       "ghost"
     ],
     "weight": 33.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "water-absorb"
   },
   {
     "id": 593,
@@ -6203,7 +6795,8 @@
       "ghost"
     ],
     "weight": 135.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "water-absorb"
   },
   {
     "id": 594,
@@ -6213,7 +6806,8 @@
       "water"
     ],
     "weight": 31.6,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "healer"
   },
   {
     "id": 595,
@@ -6224,7 +6818,8 @@
       "electric"
     ],
     "weight": 0.6,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "compound-eyes"
   },
   {
     "id": 596,
@@ -6235,7 +6830,8 @@
       "electric"
     ],
     "weight": 14.3,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "compound-eyes"
   },
   {
     "id": 597,
@@ -6246,7 +6842,8 @@
       "steel"
     ],
     "weight": 18.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "iron-barbs"
   },
   {
     "id": 598,
@@ -6257,7 +6854,8 @@
       "steel"
     ],
     "weight": 110.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "iron-barbs"
   },
   {
     "id": 599,
@@ -6267,7 +6865,8 @@
       "steel"
     ],
     "weight": 21.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "plus"
   },
   {
     "id": 600,
@@ -6277,7 +6876,8 @@
       "steel"
     ],
     "weight": 51.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "plus"
   },
   {
     "id": 601,
@@ -6287,7 +6887,8 @@
       "steel"
     ],
     "weight": 81.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "plus"
   },
   {
     "id": 602,
@@ -6297,7 +6898,8 @@
       "electric"
     ],
     "weight": 0.3,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "levitate"
   },
   {
     "id": 603,
@@ -6307,7 +6909,8 @@
       "electric"
     ],
     "weight": 22.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "levitate"
   },
   {
     "id": 604,
@@ -6317,7 +6920,8 @@
       "electric"
     ],
     "weight": 80.5,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "levitate"
   },
   {
     "id": 605,
@@ -6327,7 +6931,8 @@
       "psychic"
     ],
     "weight": 9.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "telepathy"
   },
   {
     "id": 606,
@@ -6337,7 +6942,8 @@
       "psychic"
     ],
     "weight": 34.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "telepathy"
   },
   {
     "id": 607,
@@ -6348,7 +6954,8 @@
       "fire"
     ],
     "weight": 3.1,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "flash-fire"
   },
   {
     "id": 608,
@@ -6359,7 +6966,8 @@
       "fire"
     ],
     "weight": 13.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "flash-fire"
   },
   {
     "id": 609,
@@ -6370,7 +6978,8 @@
       "fire"
     ],
     "weight": 34.3,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "flash-fire"
   },
   {
     "id": 610,
@@ -6380,7 +6989,8 @@
       "dragon"
     ],
     "weight": 18.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "rivalry"
   },
   {
     "id": 611,
@@ -6390,7 +7000,8 @@
       "dragon"
     ],
     "weight": 36.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "rivalry"
   },
   {
     "id": 612,
@@ -6400,7 +7011,8 @@
       "dragon"
     ],
     "weight": 105.5,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "rivalry"
   },
   {
     "id": 613,
@@ -6410,7 +7022,8 @@
       "ice"
     ],
     "weight": 8.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "snow-cloak"
   },
   {
     "id": 614,
@@ -6420,7 +7033,8 @@
       "ice"
     ],
     "weight": 260.0,
-    "height": 2.6
+    "height": 2.6,
+    "ability": "snow-cloak"
   },
   {
     "id": 615,
@@ -6430,7 +7044,8 @@
       "ice"
     ],
     "weight": 148.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "levitate"
   },
   {
     "id": 616,
@@ -6440,7 +7055,8 @@
       "bug"
     ],
     "weight": 7.7,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "hydration"
   },
   {
     "id": 617,
@@ -6450,7 +7066,8 @@
       "bug"
     ],
     "weight": 25.3,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "hydration"
   },
   {
     "id": 618,
@@ -6461,7 +7078,8 @@
       "electric"
     ],
     "weight": 11.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "static"
   },
   {
     "id": 619,
@@ -6471,7 +7089,8 @@
       "fighting"
     ],
     "weight": 20.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "inner-focus"
   },
   {
     "id": 620,
@@ -6481,7 +7100,8 @@
       "fighting"
     ],
     "weight": 35.5,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "inner-focus"
   },
   {
     "id": 621,
@@ -6491,7 +7111,8 @@
       "dragon"
     ],
     "weight": 139.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "rough-skin"
   },
   {
     "id": 622,
@@ -6502,7 +7123,8 @@
       "ghost"
     ],
     "weight": 92.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "iron-fist"
   },
   {
     "id": 623,
@@ -6513,7 +7135,8 @@
       "ghost"
     ],
     "weight": 330.0,
-    "height": 2.8
+    "height": 2.8,
+    "ability": "iron-fist"
   },
   {
     "id": 624,
@@ -6524,7 +7147,8 @@
       "steel"
     ],
     "weight": 10.2,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "defiant"
   },
   {
     "id": 625,
@@ -6535,7 +7159,8 @@
       "steel"
     ],
     "weight": 70.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "defiant"
   },
   {
     "id": 626,
@@ -6545,7 +7170,8 @@
       "normal"
     ],
     "weight": 94.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "reckless"
   },
   {
     "id": 627,
@@ -6556,7 +7182,8 @@
       "flying"
     ],
     "weight": 10.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "keen-eye"
   },
   {
     "id": 628,
@@ -6567,7 +7194,8 @@
       "flying"
     ],
     "weight": 41.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "keen-eye"
   },
   {
     "id": 629,
@@ -6578,7 +7206,8 @@
       "flying"
     ],
     "weight": 9.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "big-pecks"
   },
   {
     "id": 630,
@@ -6589,7 +7218,8 @@
       "flying"
     ],
     "weight": 39.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "big-pecks"
   },
   {
     "id": 631,
@@ -6599,7 +7229,8 @@
       "fire"
     ],
     "weight": 58.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "gluttony"
   },
   {
     "id": 632,
@@ -6610,7 +7241,8 @@
       "steel"
     ],
     "weight": 33.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "swarm"
   },
   {
     "id": 633,
@@ -6621,7 +7253,8 @@
       "dragon"
     ],
     "weight": 17.3,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "hustle"
   },
   {
     "id": 634,
@@ -6632,7 +7265,8 @@
       "dragon"
     ],
     "weight": 50.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "hustle"
   },
   {
     "id": 635,
@@ -6643,7 +7277,8 @@
       "dragon"
     ],
     "weight": 160.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "levitate"
   },
   {
     "id": 636,
@@ -6654,7 +7289,8 @@
       "fire"
     ],
     "weight": 28.8,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "flame-body"
   },
   {
     "id": 637,
@@ -6665,7 +7301,8 @@
       "fire"
     ],
     "weight": 46.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "flame-body"
   },
   {
     "id": 638,
@@ -6676,7 +7313,8 @@
       "fighting"
     ],
     "weight": 250.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "justified"
   },
   {
     "id": 639,
@@ -6687,7 +7325,8 @@
       "fighting"
     ],
     "weight": 260.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "justified"
   },
   {
     "id": 640,
@@ -6698,7 +7337,8 @@
       "fighting"
     ],
     "weight": 200.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "justified"
   },
   {
     "id": 641,
@@ -6708,7 +7348,8 @@
       "flying"
     ],
     "weight": 63.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "prankster"
   },
   {
     "id": 642,
@@ -6719,7 +7360,8 @@
       "flying"
     ],
     "weight": 61.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "prankster"
   },
   {
     "id": 643,
@@ -6730,7 +7372,8 @@
       "fire"
     ],
     "weight": 330.0,
-    "height": 3.2
+    "height": 3.2,
+    "ability": "turboblaze"
   },
   {
     "id": 644,
@@ -6741,7 +7384,8 @@
       "electric"
     ],
     "weight": 345.0,
-    "height": 2.9
+    "height": 2.9,
+    "ability": "teravolt"
   },
   {
     "id": 645,
@@ -6752,7 +7396,8 @@
       "flying"
     ],
     "weight": 68.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "sand-force"
   },
   {
     "id": 646,
@@ -6763,7 +7408,8 @@
       "ice"
     ],
     "weight": 325.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "pressure"
   },
   {
     "id": 647,
@@ -6774,7 +7420,8 @@
       "fighting"
     ],
     "weight": 48.5,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "justified"
   },
   {
     "id": 648,
@@ -6785,7 +7432,8 @@
       "psychic"
     ],
     "weight": 6.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "serene-grace"
   },
   {
     "id": 649,
@@ -6796,7 +7444,8 @@
       "steel"
     ],
     "weight": 82.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "download"
   },
   {
     "id": 650,
@@ -6806,7 +7455,8 @@
       "grass"
     ],
     "weight": 9.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "overgrow"
   },
   {
     "id": 651,
@@ -6816,7 +7466,8 @@
       "grass"
     ],
     "weight": 29.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "overgrow"
   },
   {
     "id": 652,
@@ -6827,7 +7478,8 @@
       "fighting"
     ],
     "weight": 90.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "overgrow"
   },
   {
     "id": 653,
@@ -6837,7 +7489,8 @@
       "fire"
     ],
     "weight": 9.4,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "blaze"
   },
   {
     "id": 654,
@@ -6847,7 +7500,8 @@
       "fire"
     ],
     "weight": 14.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "blaze"
   },
   {
     "id": 655,
@@ -6858,7 +7512,8 @@
       "psychic"
     ],
     "weight": 39.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "blaze"
   },
   {
     "id": 656,
@@ -6868,7 +7523,8 @@
       "water"
     ],
     "weight": 7.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "torrent"
   },
   {
     "id": 657,
@@ -6878,7 +7534,8 @@
       "water"
     ],
     "weight": 10.9,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "torrent"
   },
   {
     "id": 658,
@@ -6889,7 +7546,8 @@
       "dark"
     ],
     "weight": 40.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "torrent"
   },
   {
     "id": 659,
@@ -6899,7 +7557,8 @@
       "normal"
     ],
     "weight": 5.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "pickup"
   },
   {
     "id": 660,
@@ -6910,7 +7569,8 @@
       "ground"
     ],
     "weight": 42.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "pickup"
   },
   {
     "id": 661,
@@ -6921,7 +7581,8 @@
       "flying"
     ],
     "weight": 1.7,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "big-pecks"
   },
   {
     "id": 662,
@@ -6932,7 +7593,8 @@
       "flying"
     ],
     "weight": 16.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "flame-body"
   },
   {
     "id": 663,
@@ -6943,7 +7605,8 @@
       "flying"
     ],
     "weight": 24.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "flame-body"
   },
   {
     "id": 664,
@@ -6953,7 +7616,8 @@
       "bug"
     ],
     "weight": 2.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shield-dust"
   },
   {
     "id": 665,
@@ -6963,7 +7627,8 @@
       "bug"
     ],
     "weight": 8.4,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shed-skin"
   },
   {
     "id": 666,
@@ -6974,7 +7639,8 @@
       "flying"
     ],
     "weight": 17.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "shield-dust"
   },
   {
     "id": 667,
@@ -6985,7 +7651,8 @@
       "normal"
     ],
     "weight": 13.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "rivalry"
   },
   {
     "id": 668,
@@ -6996,7 +7663,8 @@
       "normal"
     ],
     "weight": 81.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "rivalry"
   },
   {
     "id": 669,
@@ -7006,7 +7674,8 @@
       "fairy"
     ],
     "weight": 0.1,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "flower-veil"
   },
   {
     "id": 670,
@@ -7016,7 +7685,8 @@
       "fairy"
     ],
     "weight": 0.9,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "flower-veil"
   },
   {
     "id": 671,
@@ -7026,7 +7696,8 @@
       "fairy"
     ],
     "weight": 10.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "flower-veil"
   },
   {
     "id": 672,
@@ -7036,7 +7707,8 @@
       "grass"
     ],
     "weight": 31.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "sap-sipper"
   },
   {
     "id": 673,
@@ -7046,7 +7718,8 @@
       "grass"
     ],
     "weight": 91.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "sap-sipper"
   },
   {
     "id": 674,
@@ -7056,7 +7729,8 @@
       "fighting"
     ],
     "weight": 8.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "iron-fist"
   },
   {
     "id": 675,
@@ -7067,7 +7741,8 @@
       "dark"
     ],
     "weight": 136.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "iron-fist"
   },
   {
     "id": 676,
@@ -7077,7 +7752,8 @@
       "normal"
     ],
     "weight": 28.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "fur-coat"
   },
   {
     "id": 677,
@@ -7087,7 +7763,8 @@
       "psychic"
     ],
     "weight": 3.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "keen-eye"
   },
   {
     "id": 678,
@@ -7097,7 +7774,8 @@
       "psychic"
     ],
     "weight": 8.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "keen-eye"
   },
   {
     "id": 679,
@@ -7108,7 +7786,8 @@
       "ghost"
     ],
     "weight": 2.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "no-guard"
   },
   {
     "id": 680,
@@ -7119,7 +7798,8 @@
       "ghost"
     ],
     "weight": 4.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "no-guard"
   },
   {
     "id": 681,
@@ -7130,7 +7810,8 @@
       "ghost"
     ],
     "weight": 53.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "stance-change"
   },
   {
     "id": 682,
@@ -7140,7 +7821,8 @@
       "fairy"
     ],
     "weight": 0.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "healer"
   },
   {
     "id": 683,
@@ -7150,7 +7832,8 @@
       "fairy"
     ],
     "weight": 15.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "healer"
   },
   {
     "id": 684,
@@ -7160,7 +7843,8 @@
       "fairy"
     ],
     "weight": 3.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "sweet-veil"
   },
   {
     "id": 685,
@@ -7170,7 +7854,8 @@
       "fairy"
     ],
     "weight": 5.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "sweet-veil"
   },
   {
     "id": 686,
@@ -7181,7 +7866,8 @@
       "psychic"
     ],
     "weight": 3.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "contrary"
   },
   {
     "id": 687,
@@ -7192,7 +7878,8 @@
       "psychic"
     ],
     "weight": 47.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "contrary"
   },
   {
     "id": 688,
@@ -7203,7 +7890,8 @@
       "water"
     ],
     "weight": 31.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "tough-claws"
   },
   {
     "id": 689,
@@ -7214,7 +7902,8 @@
       "water"
     ],
     "weight": 96.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "tough-claws"
   },
   {
     "id": 690,
@@ -7225,7 +7914,8 @@
       "water"
     ],
     "weight": 7.3,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "poison-point"
   },
   {
     "id": 691,
@@ -7236,7 +7926,8 @@
       "dragon"
     ],
     "weight": 81.5,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "poison-point"
   },
   {
     "id": 692,
@@ -7246,7 +7937,8 @@
       "water"
     ],
     "weight": 8.3,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "mega-launcher"
   },
   {
     "id": 693,
@@ -7256,7 +7948,8 @@
       "water"
     ],
     "weight": 35.3,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "mega-launcher"
   },
   {
     "id": 694,
@@ -7267,7 +7960,8 @@
       "normal"
     ],
     "weight": 6.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "dry-skin"
   },
   {
     "id": 695,
@@ -7278,7 +7972,8 @@
       "normal"
     ],
     "weight": 21.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "dry-skin"
   },
   {
     "id": 696,
@@ -7289,7 +7984,8 @@
       "dragon"
     ],
     "weight": 26.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "strong-jaw"
   },
   {
     "id": 697,
@@ -7300,7 +7996,8 @@
       "dragon"
     ],
     "weight": 270.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "strong-jaw"
   },
   {
     "id": 698,
@@ -7311,7 +8008,8 @@
       "ice"
     ],
     "weight": 25.2,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "refrigerate"
   },
   {
     "id": 699,
@@ -7322,7 +8020,8 @@
       "ice"
     ],
     "weight": 225.0,
-    "height": 2.7
+    "height": 2.7,
+    "ability": "refrigerate"
   },
   {
     "id": 700,
@@ -7332,7 +8031,8 @@
       "fairy"
     ],
     "weight": 23.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "cute-charm"
   },
   {
     "id": 701,
@@ -7343,7 +8043,8 @@
       "flying"
     ],
     "weight": 21.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "limber"
   },
   {
     "id": 702,
@@ -7354,7 +8055,8 @@
       "fairy"
     ],
     "weight": 2.2,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "cheek-pouch"
   },
   {
     "id": 703,
@@ -7365,7 +8067,8 @@
       "fairy"
     ],
     "weight": 5.7,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "clear-body"
   },
   {
     "id": 704,
@@ -7375,7 +8078,8 @@
       "dragon"
     ],
     "weight": 2.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "sap-sipper"
   },
   {
     "id": 705,
@@ -7385,7 +8089,8 @@
       "dragon"
     ],
     "weight": 17.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "sap-sipper"
   },
   {
     "id": 706,
@@ -7395,7 +8100,8 @@
       "dragon"
     ],
     "weight": 150.5,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "sap-sipper"
   },
   {
     "id": 707,
@@ -7406,7 +8112,8 @@
       "fairy"
     ],
     "weight": 3.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "prankster"
   },
   {
     "id": 708,
@@ -7417,7 +8124,8 @@
       "grass"
     ],
     "weight": 7.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "natural-cure"
   },
   {
     "id": 709,
@@ -7428,7 +8136,8 @@
       "grass"
     ],
     "weight": 71.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "natural-cure"
   },
   {
     "id": 710,
@@ -7439,7 +8148,8 @@
       "grass"
     ],
     "weight": 5.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "pickup"
   },
   {
     "id": 711,
@@ -7450,7 +8160,8 @@
       "grass"
     ],
     "weight": 12.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "pickup"
   },
   {
     "id": 712,
@@ -7460,7 +8171,8 @@
       "ice"
     ],
     "weight": 99.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "own-tempo"
   },
   {
     "id": 713,
@@ -7470,7 +8182,8 @@
       "ice"
     ],
     "weight": 505.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "own-tempo"
   },
   {
     "id": 714,
@@ -7481,7 +8194,8 @@
       "dragon"
     ],
     "weight": 8.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "frisk"
   },
   {
     "id": 715,
@@ -7492,7 +8206,8 @@
       "dragon"
     ],
     "weight": 85.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "frisk"
   },
   {
     "id": 716,
@@ -7502,7 +8217,8 @@
       "fairy"
     ],
     "weight": 215.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "fairy-aura"
   },
   {
     "id": 717,
@@ -7513,7 +8229,8 @@
       "flying"
     ],
     "weight": 203.0,
-    "height": 5.8
+    "height": 5.8,
+    "ability": "dark-aura"
   },
   {
     "id": 718,
@@ -7524,7 +8241,8 @@
       "ground"
     ],
     "weight": 305.0,
-    "height": 5.0
+    "height": 5.0,
+    "ability": "aura-break"
   },
   {
     "id": 719,
@@ -7535,7 +8253,8 @@
       "fairy"
     ],
     "weight": 8.8,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "clear-body"
   },
   {
     "id": 720,
@@ -7546,7 +8265,8 @@
       "ghost"
     ],
     "weight": 9.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "magician"
   },
   {
     "id": 721,
@@ -7557,7 +8277,8 @@
       "water"
     ],
     "weight": 195.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "water-absorb"
   },
   {
     "id": 722,
@@ -7568,7 +8289,8 @@
       "flying"
     ],
     "weight": 1.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "overgrow"
   },
   {
     "id": 723,
@@ -7579,7 +8301,8 @@
       "flying"
     ],
     "weight": 16.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "overgrow"
   },
   {
     "id": 724,
@@ -7590,7 +8313,8 @@
       "ghost"
     ],
     "weight": 36.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "overgrow"
   },
   {
     "id": 725,
@@ -7600,7 +8324,8 @@
       "fire"
     ],
     "weight": 4.3,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "blaze"
   },
   {
     "id": 726,
@@ -7610,7 +8335,8 @@
       "fire"
     ],
     "weight": 25.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "blaze"
   },
   {
     "id": 727,
@@ -7621,7 +8347,8 @@
       "dark"
     ],
     "weight": 83.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "blaze"
   },
   {
     "id": 728,
@@ -7631,7 +8358,8 @@
       "water"
     ],
     "weight": 7.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "torrent"
   },
   {
     "id": 729,
@@ -7641,7 +8369,8 @@
       "water"
     ],
     "weight": 17.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "torrent"
   },
   {
     "id": 730,
@@ -7652,7 +8381,8 @@
       "fairy"
     ],
     "weight": 44.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "torrent"
   },
   {
     "id": 731,
@@ -7663,7 +8393,8 @@
       "flying"
     ],
     "weight": 1.2,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "keen-eye"
   },
   {
     "id": 732,
@@ -7674,7 +8405,8 @@
       "flying"
     ],
     "weight": 14.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "keen-eye"
   },
   {
     "id": 733,
@@ -7685,7 +8417,8 @@
       "flying"
     ],
     "weight": 26.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "keen-eye"
   },
   {
     "id": 734,
@@ -7695,7 +8428,8 @@
       "normal"
     ],
     "weight": 6.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "stakeout"
   },
   {
     "id": 735,
@@ -7705,7 +8439,8 @@
       "normal"
     ],
     "weight": 14.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "stakeout"
   },
   {
     "id": 736,
@@ -7715,7 +8450,8 @@
       "bug"
     ],
     "weight": 4.4,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swarm"
   },
   {
     "id": 737,
@@ -7726,7 +8462,8 @@
       "electric"
     ],
     "weight": 10.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "battery"
   },
   {
     "id": 738,
@@ -7737,7 +8474,8 @@
       "electric"
     ],
     "weight": 45.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "levitate"
   },
   {
     "id": 739,
@@ -7747,7 +8485,8 @@
       "fighting"
     ],
     "weight": 7.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "hyper-cutter"
   },
   {
     "id": 740,
@@ -7758,7 +8497,8 @@
       "ice"
     ],
     "weight": 180.0,
-    "height": 1.7
+    "height": 1.7,
+    "ability": "hyper-cutter"
   },
   {
     "id": 741,
@@ -7769,7 +8509,8 @@
       "flying"
     ],
     "weight": 3.4,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "dancer"
   },
   {
     "id": 742,
@@ -7780,7 +8521,8 @@
       "fairy"
     ],
     "weight": 0.2,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "honey-gather"
   },
   {
     "id": 743,
@@ -7791,7 +8533,8 @@
       "fairy"
     ],
     "weight": 0.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "honey-gather"
   },
   {
     "id": 744,
@@ -7801,7 +8544,8 @@
       "rock"
     ],
     "weight": 9.2,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "keen-eye"
   },
   {
     "id": 745,
@@ -7811,7 +8555,8 @@
       "rock"
     ],
     "weight": 25.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "keen-eye"
   },
   {
     "id": 746,
@@ -7821,7 +8566,8 @@
       "water"
     ],
     "weight": 0.3,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "schooling"
   },
   {
     "id": 747,
@@ -7832,7 +8578,8 @@
       "water"
     ],
     "weight": 8.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "merciless"
   },
   {
     "id": 748,
@@ -7843,7 +8590,8 @@
       "water"
     ],
     "weight": 14.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "merciless"
   },
   {
     "id": 749,
@@ -7853,7 +8601,8 @@
       "ground"
     ],
     "weight": 110.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "own-tempo"
   },
   {
     "id": 750,
@@ -7863,7 +8612,8 @@
       "ground"
     ],
     "weight": 920.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "own-tempo"
   },
   {
     "id": 751,
@@ -7874,7 +8624,8 @@
       "bug"
     ],
     "weight": 4.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "water-bubble"
   },
   {
     "id": 752,
@@ -7885,7 +8636,8 @@
       "bug"
     ],
     "weight": 82.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "water-bubble"
   },
   {
     "id": 753,
@@ -7895,7 +8647,8 @@
       "grass"
     ],
     "weight": 1.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "leaf-guard"
   },
   {
     "id": 754,
@@ -7905,7 +8658,8 @@
       "grass"
     ],
     "weight": 18.5,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "leaf-guard"
   },
   {
     "id": 755,
@@ -7916,7 +8670,8 @@
       "fairy"
     ],
     "weight": 1.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "illuminate"
   },
   {
     "id": 756,
@@ -7927,7 +8682,8 @@
       "fairy"
     ],
     "weight": 11.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "illuminate"
   },
   {
     "id": 757,
@@ -7938,7 +8694,8 @@
       "fire"
     ],
     "weight": 4.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "corrosion"
   },
   {
     "id": 758,
@@ -7949,7 +8706,8 @@
       "fire"
     ],
     "weight": 22.2,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "corrosion"
   },
   {
     "id": 759,
@@ -7960,7 +8718,8 @@
       "fighting"
     ],
     "weight": 6.8,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "fluffy"
   },
   {
     "id": 760,
@@ -7971,7 +8730,8 @@
       "fighting"
     ],
     "weight": 135.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "fluffy"
   },
   {
     "id": 761,
@@ -7981,7 +8741,8 @@
       "grass"
     ],
     "weight": 3.2,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "leaf-guard"
   },
   {
     "id": 762,
@@ -7991,7 +8752,8 @@
       "grass"
     ],
     "weight": 8.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "leaf-guard"
   },
   {
     "id": 763,
@@ -8001,7 +8763,8 @@
       "grass"
     ],
     "weight": 21.4,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "leaf-guard"
   },
   {
     "id": 764,
@@ -8011,7 +8774,8 @@
       "fairy"
     ],
     "weight": 0.3,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "flower-veil"
   },
   {
     "id": 765,
@@ -8022,7 +8786,8 @@
       "psychic"
     ],
     "weight": 76.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "inner-focus"
   },
   {
     "id": 766,
@@ -8032,7 +8797,8 @@
       "fighting"
     ],
     "weight": 82.8,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "receiver"
   },
   {
     "id": 767,
@@ -8043,7 +8809,8 @@
       "water"
     ],
     "weight": 12.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "wimp-out"
   },
   {
     "id": 768,
@@ -8054,7 +8821,8 @@
       "water"
     ],
     "weight": 108.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "emergency-exit"
   },
   {
     "id": 769,
@@ -8065,7 +8833,8 @@
       "ground"
     ],
     "weight": 70.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "water-compaction"
   },
   {
     "id": 770,
@@ -8076,7 +8845,8 @@
       "ground"
     ],
     "weight": 250.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "water-compaction"
   },
   {
     "id": 771,
@@ -8086,7 +8856,8 @@
       "water"
     ],
     "weight": 1.2,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "innards-out"
   },
   {
     "id": 772,
@@ -8096,7 +8867,8 @@
       "normal"
     ],
     "weight": 120.5,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "battle-armor"
   },
   {
     "id": 773,
@@ -8106,7 +8878,8 @@
       "normal"
     ],
     "weight": 100.5,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "rks-system"
   },
   {
     "id": 774,
@@ -8117,7 +8890,8 @@
       "flying"
     ],
     "weight": 40.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shields-down"
   },
   {
     "id": 775,
@@ -8127,7 +8901,8 @@
       "normal"
     ],
     "weight": 19.9,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "comatose"
   },
   {
     "id": 776,
@@ -8138,7 +8913,8 @@
       "dragon"
     ],
     "weight": 212.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "shell-armor"
   },
   {
     "id": 777,
@@ -8149,7 +8925,8 @@
       "steel"
     ],
     "weight": 3.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "iron-barbs"
   },
   {
     "id": 778,
@@ -8160,7 +8937,8 @@
       "fairy"
     ],
     "weight": 0.7,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "disguise"
   },
   {
     "id": 779,
@@ -8171,7 +8949,8 @@
       "psychic"
     ],
     "weight": 19.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "dazzling"
   },
   {
     "id": 780,
@@ -8182,7 +8961,8 @@
       "dragon"
     ],
     "weight": 185.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "berserk"
   },
   {
     "id": 781,
@@ -8193,7 +8973,8 @@
       "grass"
     ],
     "weight": 210.0,
-    "height": 3.9
+    "height": 3.9,
+    "ability": "steelworker"
   },
   {
     "id": 782,
@@ -8203,7 +8984,8 @@
       "dragon"
     ],
     "weight": 29.7,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "bulletproof"
   },
   {
     "id": 783,
@@ -8214,7 +8996,8 @@
       "fighting"
     ],
     "weight": 47.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "bulletproof"
   },
   {
     "id": 784,
@@ -8225,7 +9008,8 @@
       "fighting"
     ],
     "weight": 78.2,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "bulletproof"
   },
   {
     "id": 785,
@@ -8236,7 +9020,8 @@
       "fairy"
     ],
     "weight": 20.5,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "electric-surge"
   },
   {
     "id": 786,
@@ -8247,7 +9032,8 @@
       "fairy"
     ],
     "weight": 18.6,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "psychic-surge"
   },
   {
     "id": 787,
@@ -8258,7 +9044,8 @@
       "fairy"
     ],
     "weight": 45.5,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "grassy-surge"
   },
   {
     "id": 788,
@@ -8269,7 +9056,8 @@
       "fairy"
     ],
     "weight": 21.2,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "misty-surge"
   },
   {
     "id": 789,
@@ -8279,7 +9067,8 @@
       "psychic"
     ],
     "weight": 0.1,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "unaware"
   },
   {
     "id": 790,
@@ -8289,7 +9078,8 @@
       "psychic"
     ],
     "weight": 999.9,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "sturdy"
   },
   {
     "id": 791,
@@ -8300,7 +9090,8 @@
       "steel"
     ],
     "weight": 230.0,
-    "height": 3.4
+    "height": 3.4,
+    "ability": "full-metal-body"
   },
   {
     "id": 792,
@@ -8311,7 +9102,8 @@
       "ghost"
     ],
     "weight": 120.0,
-    "height": 4.0
+    "height": 4.0,
+    "ability": "shadow-shield"
   },
   {
     "id": 793,
@@ -8322,7 +9114,8 @@
       "poison"
     ],
     "weight": 55.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "beast-boost"
   },
   {
     "id": 794,
@@ -8333,7 +9126,8 @@
       "fighting"
     ],
     "weight": 333.6,
-    "height": 2.4
+    "height": 2.4,
+    "ability": "beast-boost"
   },
   {
     "id": 795,
@@ -8344,7 +9138,8 @@
       "fighting"
     ],
     "weight": 25.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "beast-boost"
   },
   {
     "id": 796,
@@ -8354,7 +9149,8 @@
       "electric"
     ],
     "weight": 100.0,
-    "height": 3.8
+    "height": 3.8,
+    "ability": "beast-boost"
   },
   {
     "id": 797,
@@ -8365,7 +9161,8 @@
       "flying"
     ],
     "weight": 999.9,
-    "height": 9.2
+    "height": 9.2,
+    "ability": "beast-boost"
   },
   {
     "id": 798,
@@ -8376,7 +9173,8 @@
       "steel"
     ],
     "weight": 0.1,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "beast-boost"
   },
   {
     "id": 799,
@@ -8387,7 +9185,8 @@
       "dragon"
     ],
     "weight": 888.0,
-    "height": 5.5
+    "height": 5.5,
+    "ability": "beast-boost"
   },
   {
     "id": 800,
@@ -8397,7 +9196,8 @@
       "psychic"
     ],
     "weight": 230.0,
-    "height": 2.4
+    "height": 2.4,
+    "ability": "prism-armor"
   },
   {
     "id": 801,
@@ -8408,7 +9208,8 @@
       "fairy"
     ],
     "weight": 80.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "soul-heart"
   },
   {
     "id": 802,
@@ -8419,7 +9220,8 @@
       "ghost"
     ],
     "weight": 22.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "technician"
   },
   {
     "id": 803,
@@ -8429,7 +9231,8 @@
       "poison"
     ],
     "weight": 1.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "beast-boost"
   },
   {
     "id": 804,
@@ -8440,7 +9243,8 @@
       "dragon"
     ],
     "weight": 150.0,
-    "height": 3.6
+    "height": 3.6,
+    "ability": "beast-boost"
   },
   {
     "id": 805,
@@ -8451,7 +9255,8 @@
       "steel"
     ],
     "weight": 820.0,
-    "height": 5.5
+    "height": 5.5,
+    "ability": "beast-boost"
   },
   {
     "id": 806,
@@ -8462,7 +9267,8 @@
       "ghost"
     ],
     "weight": 13.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "beast-boost"
   },
   {
     "id": 807,
@@ -8472,7 +9278,8 @@
       "electric"
     ],
     "weight": 44.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "volt-absorb"
   },
   {
     "id": 808,
@@ -8482,7 +9289,8 @@
       "steel"
     ],
     "weight": 8.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "magnet-pull"
   },
   {
     "id": 809,
@@ -8492,7 +9300,8 @@
       "steel"
     ],
     "weight": 800.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "iron-fist"
   },
   {
     "id": 810,
@@ -8502,7 +9311,8 @@
       "grass"
     ],
     "weight": 5.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "overgrow"
   },
   {
     "id": 811,
@@ -8512,7 +9322,8 @@
       "grass"
     ],
     "weight": 14.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "overgrow"
   },
   {
     "id": 812,
@@ -8522,7 +9333,8 @@
       "grass"
     ],
     "weight": 90.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "overgrow"
   },
   {
     "id": 813,
@@ -8532,7 +9344,8 @@
       "fire"
     ],
     "weight": 4.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "blaze"
   },
   {
     "id": 814,
@@ -8542,7 +9355,8 @@
       "fire"
     ],
     "weight": 9.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "blaze"
   },
   {
     "id": 815,
@@ -8552,7 +9366,8 @@
       "fire"
     ],
     "weight": 33.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "blaze"
   },
   {
     "id": 816,
@@ -8562,7 +9377,8 @@
       "water"
     ],
     "weight": 4.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "torrent"
   },
   {
     "id": 817,
@@ -8572,7 +9388,8 @@
       "water"
     ],
     "weight": 11.5,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "torrent"
   },
   {
     "id": 818,
@@ -8582,7 +9399,8 @@
       "water"
     ],
     "weight": 45.2,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "torrent"
   },
   {
     "id": 819,
@@ -8592,7 +9410,8 @@
       "normal"
     ],
     "weight": 2.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "cheek-pouch"
   },
   {
     "id": 820,
@@ -8602,7 +9421,8 @@
       "normal"
     ],
     "weight": 6.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "cheek-pouch"
   },
   {
     "id": 821,
@@ -8612,7 +9432,8 @@
       "flying"
     ],
     "weight": 1.8,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "keen-eye"
   },
   {
     "id": 822,
@@ -8622,7 +9443,8 @@
       "flying"
     ],
     "weight": 16.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "keen-eye"
   },
   {
     "id": 823,
@@ -8633,7 +9455,8 @@
       "steel"
     ],
     "weight": 75.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "pressure"
   },
   {
     "id": 824,
@@ -8643,7 +9466,8 @@
       "bug"
     ],
     "weight": 8.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swarm"
   },
   {
     "id": 825,
@@ -8654,7 +9478,8 @@
       "psychic"
     ],
     "weight": 19.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swarm"
   },
   {
     "id": 826,
@@ -8665,7 +9490,8 @@
       "psychic"
     ],
     "weight": 40.8,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "swarm"
   },
   {
     "id": 827,
@@ -8675,7 +9501,8 @@
       "dark"
     ],
     "weight": 8.9,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "run-away"
   },
   {
     "id": 828,
@@ -8685,7 +9512,8 @@
       "dark"
     ],
     "weight": 19.9,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "run-away"
   },
   {
     "id": 829,
@@ -8695,7 +9523,8 @@
       "grass"
     ],
     "weight": 2.2,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "cotton-down"
   },
   {
     "id": 830,
@@ -8705,7 +9534,8 @@
       "grass"
     ],
     "weight": 2.5,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "cotton-down"
   },
   {
     "id": 831,
@@ -8715,7 +9545,8 @@
       "normal"
     ],
     "weight": 6.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "fluffy"
   },
   {
     "id": 832,
@@ -8725,7 +9556,8 @@
       "normal"
     ],
     "weight": 43.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "fluffy"
   },
   {
     "id": 833,
@@ -8735,7 +9567,8 @@
       "water"
     ],
     "weight": 8.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "strong-jaw"
   },
   {
     "id": 834,
@@ -8746,7 +9579,8 @@
       "rock"
     ],
     "weight": 115.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "strong-jaw"
   },
   {
     "id": 835,
@@ -8756,7 +9590,8 @@
       "electric"
     ],
     "weight": 13.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "ball-fetch"
   },
   {
     "id": 836,
@@ -8766,7 +9601,8 @@
       "electric"
     ],
     "weight": 34.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "strong-jaw"
   },
   {
     "id": 837,
@@ -8776,7 +9612,8 @@
       "rock"
     ],
     "weight": 12.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "steam-engine"
   },
   {
     "id": 838,
@@ -8787,7 +9624,8 @@
       "fire"
     ],
     "weight": 78.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "steam-engine"
   },
   {
     "id": 839,
@@ -8798,7 +9636,8 @@
       "fire"
     ],
     "weight": 310.5,
-    "height": 2.8
+    "height": 2.8,
+    "ability": "steam-engine"
   },
   {
     "id": 840,
@@ -8809,7 +9648,8 @@
       "dragon"
     ],
     "weight": 0.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "ripen"
   },
   {
     "id": 841,
@@ -8820,7 +9660,8 @@
       "dragon"
     ],
     "weight": 1.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "ripen"
   },
   {
     "id": 842,
@@ -8831,7 +9672,8 @@
       "dragon"
     ],
     "weight": 13.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "ripen"
   },
   {
     "id": 843,
@@ -8841,7 +9683,8 @@
       "ground"
     ],
     "weight": 7.6,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "sand-spit"
   },
   {
     "id": 844,
@@ -8851,7 +9694,8 @@
       "ground"
     ],
     "weight": 65.5,
-    "height": 3.8
+    "height": 3.8,
+    "ability": "sand-spit"
   },
   {
     "id": 845,
@@ -8862,7 +9706,8 @@
       "water"
     ],
     "weight": 18.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "gulp-missile"
   },
   {
     "id": 846,
@@ -8872,7 +9717,8 @@
       "water"
     ],
     "weight": 1.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "swift-swim"
   },
   {
     "id": 847,
@@ -8882,7 +9728,8 @@
       "water"
     ],
     "weight": 30.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "swift-swim"
   },
   {
     "id": 848,
@@ -8893,7 +9740,8 @@
       "poison"
     ],
     "weight": 11.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "rattled"
   },
   {
     "id": 849,
@@ -8904,7 +9752,8 @@
       "poison"
     ],
     "weight": 40.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "punk-rock"
   },
   {
     "id": 850,
@@ -8915,7 +9764,8 @@
       "bug"
     ],
     "weight": 1.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "flash-fire"
   },
   {
     "id": 851,
@@ -8926,7 +9776,8 @@
       "bug"
     ],
     "weight": 120.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "flash-fire"
   },
   {
     "id": 852,
@@ -8936,7 +9787,8 @@
       "fighting"
     ],
     "weight": 4.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "limber"
   },
   {
     "id": 853,
@@ -8946,7 +9798,8 @@
       "fighting"
     ],
     "weight": 39.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "limber"
   },
   {
     "id": 854,
@@ -8956,7 +9809,8 @@
       "ghost"
     ],
     "weight": 0.2,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "weak-armor"
   },
   {
     "id": 855,
@@ -8966,7 +9820,8 @@
       "ghost"
     ],
     "weight": 0.4,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "weak-armor"
   },
   {
     "id": 856,
@@ -8976,7 +9831,8 @@
       "psychic"
     ],
     "weight": 3.4,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "healer"
   },
   {
     "id": 857,
@@ -8986,7 +9842,8 @@
       "psychic"
     ],
     "weight": 4.8,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "healer"
   },
   {
     "id": 858,
@@ -8997,7 +9854,8 @@
       "fairy"
     ],
     "weight": 5.1,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "healer"
   },
   {
     "id": 859,
@@ -9008,7 +9866,8 @@
       "fairy"
     ],
     "weight": 5.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "prankster"
   },
   {
     "id": 860,
@@ -9019,7 +9878,8 @@
       "fairy"
     ],
     "weight": 12.5,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "prankster"
   },
   {
     "id": 861,
@@ -9030,7 +9890,8 @@
       "fairy"
     ],
     "weight": 61.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "prankster"
   },
   {
     "id": 862,
@@ -9041,7 +9902,8 @@
       "normal"
     ],
     "weight": 46.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "reckless"
   },
   {
     "id": 863,
@@ -9051,7 +9913,8 @@
       "steel"
     ],
     "weight": 28.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "battle-armor"
   },
   {
     "id": 864,
@@ -9061,7 +9924,8 @@
       "ghost"
     ],
     "weight": 0.4,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "weak-armor"
   },
   {
     "id": 865,
@@ -9071,7 +9935,8 @@
       "fighting"
     ],
     "weight": 117.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "steadfast"
   },
   {
     "id": 866,
@@ -9082,7 +9947,8 @@
       "psychic"
     ],
     "weight": 58.2,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "tangled-feet"
   },
   {
     "id": 867,
@@ -9093,7 +9959,8 @@
       "ghost"
     ],
     "weight": 66.6,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "wandering-spirit"
   },
   {
     "id": 868,
@@ -9103,7 +9970,8 @@
       "fairy"
     ],
     "weight": 0.3,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "sweet-veil"
   },
   {
     "id": 869,
@@ -9113,7 +9981,8 @@
       "fairy"
     ],
     "weight": 0.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "sweet-veil"
   },
   {
     "id": 870,
@@ -9123,7 +9992,8 @@
       "fighting"
     ],
     "weight": 62.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "battle-armor"
   },
   {
     "id": 871,
@@ -9133,7 +10003,8 @@
       "electric"
     ],
     "weight": 1.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "lightning-rod"
   },
   {
     "id": 872,
@@ -9144,7 +10015,8 @@
       "bug"
     ],
     "weight": 3.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "shield-dust"
   },
   {
     "id": 873,
@@ -9155,7 +10027,8 @@
       "bug"
     ],
     "weight": 42.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "shield-dust"
   },
   {
     "id": 874,
@@ -9165,7 +10038,8 @@
       "rock"
     ],
     "weight": 520.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "power-spot"
   },
   {
     "id": 875,
@@ -9175,7 +10049,8 @@
       "ice"
     ],
     "weight": 89.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "ice-face"
   },
   {
     "id": 876,
@@ -9186,7 +10061,8 @@
       "normal"
     ],
     "weight": 28.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "inner-focus"
   },
   {
     "id": 877,
@@ -9197,7 +10073,8 @@
       "dark"
     ],
     "weight": 3.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "hunger-switch"
   },
   {
     "id": 878,
@@ -9207,7 +10084,8 @@
       "steel"
     ],
     "weight": 100.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "sheer-force"
   },
   {
     "id": 879,
@@ -9217,7 +10095,8 @@
       "steel"
     ],
     "weight": 650.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "sheer-force"
   },
   {
     "id": 880,
@@ -9228,7 +10107,8 @@
       "dragon"
     ],
     "weight": 190.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "volt-absorb"
   },
   {
     "id": 881,
@@ -9239,7 +10119,8 @@
       "ice"
     ],
     "weight": 150.0,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "volt-absorb"
   },
   {
     "id": 882,
@@ -9250,7 +10131,8 @@
       "dragon"
     ],
     "weight": 215.0,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "water-absorb"
   },
   {
     "id": 883,
@@ -9261,7 +10143,8 @@
       "ice"
     ],
     "weight": 175.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "water-absorb"
   },
   {
     "id": 884,
@@ -9272,7 +10155,8 @@
       "dragon"
     ],
     "weight": 40.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "light-metal"
   },
   {
     "id": 885,
@@ -9283,7 +10167,8 @@
       "ghost"
     ],
     "weight": 2.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "clear-body"
   },
   {
     "id": 886,
@@ -9294,7 +10179,8 @@
       "ghost"
     ],
     "weight": 11.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "clear-body"
   },
   {
     "id": 887,
@@ -9305,7 +10191,8 @@
       "ghost"
     ],
     "weight": 50.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "clear-body"
   },
   {
     "id": 888,
@@ -9315,7 +10202,8 @@
       "fairy"
     ],
     "weight": 110.0,
-    "height": 2.8
+    "height": 2.8,
+    "ability": "intrepid-sword"
   },
   {
     "id": 889,
@@ -9325,7 +10213,8 @@
       "fighting"
     ],
     "weight": 210.0,
-    "height": 2.9
+    "height": 2.9,
+    "ability": "dauntless-shield"
   },
   {
     "id": 890,
@@ -9336,7 +10225,8 @@
       "dragon"
     ],
     "weight": 950.0,
-    "height": 20.0
+    "height": 20.0,
+    "ability": "pressure"
   },
   {
     "id": 891,
@@ -9346,7 +10236,8 @@
       "fighting"
     ],
     "weight": 12.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "inner-focus"
   },
   {
     "id": 892,
@@ -9357,7 +10248,8 @@
       "dark"
     ],
     "weight": 105.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "unseen-fist"
   },
   {
     "id": 893,
@@ -9368,7 +10260,8 @@
       "grass"
     ],
     "weight": 70.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "leaf-guard"
   },
   {
     "id": 894,
@@ -9378,7 +10271,8 @@
       "electric"
     ],
     "weight": 145.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "transistor"
   },
   {
     "id": 895,
@@ -9388,7 +10282,8 @@
       "dragon"
     ],
     "weight": 200.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "dragons-maw"
   },
   {
     "id": 896,
@@ -9398,7 +10293,8 @@
       "ice"
     ],
     "weight": 800.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "chilling-neigh"
   },
   {
     "id": 897,
@@ -9408,7 +10304,8 @@
       "ghost"
     ],
     "weight": 44.5,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "grim-neigh"
   },
   {
     "id": 898,
@@ -9419,7 +10316,8 @@
       "grass"
     ],
     "weight": 7.7,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "unnerve"
   },
   {
     "id": 899,
@@ -9430,7 +10328,8 @@
       "psychic"
     ],
     "weight": 95.1,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "intimidate"
   },
   {
     "id": 900,
@@ -9441,7 +10340,8 @@
       "rock"
     ],
     "weight": 89.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "swarm"
   },
   {
     "id": 901,
@@ -9452,7 +10352,8 @@
       "normal"
     ],
     "weight": 290.0,
-    "height": 2.4
+    "height": 2.4,
+    "ability": "guts"
   },
   {
     "id": 902,
@@ -9463,7 +10364,8 @@
       "ghost"
     ],
     "weight": 110.0,
-    "height": 3.0
+    "height": 3.0,
+    "ability": "swift-swim"
   },
   {
     "id": 903,
@@ -9474,7 +10376,8 @@
       "poison"
     ],
     "weight": 43.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "pressure"
   },
   {
     "id": 904,
@@ -9485,7 +10388,8 @@
       "poison"
     ],
     "weight": 60.5,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "poison-point"
   },
   {
     "id": 905,
@@ -9496,7 +10400,8 @@
       "flying"
     ],
     "weight": 48.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "cute-charm"
   },
   {
     "id": 906,
@@ -9506,7 +10411,8 @@
       "grass"
     ],
     "weight": 4.1,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "overgrow"
   },
   {
     "id": 907,
@@ -9516,7 +10422,8 @@
       "grass"
     ],
     "weight": 12.2,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "overgrow"
   },
   {
     "id": 908,
@@ -9527,7 +10434,8 @@
       "dark"
     ],
     "weight": 31.2,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "overgrow"
   },
   {
     "id": 909,
@@ -9537,7 +10445,8 @@
       "fire"
     ],
     "weight": 9.8,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "blaze"
   },
   {
     "id": 910,
@@ -9547,7 +10456,8 @@
       "fire"
     ],
     "weight": 30.7,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "blaze"
   },
   {
     "id": 911,
@@ -9558,7 +10468,8 @@
       "ghost"
     ],
     "weight": 326.5,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "blaze"
   },
   {
     "id": 912,
@@ -9568,7 +10479,8 @@
       "water"
     ],
     "weight": 6.1,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "torrent"
   },
   {
     "id": 913,
@@ -9578,7 +10490,8 @@
       "water"
     ],
     "weight": 21.5,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "torrent"
   },
   {
     "id": 914,
@@ -9589,7 +10502,8 @@
       "fighting"
     ],
     "weight": 61.9,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "torrent"
   },
   {
     "id": 915,
@@ -9599,7 +10513,8 @@
       "normal"
     ],
     "weight": 10.2,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "aroma-veil"
   },
   {
     "id": 916,
@@ -9609,7 +10524,8 @@
       "normal"
     ],
     "weight": 120.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "lingering-aroma"
   },
   {
     "id": 917,
@@ -9619,7 +10535,8 @@
       "bug"
     ],
     "weight": 4.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "insomnia"
   },
   {
     "id": 918,
@@ -9629,7 +10546,8 @@
       "bug"
     ],
     "weight": 16.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "insomnia"
   },
   {
     "id": 919,
@@ -9639,7 +10557,8 @@
       "bug"
     ],
     "weight": 1.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "swarm"
   },
   {
     "id": 920,
@@ -9650,7 +10569,8 @@
       "dark"
     ],
     "weight": 17.5,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "swarm"
   },
   {
     "id": 921,
@@ -9660,7 +10580,8 @@
       "electric"
     ],
     "weight": 2.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "static"
   },
   {
     "id": 922,
@@ -9671,7 +10592,8 @@
       "fighting"
     ],
     "weight": 6.5,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "volt-absorb"
   },
   {
     "id": 923,
@@ -9682,7 +10604,8 @@
       "fighting"
     ],
     "weight": 41.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "volt-absorb"
   },
   {
     "id": 924,
@@ -9692,7 +10615,8 @@
       "normal"
     ],
     "weight": 1.8,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "run-away"
   },
   {
     "id": 925,
@@ -9702,7 +10626,8 @@
       "normal"
     ],
     "weight": 2.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "friend-guard"
   },
   {
     "id": 926,
@@ -9712,7 +10637,8 @@
       "fairy"
     ],
     "weight": 10.9,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "own-tempo"
   },
   {
     "id": 927,
@@ -9722,7 +10648,8 @@
       "fairy"
     ],
     "weight": 14.9,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "well-baked-body"
   },
   {
     "id": 928,
@@ -9733,7 +10660,8 @@
       "normal"
     ],
     "weight": 6.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "early-bird"
   },
   {
     "id": 929,
@@ -9744,7 +10672,8 @@
       "normal"
     ],
     "weight": 11.9,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "early-bird"
   },
   {
     "id": 930,
@@ -9755,7 +10684,8 @@
       "normal"
     ],
     "weight": 48.2,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "seed-sower"
   },
   {
     "id": 931,
@@ -9766,7 +10696,8 @@
       "flying"
     ],
     "weight": 2.4,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "intimidate"
   },
   {
     "id": 932,
@@ -9776,7 +10707,8 @@
       "rock"
     ],
     "weight": 16.0,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "purifying-salt"
   },
   {
     "id": 933,
@@ -9786,7 +10718,8 @@
       "rock"
     ],
     "weight": 105.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "purifying-salt"
   },
   {
     "id": 934,
@@ -9796,7 +10729,8 @@
       "rock"
     ],
     "weight": 240.0,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "purifying-salt"
   },
   {
     "id": 935,
@@ -9806,7 +10740,8 @@
       "fire"
     ],
     "weight": 10.5,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "flash-fire"
   },
   {
     "id": 936,
@@ -9817,7 +10752,8 @@
       "psychic"
     ],
     "weight": 85.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "flash-fire"
   },
   {
     "id": 937,
@@ -9828,7 +10764,8 @@
       "ghost"
     ],
     "weight": 62.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "flash-fire"
   },
   {
     "id": 938,
@@ -9838,7 +10775,8 @@
       "electric"
     ],
     "weight": 0.4,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "own-tempo"
   },
   {
     "id": 939,
@@ -9848,7 +10786,8 @@
       "electric"
     ],
     "weight": 113.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "electromorphosis"
   },
   {
     "id": 940,
@@ -9859,7 +10798,8 @@
       "flying"
     ],
     "weight": 3.6,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "wind-power"
   },
   {
     "id": 941,
@@ -9870,7 +10810,8 @@
       "flying"
     ],
     "weight": 38.6,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "wind-power"
   },
   {
     "id": 942,
@@ -9880,7 +10821,8 @@
       "dark"
     ],
     "weight": 16.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "intimidate"
   },
   {
     "id": 943,
@@ -9890,7 +10832,8 @@
       "dark"
     ],
     "weight": 61.0,
-    "height": 1.1
+    "height": 1.1,
+    "ability": "intimidate"
   },
   {
     "id": 944,
@@ -9901,7 +10844,8 @@
       "normal"
     ],
     "weight": 0.7,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "unburden"
   },
   {
     "id": 945,
@@ -9912,7 +10856,8 @@
       "normal"
     ],
     "weight": 27.2,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "unburden"
   },
   {
     "id": 946,
@@ -9923,7 +10868,8 @@
       "ghost"
     ],
     "weight": 0.6,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "wind-rider"
   },
   {
     "id": 947,
@@ -9934,7 +10880,8 @@
       "ghost"
     ],
     "weight": 6.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "wind-rider"
   },
   {
     "id": 948,
@@ -9945,7 +10892,8 @@
       "grass"
     ],
     "weight": 33.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "mycelium-might"
   },
   {
     "id": 949,
@@ -9956,7 +10904,8 @@
       "grass"
     ],
     "weight": 58.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "mycelium-might"
   },
   {
     "id": 950,
@@ -9966,7 +10915,8 @@
       "rock"
     ],
     "weight": 79.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "anger-shell"
   },
   {
     "id": 951,
@@ -9976,7 +10926,8 @@
       "grass"
     ],
     "weight": 3.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "chlorophyll"
   },
   {
     "id": 952,
@@ -9987,7 +10938,8 @@
       "fire"
     ],
     "weight": 15.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "chlorophyll"
   },
   {
     "id": 953,
@@ -9997,7 +10949,8 @@
       "bug"
     ],
     "weight": 1.0,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "compound-eyes"
   },
   {
     "id": 954,
@@ -10008,7 +10961,8 @@
       "psychic"
     ],
     "weight": 3.5,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "synchronize"
   },
   {
     "id": 955,
@@ -10018,7 +10972,8 @@
       "psychic"
     ],
     "weight": 1.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "anticipation"
   },
   {
     "id": 956,
@@ -10028,7 +10983,8 @@
       "psychic"
     ],
     "weight": 90.0,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "opportunist"
   },
   {
     "id": 957,
@@ -10039,7 +10995,8 @@
       "steel"
     ],
     "weight": 8.9,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "mold-breaker"
   },
   {
     "id": 958,
@@ -10050,7 +11007,8 @@
       "steel"
     ],
     "weight": 59.1,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "mold-breaker"
   },
   {
     "id": 959,
@@ -10061,7 +11019,8 @@
       "steel"
     ],
     "weight": 112.8,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "mold-breaker"
   },
   {
     "id": 960,
@@ -10071,7 +11030,8 @@
       "water"
     ],
     "weight": 1.8,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "gooey"
   },
   {
     "id": 961,
@@ -10081,7 +11041,8 @@
       "water"
     ],
     "weight": 5.4,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "gooey"
   },
   {
     "id": 962,
@@ -10092,7 +11053,8 @@
       "dark"
     ],
     "weight": 42.9,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "big-pecks"
   },
   {
     "id": 963,
@@ -10102,7 +11064,8 @@
       "water"
     ],
     "weight": 60.2,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "water-veil"
   },
   {
     "id": 964,
@@ -10112,7 +11075,8 @@
       "water"
     ],
     "weight": 60.2,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "zero-to-hero"
   },
   {
     "id": 965,
@@ -10123,7 +11087,8 @@
       "poison"
     ],
     "weight": 35.0,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "overcoat"
   },
   {
     "id": 966,
@@ -10134,7 +11099,8 @@
       "poison"
     ],
     "weight": 120.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "overcoat"
   },
   {
     "id": 967,
@@ -10145,7 +11111,8 @@
       "normal"
     ],
     "weight": 63.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "shed-skin"
   },
   {
     "id": 968,
@@ -10155,7 +11122,8 @@
       "steel"
     ],
     "weight": 310.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "earth-eater"
   },
   {
     "id": 969,
@@ -10166,7 +11134,8 @@
       "poison"
     ],
     "weight": 8.0,
-    "height": 0.7
+    "height": 0.7,
+    "ability": "toxic-debris"
   },
   {
     "id": 970,
@@ -10177,7 +11146,8 @@
       "poison"
     ],
     "weight": 45.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "toxic-debris"
   },
   {
     "id": 971,
@@ -10187,7 +11157,8 @@
       "ghost"
     ],
     "weight": 35.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "pickup"
   },
   {
     "id": 972,
@@ -10197,7 +11168,8 @@
       "ghost"
     ],
     "weight": 15.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "sand-rush"
   },
   {
     "id": 973,
@@ -10208,7 +11180,8 @@
       "fighting"
     ],
     "weight": 37.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "scrappy"
   },
   {
     "id": 974,
@@ -10218,7 +11191,8 @@
       "ice"
     ],
     "weight": 45.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "thick-fat"
   },
   {
     "id": 975,
@@ -10228,7 +11202,8 @@
       "ice"
     ],
     "weight": 700.0,
-    "height": 4.5
+    "height": 4.5,
+    "ability": "thick-fat"
   },
   {
     "id": 976,
@@ -10239,7 +11214,8 @@
       "psychic"
     ],
     "weight": 90.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "mold-breaker"
   },
   {
     "id": 977,
@@ -10249,7 +11225,8 @@
       "water"
     ],
     "weight": 220.0,
-    "height": 12.0
+    "height": 12.0,
+    "ability": "unaware"
   },
   {
     "id": 978,
@@ -10260,7 +11237,8 @@
       "water"
     ],
     "weight": 8.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "commander"
   },
   {
     "id": 979,
@@ -10271,7 +11249,8 @@
       "ghost"
     ],
     "weight": 56.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "vital-spirit"
   },
   {
     "id": 980,
@@ -10282,7 +11261,8 @@
       "ground"
     ],
     "weight": 223.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "poison-point"
   },
   {
     "id": 981,
@@ -10293,7 +11273,8 @@
       "psychic"
     ],
     "weight": 160.0,
-    "height": 3.2
+    "height": 3.2,
+    "ability": "cud-chew"
   },
   {
     "id": 982,
@@ -10303,7 +11284,8 @@
       "normal"
     ],
     "weight": 39.2,
-    "height": 3.6
+    "height": 3.6,
+    "ability": "serene-grace"
   },
   {
     "id": 983,
@@ -10314,7 +11296,8 @@
       "steel"
     ],
     "weight": 120.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "defiant"
   },
   {
     "id": 984,
@@ -10325,7 +11308,8 @@
       "fighting"
     ],
     "weight": 320.0,
-    "height": 2.2
+    "height": 2.2,
+    "ability": "protosynthesis"
   },
   {
     "id": 985,
@@ -10336,7 +11320,8 @@
       "psychic"
     ],
     "weight": 8.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "protosynthesis"
   },
   {
     "id": 986,
@@ -10347,7 +11332,8 @@
       "dark"
     ],
     "weight": 21.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "protosynthesis"
   },
   {
     "id": 987,
@@ -10358,7 +11344,8 @@
       "fairy"
     ],
     "weight": 4.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "protosynthesis"
   },
   {
     "id": 988,
@@ -10369,7 +11356,8 @@
       "fighting"
     ],
     "weight": 92.0,
-    "height": 3.2
+    "height": 3.2,
+    "ability": "protosynthesis"
   },
   {
     "id": 989,
@@ -10380,7 +11368,8 @@
       "ground"
     ],
     "weight": 60.0,
-    "height": 2.3
+    "height": 2.3,
+    "ability": "protosynthesis"
   },
   {
     "id": 990,
@@ -10391,7 +11380,8 @@
       "steel"
     ],
     "weight": 240.0,
-    "height": 0.9
+    "height": 0.9,
+    "ability": "quark-drive"
   },
   {
     "id": 991,
@@ -10402,7 +11392,8 @@
       "water"
     ],
     "weight": 11.0,
-    "height": 0.6
+    "height": 0.6,
+    "ability": "quark-drive"
   },
   {
     "id": 992,
@@ -10413,7 +11404,8 @@
       "electric"
     ],
     "weight": 380.7,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "quark-drive"
   },
   {
     "id": 993,
@@ -10424,7 +11416,8 @@
       "flying"
     ],
     "weight": 111.0,
-    "height": 1.3
+    "height": 1.3,
+    "ability": "quark-drive"
   },
   {
     "id": 994,
@@ -10435,7 +11428,8 @@
       "poison"
     ],
     "weight": 36.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "quark-drive"
   },
   {
     "id": 995,
@@ -10446,7 +11440,8 @@
       "electric"
     ],
     "weight": 303.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "quark-drive"
   },
   {
     "id": 996,
@@ -10457,7 +11452,8 @@
       "ice"
     ],
     "weight": 17.0,
-    "height": 0.5
+    "height": 0.5,
+    "ability": "thermal-exchange"
   },
   {
     "id": 997,
@@ -10468,7 +11464,8 @@
       "ice"
     ],
     "weight": 30.0,
-    "height": 0.8
+    "height": 0.8,
+    "ability": "thermal-exchange"
   },
   {
     "id": 998,
@@ -10479,7 +11476,8 @@
       "ice"
     ],
     "weight": 210.0,
-    "height": 2.1
+    "height": 2.1,
+    "ability": "thermal-exchange"
   },
   {
     "id": 999,
@@ -10489,7 +11487,8 @@
       "ghost"
     ],
     "weight": 5.0,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "rattled"
   },
   {
     "id": 1000,
@@ -10500,7 +11499,8 @@
       "ghost"
     ],
     "weight": 30.0,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "good-as-gold"
   },
   {
     "id": 1001,
@@ -10511,7 +11511,8 @@
       "grass"
     ],
     "weight": 74.2,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "tablets-of-ruin"
   },
   {
     "id": 1002,
@@ -10522,7 +11523,8 @@
       "ice"
     ],
     "weight": 152.2,
-    "height": 1.9
+    "height": 1.9,
+    "ability": "sword-of-ruin"
   },
   {
     "id": 1003,
@@ -10533,7 +11535,8 @@
       "ground"
     ],
     "weight": 699.7,
-    "height": 2.7
+    "height": 2.7,
+    "ability": "vessel-of-ruin"
   },
   {
     "id": 1004,
@@ -10544,7 +11547,8 @@
       "fire"
     ],
     "weight": 4.9,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "beads-of-ruin"
   },
   {
     "id": 1005,
@@ -10555,7 +11559,8 @@
       "dark"
     ],
     "weight": 380.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "protosynthesis"
   },
   {
     "id": 1006,
@@ -10566,7 +11571,8 @@
       "fighting"
     ],
     "weight": 35.0,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "quark-drive"
   },
   {
     "id": 1007,
@@ -10577,7 +11583,8 @@
       "dragon"
     ],
     "weight": 303.0,
-    "height": 2.5
+    "height": 2.5,
+    "ability": "orichalcum-pulse"
   },
   {
     "id": 1008,
@@ -10588,7 +11595,8 @@
       "dragon"
     ],
     "weight": 240.0,
-    "height": 3.5
+    "height": 3.5,
+    "ability": "hadron-engine"
   },
   {
     "id": 1009,
@@ -10599,7 +11607,8 @@
       "dragon"
     ],
     "weight": 280.0,
-    "height": 3.5
+    "height": 3.5,
+    "ability": "protosynthesis"
   },
   {
     "id": 1010,
@@ -10610,7 +11619,8 @@
       "psychic"
     ],
     "weight": 125.0,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "quark-drive"
   },
   {
     "id": 1011,
@@ -10621,7 +11631,8 @@
       "dragon"
     ],
     "weight": 9.7,
-    "height": 0.4
+    "height": 0.4,
+    "ability": "supersweet-syrup"
   },
   {
     "id": 1012,
@@ -10632,7 +11643,8 @@
       "ghost"
     ],
     "weight": 1.1,
-    "height": 0.1
+    "height": 0.1,
+    "ability": "hospitality"
   },
   {
     "id": 1013,
@@ -10643,7 +11655,8 @@
       "ghost"
     ],
     "weight": 2.2,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "hospitality"
   },
   {
     "id": 1014,
@@ -10654,7 +11667,8 @@
       "fighting"
     ],
     "weight": 92.2,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "toxic-chain"
   },
   {
     "id": 1015,
@@ -10665,7 +11679,8 @@
       "psychic"
     ],
     "weight": 12.2,
-    "height": 1.0
+    "height": 1.0,
+    "ability": "toxic-chain"
   },
   {
     "id": 1016,
@@ -10676,7 +11691,8 @@
       "fairy"
     ],
     "weight": 30.1,
-    "height": 1.4
+    "height": 1.4,
+    "ability": "toxic-chain"
   },
   {
     "id": 1017,
@@ -10686,7 +11702,8 @@
       "grass"
     ],
     "weight": 39.8,
-    "height": 1.2
+    "height": 1.2,
+    "ability": "defiant"
   },
   {
     "id": 1018,
@@ -10697,7 +11714,8 @@
       "dragon"
     ],
     "weight": 60.0,
-    "height": 2.0
+    "height": 2.0,
+    "ability": "stamina"
   },
   {
     "id": 1019,
@@ -10708,7 +11726,8 @@
       "dragon"
     ],
     "weight": 93.0,
-    "height": 1.8
+    "height": 1.8,
+    "ability": "supersweet-syrup"
   },
   {
     "id": 1020,
@@ -10719,7 +11738,8 @@
       "dragon"
     ],
     "weight": 590.0,
-    "height": 3.5
+    "height": 3.5,
+    "ability": "protosynthesis"
   },
   {
     "id": 1021,
@@ -10730,7 +11750,8 @@
       "dragon"
     ],
     "weight": 480.0,
-    "height": 5.2
+    "height": 5.2,
+    "ability": "protosynthesis"
   },
   {
     "id": 1022,
@@ -10741,7 +11762,8 @@
       "psychic"
     ],
     "weight": 162.5,
-    "height": 1.5
+    "height": 1.5,
+    "ability": "quark-drive"
   },
   {
     "id": 1023,
@@ -10752,7 +11774,8 @@
       "psychic"
     ],
     "weight": 156.0,
-    "height": 1.6
+    "height": 1.6,
+    "ability": "quark-drive"
   },
   {
     "id": 1024,
@@ -10762,7 +11785,8 @@
       "normal"
     ],
     "weight": 6.5,
-    "height": 0.2
+    "height": 0.2,
+    "ability": "tera-shift"
   },
   {
     "id": 1025,
@@ -10773,6 +11797,7 @@
       "ghost"
     ],
     "weight": 0.3,
-    "height": 0.3
+    "height": 0.3,
+    "ability": "poison-puppeteer"
   }
 ]

@@ -25,3 +25,13 @@ function formatDigits(number, amountOfDigits) {
 
     return zeroesStr + strInt;
 }
+
+export function areElementsInArray(elements, arr) {
+    for (const element of elements) {
+        if (!arr.includes(element)) {
+            return false;
+        }
+    }
+
+    return true;
+}

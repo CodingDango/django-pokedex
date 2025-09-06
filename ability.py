@@ -41,14 +41,19 @@ async def process_pokemon(session, semaphore, pokemon):
         
         if not fetched_data:
             pokemon['error'] = 'Failed to fetch data'
-            pokemon['weight'] = None
-            pokemon['height'] = None
             return pokemon
 
         # Find the first visible ability
-        pokemon['weight'] = fetched_data['weight'] / 10
-        pokemon['height'] = fetched_data['height'] / 10
-        print(f"Processed Pokémon ID: {pokemon['id']}, Weight: {pokemon['weight']}")
+        ability = None
+        
+        for item in fetched_data['abilities']:
+            if not item['is_hidden']:
+                ability = item['ability']['name']
+                break
+            
+        pokemon['ability'] = ability
+        
+        print(f"Processed Pokémon ID: {pokemon['id']} with ability `{ability}`")
         
     return pokemon
 

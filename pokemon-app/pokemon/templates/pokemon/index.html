@@ -18,13 +18,13 @@
     </div>
     <div class="search__input-wrapper">
       <input
-        id="search-input"
-        class="search__input"
+        class="search__input search-input"
         type="text"
         placeholder="Search your pokemon!"
+
       />
 
-      <button id="search-btn" class="search__button">
+      <button class="search__button search-btn">
         <img src="{% static 'pokemon/images/pokeball.svg' %}" />
       </button>
     </div>
@@ -51,7 +51,7 @@
         </span>
         <span class="dropdown click-and-replace-text">
           <button class="dropdown__toggle dropdown__toggle--w-sm u-flex u-gap-8 u-justify-between" >
-            <span id="active-sort-text" class="click-and-replace-text__text">Ascending</span>
+            <span class="click-and-replace-text__text">Ascending</span>
             <span class="icon icon--md">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
@@ -162,7 +162,7 @@
               <i class="fa-solid fa-rotate-right"></i>
             </span>
           </button>
-          <button class="button button--primary">
+          <button class="button button--primary search-btn">
             <span class="icon icon--lg">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>

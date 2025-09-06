@@ -98,4 +98,3 @@ export function getWeightCategoryOfPokemon(pokemon) {
         return categories[2];
     }
 }
-

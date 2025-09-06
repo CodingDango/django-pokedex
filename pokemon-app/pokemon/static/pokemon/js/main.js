@@ -1,59 +1,55 @@
-import { handleSearchSubmit, getPokemonCardsContainer, renderPokemons, loadHomepageView, setLoadMoreBtnVisiblity} from "./ui.js";
+import { handleSearchSubmit, renderPokemons, setLoadMoreBtnVisiblity} from "./ui.js";
 import { getListOfPokemonsLocal, getAllAbilityNames, getHeightCategories, getWeightCategories} from "./api.js" ;
 import { capitalize } from "./helpers.js";
+import { updateFilterState, filterState, filteredPokemons, shiftFilteredPokemons  } from './state.js';
 
-const filterState = {
-    'sort' : 'ascending',
-    'types' : [], // empty means all. while ['fire'] means only types fire types.
-    'weaknesses' : [],
-    'ability' : null
-}
-
-function updateFilterState(property, value) {
-    filterState[property] = value;
-}
+const defaultPokemonAmountOnLoad = 15;
 
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultPokemonAmountOnLoad = 15;
-
-    loadHomepageView(defaultPokemonAmountOnLoad); 
-    setupSearchListeners(defaultPokemonAmountOnLoad);
+    loadFilterOptions();
+    resetFilterComponents();
+    handleSearchSubmit(defaultPokemonAmountOnLoad, filterState); // load initial.
     addEventToLoadBtn(defaultPokemonAmountOnLoad);
     handleKeyboardInputs();
     handleClickEvents();
-    loadFilterOptions();
 
     // at the start, reset all filter states
-    resetFilterComponents();
-
+    
 });
 
+function handleSearchClickListeners(event) {
+    const clickedBtn = event.target.closest('.search-btn');
 
-function setupSearchListeners(defAmtToLoad) {
-    const searchInput = document.getElementById('search-input');
-    const searchBtn = document.getElementById('search-btn');
+    if (!clickedBtn) return;
 
-    searchInput.addEventListener('keyup', (event) => {
-        if (event.key === 'Enter') handleSearchSubmit(defAmtToLoad);
-    });
+    handleSearchSubmit(defaultPokemonAmountOnLoad, filterState);
+}
 
-    searchBtn.addEventListener('click', () => handleSearchSubmit(defAmtToLoad));
+function handleInputSearchListener(event) {
+    const searchInput = event.target.closest('search-input');
+
+    if (!searchInput) return;
+
+    if (event.key === 'Enter') {
+        handleSearchSubmit(defaultPokemonAmountOnLoad, filterState);
+    }
 }
 
 function addEventToLoadBtn(defPokemonToLoad) {
     // get the id of the last element..?
     document.getElementById('load-more').addEventListener('click', () => {
-        const lastNatIdx = Number(getPokemonCardsContainer().lastElementChild.getAttribute('data-nat-dex'));
-        const pokemonsToLoad = getListOfPokemonsLocal(
-            {amount: defPokemonToLoad, offset: lastNatIdx}
-        );
+        let i = 0;
+        let pokemonsToDisplay = [];
 
-        if (pokemonsToLoad.length === 0) {
-            setLoadMoreBtnVisiblity(false);
-            return;
+        while ((i++ < defPokemonToLoad) && filteredPokemons.length > 0) {
+            pokemonsToDisplay.push(shiftFilteredPokemons());
         }
 
-        renderPokemons(pokemonsToLoad);
+        renderPokemons(pokemonsToDisplay);
+
+        if (filteredPokemons.length === 0) {
+            setLoadMoreBtnVisiblity(false);
+        }
     });
 }
 
@@ -62,6 +58,7 @@ function handleClickEvents() {
         delegateDropdowns(event);
         delegateToggleVisiblity(event);
         delegateClickAndReplaceText(event);
+        handleSearchClickListeners(event);
         handleFilterClicksStateUpdate(event);
         handleClickToResetFilters(event);
     });
@@ -71,6 +68,7 @@ function handleKeyboardInputs() {
     document.addEventListener('input', (event) => {
         setupNumberInputsValidation(event);
         handleFilterInputStateUpdate(event);
+        handleInputSearchListener(event);
     });
 }
 

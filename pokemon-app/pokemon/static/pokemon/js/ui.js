@@ -1,5 +1,14 @@
-import { capitalize, formatId } from './helpers.js';
-import { fetchPokemonDetails, getListOfPokemonsLocal, getPokemonFromLocal } from './api.js';
+import { capitalize, formatId, areElementsInArray} from './helpers.js';
+import { 
+    fetchPokemonDetails, 
+    getListOfPokemonsLocal, 
+    getPokemonFromLocal, 
+    getWeightCategoryOfPokemon, 
+    getHeightCategoryOfPokemon 
+} from './api.js';
+
+import { setFilteredPokemons, shiftFilteredPokemons, filteredPokemons } from './state.js';
+
 
 export function setLoadMoreBtnVisiblity(show) {
     const loadMoreBtn = document.getElementById('load-more');
@@ -55,29 +64,67 @@ export function renderSearchError() {
     `;
 }
 
-export function handleSearchSubmit(defAmtToRender) {
+export function handleSearchSubmit(defaultAmt, filterState) {
     let pokemonName = document.getElementById('search-input')?.value.trim().toLowerCase();
+    let pokemons;
 
     if (!pokemonName) {
-        loadHomepageView(defAmtToRender);
-        return;
+        pokemons = getListOfPokemonsLocal({});
+    } else {
+        pokemons = getListOfPokemonsLocal(
+            {filterCallback: (pokemon) => pokemon.name.includes(pokemonName)}
+        );
     }
 
-    const results = getListOfPokemonsLocal(
-        {filterCallback: (pokemon) => pokemon.name.includes(pokemonName), amount: defAmtToRender}
-    )
+    // filter by types?   
+    if (filterState.types.length > 0) {
+        pokemons = pokemons.filter(pokemon => areElementsInArray(filterState.types, pokemon.types));
+    }
 
-    loadQueriedPokemonsView(results);
-}
+    // i havent decided on weaknesses yet... how do weaknesses work?
 
-export function loadHomepageView(defAmtToRender) {
-    setLoadMoreBtnVisiblity(true);
-    clearPokemonResults();
-    renderPokemons(getListOfPokemonsLocal({amount: defAmtToRender}));
+    // filter by abilities if they have it?
+
+    if (filterState.ability !== 'all') {
+        pokemons = pokemons.filter(pokemon => (pokemon.ability === filterState.ability));
+    }
+
+    // filter by weight?
+
+    if (filterState.weight !== 'all') {
+        pokemons = pokemons.filter(pokemon => (getWeightCategoryOfPokemon(pokemon) === filterState.weight));
+    }
+
+    // filter by height?
+    if (filterState.height !== 'all') {
+        pokemons = pokemons.filter(pokemon => (getHeightCategoryOfPokemon(pokemon) === filterState.height));
+    }
+
+    // now filter by id range if they are in the range?
+    pokemons = pokemons.filter(pokemon => (filterState.fromId <= pokemon.id && pokemon.id <= filterState.toId));
+
+    // now sort by ascending or descending ids?
+    pokemons = pokemons.sort((pokemonA, pokemonB) => 
+        (filterState.sort === 'ascending') 
+        ? pokemonA.id - pokemonB.id
+        : pokemonB.id - pokemonA.id
+    );
+
+    setFilteredPokemons(pokemons);
+
+    let i = 0;
+    let pokemonsToDisplay = [];
+
+    while ((i++ < defaultAmt) && filteredPokemons.length > 0) {
+        pokemonsToDisplay.push(shiftFilteredPokemons());
+    }
+
+    loadQueriedPokemonsView(pokemonsToDisplay);
 }
 
 export function loadQueriedPokemonsView(pokemons) {
     clearPokemonResults();
+    setLoadMoreBtnVisiblity(true);
 
     if (!pokemons || pokemons.length == 0) {
         renderSearchError();
