@@ -1,8 +1,10 @@
 import POKEMON_LIST from '../data/pokemon_list.json' with { type: 'json' };
 import ABILITY_LIST from '../data/abilities.json' with { type: 'json' };
+import TYPE_LIST from '../data/types.json' with { type: 'json' };
 
 const pokeApiUrl = `https://pokeapi.co/api/v2/pokemon/`;
 const localPokemonList = POKEMON_LIST;
+const pokemonTypes = TYPE_LIST.sort();
 
 export function fetchPokemonDetails(pokemonNameOrId) {
     const endpoint = pokeApiUrl + pokemonNameOrId;
@@ -97,4 +99,45 @@ export function getWeightCategoryOfPokemon(pokemon) {
     } else {
         return categories[2];
     }
+}
+
+export function getAllPokemonTypes() {
+    return pokemonTypes;
+}
+
+export function getTypeChart() {
+    return {
+        weaknesses: { 
+        normal: ["fighting"], fire: ["water", "ground", "rock"], water: ["electric", "grass"], grass: ["fire", "ice", "poison", "flying", "bug"], electric: ["ground"], ice: ["fire", "fighting", "rock", "steel"], fighting: ["flying", "psychic", "fairy"], poison: ["ground", "psychic"], ground: ["water", "grass", "ice"], flying: ["electric", "ice", "rock"], psychic: ["bug", "ghost", "dark"], bug: ["fire", "flying", "rock"], rock: ["water", "grass", "fighting", "ground", "steel"], ghost: ["ghost", "dark"], dragon: ["ice", "dragon", "fairy"], dark: ["fighting", "bug", "fairy"], steel: ["fire", "fighting", "ground"], fairy: ["poison", "steel"] },
+        resistances: { normal: [], fire: ["fire", "grass", "ice", "bug", "steel", "fairy"], water: ["fire", "water", "ice", "steel"], grass: ["water", "grass", "electric", "ground"], electric: ["electric", "flying", "steel"], ice: ["ice"], fighting: ["bug", "rock", "dark"], poison: ["grass", "fighting", "poison", "bug", "fairy"], ground: ["poison", "rock"], flying: ["grass", "fighting", "bug"], psychic: ["fighting", "psychic"], bug: ["grass", "fighting", "ground"], rock: ["normal", "fire", "poison", "flying"], ghost: ["poison", "bug"], dragon: ["fire", "water", "grass", "electric"], dark: ["ghost", "dark"], steel: ["normal", "grass", "ice", "flying", "psychic", "bug", "rock", "dragon", "steel", "fairy"], fairy: ["fighting", "bug", "dark"] },
+        immunities: { normal: ["ghost"], fire: [], water: [], grass: [], electric: [], ice: [], fighting: [], poison: [], ground: ["electric"], flying: ["ground"], psychic: [], bug: [], rock: [], ghost: ["normal", "fighting"], dragon: [], dark: ["psychic"], steel: ["poison"], fairy: ["dragon"] }
+    };
+}
+
+export function calculateWeaknesses(pokemonTypes) {
+  const finalWeaknesses = {};
+  const typeChart = getTypeChart();
+
+  // Loop through all 18 possible attack types
+  for (const attackType of getAllPokemonTypes()) {
+    let multiplier = 1;
+
+    // Apply the multiplier for each of the Pokémon's types
+    for (const defendingType of pokemonTypes) {
+      if (typeChart.immunities[defendingType]?.includes(attackType)) {
+        multiplier *= 0; // Immunity Trump Card
+      } else if (typeChart.resistances[defendingType]?.includes(attackType)) {
+        multiplier *= 0.5; // Resistance
+      } else if (typeChart.weaknesses[defendingType]?.includes(attackType)) {
+        multiplier *= 2; // Weakness
+      }
+    }
+
+    // If the final multiplier is greater than 1, it's a weakness.
+    if (multiplier > 1) {
+      finalWeaknesses[attackType] = multiplier;
+    }
+  }
+
+  return finalWeaknesses;
 }

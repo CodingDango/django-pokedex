@@ -1,5 +1,5 @@
 import { handleSearchSubmit, renderPokemons, setLoadMoreBtnVisiblity} from "./ui.js";
-import { getListOfPokemonsLocal, getAllAbilityNames, getHeightCategories, getWeightCategories} from "./api.js" ;
+import { getAllAbilityNames, getHeightCategories, getWeightCategories, getAllPokemonTypes} from "./api.js" ;
 import { capitalize } from "./helpers.js";
 import { updateFilterState, filterState, filteredPokemons, shiftFilteredPokemons  } from './state.js';
 
@@ -12,12 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     addEventToLoadBtn(defaultPokemonAmountOnLoad);
     handleKeyboardInputs();
     handleClickEvents();
+    handleScrollEvents();
 
     // at the start, reset all filter states
+    handleKeyUpSearchListener();
     
 });
 
-function handleSearchClickListeners(event) {
+function handleSearchClickListeners() {
     const clickedBtn = event.target.closest('.search-btn');
 
     if (!clickedBtn) return;
@@ -25,14 +27,12 @@ function handleSearchClickListeners(event) {
     handleSearchSubmit(defaultPokemonAmountOnLoad, filterState);
 }
 
-function handleInputSearchListener(event) {
-    const searchInput = event.target.closest('search-input');
-
-    if (!searchInput) return;
-
-    if (event.key === 'Enter') {
-        handleSearchSubmit(defaultPokemonAmountOnLoad, filterState);
-    }
+function handleKeyUpSearchListener() {
+    document.getElementById('search-input').addEventListener('keyup', (event) => {
+        if (event.key === 'Enter') {
+            handleSearchSubmit(defaultPokemonAmountOnLoad, filterState);
+        }
+    });
 }
 
 function addEventToLoadBtn(defPokemonToLoad) {
@@ -61,6 +61,7 @@ function handleClickEvents() {
         handleSearchClickListeners(event);
         handleFilterClicksStateUpdate(event);
         handleClickToResetFilters(event);
+        handleScrollToTopClick(event);
     });
 }
 
@@ -68,7 +69,6 @@ function handleKeyboardInputs() {
     document.addEventListener('input', (event) => {
         setupNumberInputsValidation(event);
         handleFilterInputStateUpdate(event);
-        handleInputSearchListener(event);
     });
 }
 
@@ -250,27 +250,7 @@ function delegateClickAndReplaceText(event) {
 }
 
 function loadFilterTypeOptions() {
-    const allPokemonTypes = [
-        "normal",
-        'fighting',
-        "grass",
-        "fire",
-        "water",
-        "electric",
-        "flying",
-        "bug",
-        "poison",
-        "ground",
-        "rock",
-        "ice",
-        "dragon",
-        'steel',
-        'ghost',
-        'dark',
-        'psychic',
-        'fairy'
-    ].sort(); // sort alphabetically.
-
+    const allPokemonTypes = getAllPokemonTypes();
     const typesContainer = document.getElementById('filter-type-options');
     
     if (!typesContainer) return;
@@ -283,9 +263,9 @@ function loadFilterTypeOptions() {
 
 function createFilterTypeOptionHTML(type) {
     return `
-        <div class="u-flex u-gap-16">
+        <div class="u-flex u-gap-8">
             <span class="pokemon-card__type pokemon-card__type--${type}">${capitalize(type)}</span>
-            <span class='u-flex u-gap-8'>
+            <span class='u-flex u-gap-4'>
                 <label class="toggle">
                     <input class="toggle__input" data-filter='types' data-value="${type}" type="checkbox"/>
                     <span class="toggle__ui toggle__ui--type"></span>
@@ -437,4 +417,32 @@ function addCategoriesToHeight() {
         const optionHTML = createSelectItemHTML(capitalize(category), category, 'click-and-replace-text__toggle', 'filter-state-select');
         weightCategoriesContainer.insertAdjacentHTML('beforeend', optionHTML);
     });
+}
+
+function handleScrollToTopClick(event) {
+    if (!event.target.closest('.back-to-top')) return;
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
+function handleScrollEvents() {
+    window.addEventListener("scroll", (event) => {
+        handleScrollToTopScrolling(event);
+    });
+}
+
+function handleScrollToTopScrolling(event) {
+    const scrollThreshold = 1500; // 1500 pixels;
+    const backToTop = document.getElementById('back-to-top');
+
+    if (window.scrollY > scrollThreshold) {
+        backToTop.classList.add("back-to-top--show");
+    } else {
+        backToTop.classList.remove("back-to-top--show");
+    }
+
 }

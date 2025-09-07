@@ -10,7 +10,7 @@
 @mixin interactive-darken {
   cursor: pointer;
 
-  &:hover {
+  &:hover, &:focus-visible {
     filter: brightness(85%);
   }
 }

@@ -38,7 +38,7 @@ $grid-dimensions: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   justify-content: space-between;
 }
 
-u-justify-end {
+.u-justify-end {
   justify-content: end;
 }
 
@@ -69,6 +69,14 @@ u-justify-end {
   display: grid;
 }
 
+.u-m-auto {
+  margin: auto;
+}
+
+.u-h-full {
+  height: 100%;
+}
+
 @each $dimension in $grid-dimensions {
   .u-cols-#{$dimension} {
     grid-template-columns: repeat(#{$dimension}, 1fr);
@@ -81,6 +89,11 @@ u-justify-end {
   .u-col-#{$dimension} {
     grid-column: #{$dimension} / #{($dimension + 1)};
   }
+
+  .u-row-#{$dimension} {
+    grid-row: #{$dimension} / #{($dimension + 1)};
+  }
+  
 }
 
 .u-max-w-half {

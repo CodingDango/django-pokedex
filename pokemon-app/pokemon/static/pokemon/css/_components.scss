@@ -20,6 +20,7 @@
 .search__header {
   font-weight: bold;
   font-size: 36px;
+  background-color: transparent;
 }
 
 .search__text {
@@ -149,8 +150,8 @@
   }
   
   &__sprite {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 150px;
+    max-height: 150px;
     z-index: 5;
   }
   
@@ -334,6 +335,11 @@
   align-items: center;
 }
 
+.dropdown__toggle:focus-visible {
+  outline-color: var.$primary-red;
+  filter: brightness(0.80);
+}
+
 /* Handle long text with "..." */
 .click-and-replace-text__text {
   white-space: nowrap;
@@ -348,8 +354,12 @@
   width: 150px;
 }
 
+.filter-section {
+  width: 100%;
+}
+
 .dropdown__toggle--w-md {
-  width: 250px;
+  width: 100%;
 }
 
 .dropdown__target {
@@ -357,7 +367,6 @@
   visibility: hidden;
   background-color: var.$lighter-dark-color;
   color: white;
-  max-width: 320px;
   width: 100%;
   top: 100%;
   left: 0%;
@@ -461,9 +470,9 @@
   border-color: var.$primary-red;
 }
 
-.toggle__input:focus + .toggle__ui::before {
+.toggle__input:focus-visible + .toggle__ui::before {
   outline: solid black;
-  filter: brightness(0.95);
+  filter: brightness(0.90);
 }
 
 #filter-controls {
@@ -471,4 +480,147 @@
   box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;  
   padding: 30px 40px;
   border-radius: 10px;
+}
+
+#filter-type-options {
+  column-gap: 28px;
+  width: 100%;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.id-range {
+  align-items: end;
+}
+
+.filter-btn-text::before {
+  content: 'Advanced Filters';
+}
+
+.back-to-top {
+  flex-direction: column;
+  position: fixed;
+  display: flex;
+  bottom: 2rem;
+  right: 2rem;
+  gap: 8px;
+  color: var.$primary-red;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+
+  opacity: 0; /* Start fully transparent */
+  pointer-events: none; /* Make it unclickable when invisible */
+  transform: translateY(20px); /* Optional: Start slightly lower for a slide-up effect */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.back-to-top--show {
+  opacity: 1; /* Make it fully visible */
+  pointer-events: auto; /* Make it clickable again */
+  transform: translateY(0); /* Optional: Move it to its final position */
+}
+
+.back-to-top__symbol {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: white;
+  color: var.$primary-red;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+}
+
+@media (max-width: 750px) {
+  .pokemon-card {
+    padding: 10px 15px;
+  }
+
+  .results__container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+
+  }
+
+  #filter-controls {
+    padding: 15px 20px;
+  }
+
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .filter-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 40px;
+  }
+
+  .filter-grid > * {
+    grid-column: 1 / -1 !important; /* Tell every item to start at column line 1 and end at the very last line (-1) */
+    grid-row: auto !important;
+    align-items: start !important;
+  }
+
+  .filter-section {
+    width: 100%;
+  }
+
+  .dropdown__toggle--w-md {
+    width: 100%;
+  }
+
+  .dropdown__toggle {
+    width: 100%;
+  }
+  
+  .id-range {
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  #filter-controls {
+    padding: 10px;
+  } 
+
+  #filter-type-options {
+    column-gap: 14px;
+    width: 100%;
+  }
+
+  #filter-type-options .pokemon-card__type {
+    width: 4.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .filter-btn-text::before {
+    content: 'Filters' !important;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .results__container {
+    grid-template-columns: 1fr;
+  }
+
+  .pokemon-card {
+    padding: 10px 20px;
+  }
 }

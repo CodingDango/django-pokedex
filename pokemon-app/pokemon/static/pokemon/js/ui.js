@@ -1,10 +1,9 @@
 import { capitalize, formatId, areElementsInArray} from './helpers.js';
 import { 
-    fetchPokemonDetails, 
     getListOfPokemonsLocal, 
-    getPokemonFromLocal, 
     getWeightCategoryOfPokemon, 
-    getHeightCategoryOfPokemon 
+    getHeightCategoryOfPokemon,
+    calculateWeaknesses
 } from './api.js';
 
 import { setFilteredPokemons, shiftFilteredPokemons, filteredPokemons } from './state.js';
@@ -82,9 +81,14 @@ export function handleSearchSubmit(defaultAmt, filterState) {
     }
 
     // i havent decided on weaknesses yet... how do weaknesses work?
+    if (filterState.weaknesses.length > 0) {
+        pokemons = pokemons.filter(pokemon => {
+            const weaknesses = Object.keys(calculateWeaknesses(pokemon.types));
+            return areElementsInArray(filterState.weaknesses, weaknesses);
+        });
+    }
 
     // filter by abilities if they have it?
-
     if (filterState.ability !== 'all') {
         pokemons = pokemons.filter(pokemon => (pokemon.ability === filterState.ability));
     }
@@ -124,7 +128,12 @@ export function handleSearchSubmit(defaultAmt, filterState) {
 
 export function loadQueriedPokemonsView(pokemons) {
     clearPokemonResults();
-    setLoadMoreBtnVisiblity(true);
+
+    if (pokemons.length === 1) {
+        setLoadMoreBtnVisiblity(false);
+    } else {
+        setLoadMoreBtnVisiblity(true);
+    }
 
     if (!pokemons || pokemons.length == 0) {
         renderSearchError();
