@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import requests 
+import json
 
 # helper functions because im tired.
 def get_gender_rates(gender_rate):
@@ -37,8 +38,31 @@ def viewPokemon(request, id):
         context['official_artwork_url'] = json_data.get('sprites', {}).get('other', {}).get('official-artwork', {}).get('front_default')
         context['weightKg'] = ( json_data['weight'] / 10 )
         context['heightFt'] = "{:.2f}".format(json_data['height'] / 3.048)
-        context['types'] = [slot['type']['name'] for slot in json_data['types']]
+        context['types'] = json.dumps([slot['type']['name'] for slot in json_data['types']])
         context['abilitiesStr'] = ', '.join([slot['ability']['name'].capitalize() for slot in json_data['abilities']])
+        
+        max_stat = 255
+        context['baseStats'] = []
+        
+        for stat_info in json_data['stats']:
+            stat_value = stat_info['base_stat']            
+            stat_name = stat_info['stat']['name']
+            
+            if (stat_name == 'special-attack'):
+                stat_name = 'sp. atk'
+            elif (stat_name == 'special-defense'):
+                stat_name = 'sp. def'
+            
+            stat_name = stat_name.title()            
+            
+            context['baseStats'].append({
+                'name' : stat_name,
+                'value' : stat_value,
+                'widthPercentage' : (stat_value / max_stat) * 100,
+            })
+        
+        # Manually replace....
+        
         
     except requests.exceptions.HTTPError as err:
         # The "phone call" connected, but the API gave us an error page.
