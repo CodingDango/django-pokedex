@@ -22,6 +22,7 @@ export function setLoadMoreBtnVisiblity(show) {
 export function createPokemonCardElement(pokemonData) {
     const htmlToRender = `
         <article data-nat-dex=${pokemonData.id} class="pokemon-card pokemon-card--${pokemonData.types[0]}">
+          <a href='/${pokemonData.id}' class='pokemon-card__link'></a>
           <img class='pokemon-card__ball' src='/static/pokemon/images/pokeball2.svg'>
           <header class="pokemon-card__header">
             <h2 class="pokemon-card__name">${capitalize(pokemonData.name)}</h2>
@@ -40,6 +41,7 @@ export function createPokemonCardElement(pokemonData) {
             <img class="pokemon-card__sprite" src="${pokemonData.imageUrl}"> 
           </div>
         </article>`;
+        
 
     return htmlToRender;
 }

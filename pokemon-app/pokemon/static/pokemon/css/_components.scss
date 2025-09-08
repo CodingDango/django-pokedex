@@ -184,6 +184,90 @@
       }
     }
   }
+
+  &__link {
+    position: absolute;
+    inset: 0%;
+    border-radius: inherit;
+    z-index: 20;
+    &:focus-visible {
+      border: 2px solid var.$text-color;
+    }
+  }
+}
+
+.pokemon-detailed-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & > * {
+    padding: 20px 30px;
+  }
+}
+
+.pokemon-detailed-card__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.pokemon-detailed-card__img {
+  @each $type, $colors in var.$pokemon-types {
+    $card-color: list.nth($colors, 1);
+    &--#{$type} {
+      background-color: $card-color;
+    }
+  }
+
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.pokemon-detailed-card__detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-weight: 600;
+}
+
+.pokemon-detailed-card__detail div:first-child {
+  color: var.$text-light;
+}
+
+.navigate-pokemons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.navigate-pokemons__left-id, .navigate-pokemons__right-id {
+  color: var.$text-light;
+}
+
+.female_icon {
+  color: var.$pink;
+}
+
+.male_icon {
+  color: var.$sky;
 }
 
 .bg_img__wrapper {
@@ -539,6 +623,8 @@
   color: var.$primary-red;
   box-shadow: var.$drop-shadow-properties var.$drop-shadow-color;
 }
+
+
 
 @media (max-width: 750px) {
   .pokemon-card {

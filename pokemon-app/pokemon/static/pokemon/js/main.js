@@ -1,5 +1,5 @@
 import { handleSearchSubmit, renderPokemons, setLoadMoreBtnVisiblity} from "./ui.js";
-import { getAllAbilityNames, getHeightCategories, getWeightCategories, getAllPokemonTypes} from "./api.js" ;
+import { getAllAbilityNames, getHeightCategories, getWeightCategories, getAllPokemonTypes, fetchPokemonDetails} from "./api.js" ;
 import { capitalize } from "./helpers.js";
 import { updateFilterState, filterState, filteredPokemons, shiftFilteredPokemons  } from './state.js';
 
@@ -435,8 +435,8 @@ function handleScrollEvents() {
     });
 }
 
-function handleScrollToTopScrolling(event) {
-    const scrollThreshold = 1500; // 1500 pixels;
+function handleScrollToTopScrolling() {
+    const scrollThreshold = 1000; // 1000 pixels;
     const backToTop = document.getElementById('back-to-top');
 
     if (window.scrollY > scrollThreshold) {
@@ -446,3 +446,4 @@ function handleScrollToTopScrolling(event) {
     }
 
 }
+
