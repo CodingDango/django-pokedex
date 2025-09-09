@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTypeWeaknesses();
     loadPrevAndNextNav();
     formatPokemonIdElement();
+    delegateFormatIds()
 });
 
 function loadDocumentDataElementJson(selector) {
@@ -63,4 +64,13 @@ function formatPokemonIdElement() {
 
     const formattedIdStr = `#${formatId(parseInt(pokemonIdElement.textContent))}`
     pokemonIdElement.textContent = formattedIdStr;
+}
+
+function delegateFormatIds() {
+    const elements = document.querySelectorAll('.format-id');
+
+    for (const element of elements) {
+        const formattedIdStr = `#${formatId(parseInt(element.textContent))}`;
+        element.textContent = formattedIdStr;
+    }
 }

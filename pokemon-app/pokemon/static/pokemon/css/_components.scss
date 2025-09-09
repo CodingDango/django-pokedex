@@ -183,6 +183,13 @@
         color: $type-indicator-text-color;
       }
     }
+
+    &--sm {
+      font-size: 14px;
+      padding: 2px;
+      border-radius: 10px;
+      width: 4rem;
+    }
   }
 
   &__link {
@@ -207,6 +214,8 @@
   & > * {
     padding: 20px 30px;
   }
+
+  padding: 10px 0 20px 0;
 }
 
 .pokemon-detailed-card__id {
@@ -247,11 +256,26 @@
   grid-column: 1 / -1;
 }
 
+.inset-link {
+  position: absolute;
+  inset: 0%;
+  border-radius: inherit;
+  z-index: 20;
+
+  &:focus-visible {
+    border: 2px solid var.$text-color;
+  }
+}
+
 .pokemon-detailed-card__evolution-card {
+  position: relative;
   width: 100%;
-  height: 100%;
   max-width: 128px;
-  max-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 
   & img {
     width: 100%;

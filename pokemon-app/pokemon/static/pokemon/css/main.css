@@ -19,7 +19,7 @@ input::-webkit-inner-spin-button {
   min-height: 100vh;
   max-width: 900px;
   width: 100%;
-  padding: 80px 0px 40px 0px;
+  padding: 80px 0px 80px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ input::-webkit-inner-spin-button {
   min-height: 100vh;
   max-width: 900px;
   width: 100%;
-  padding: 80px 0px 40px 0px;
+  padding: 80px 0px 80px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -354,6 +354,12 @@ input::-webkit-inner-spin-button {
   background-color: #F9A7D2;
   color: white;
 }
+.pokemon-card__type--sm {
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 10px;
+  width: 4rem;
+}
 .pokemon-card__link {
   position: absolute;
   inset: 0%;
@@ -371,6 +377,7 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 4px 12px 0px rgba(29, 41, 61, 0.1);
   display: flex;
   flex-direction: column;
+  padding: 10px 0 20px 0;
 }
 .pokemon-detailed-card > * {
   padding: 20px 30px;
@@ -461,11 +468,25 @@ input::-webkit-inner-spin-button {
   grid-column: 1/-1;
 }
 
+.inset-link {
+  position: absolute;
+  inset: 0%;
+  border-radius: inherit;
+  z-index: 20;
+}
+.inset-link:focus-visible {
+  border: 2px solid #1D293D;
+}
+
 .pokemon-detailed-card__evolution-card {
+  position: relative;
   width: 100%;
-  height: 100%;
   max-width: 128px;
-  max-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 .pokemon-detailed-card__evolution-card img {
   width: 100%;

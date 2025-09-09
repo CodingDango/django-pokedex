@@ -166,25 +166,64 @@
         <div class="pokemon-detailed-card__evolutions" class="u-flex u-flex-col u-gap-20">
           <div class="u-flex u-flex-col u-gap-20">
             <h2>Evolutions</h2>
+            <!-- <p>This pokemon does not evolve.</p> -->
 
             <div class="u-flex u-justify-center u-items-center">
-              <div class="pokemon-detailed-card__evolution-card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-              </div> 
               
+              {% for evolution in evolution_names %}
+
               <div class="pokemon-detailed-card__evolution-card">
+                <a href="/1" class="inset-link"></a>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+                <p class="format-id text-light">1</p>
+                <h3>{{ evolution }}</h3>
+                <div class="u-flex u-justify-center u-items-center u-gap-4">
+                  {% for type in details.types %}
+                    <span class="pokemon-card__type pokemon-card__type--{{type.type.name}} pokemon-card__type--sm">{{ type.type.name|capfirst }}</span>
+                  {% endfor %}
+                </div>
+              </div> 
+
+              {% endfor %}
+              
+              <!-- <div class="pokemon-detailed-card__evolution-card">
                 <div class="icon icon--lg">
                   <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
-              </div>
+                <div>(Level 16)</div>
+              </div> -->
 
-              <div class="pokemon-detailed-card__evolution-card">
+              <!-- <div class="pokemon-detailed-card__evolution-card">
+                <a href="/2" class="inset-link"></a>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png">
-              </div> 
+                <p class="format-id text-light">2</p>
+                <h3>Ivysaur</h3>
+                <div class="u-flex u-justify-center u-items-center u-gap-4">
+                  {% for type in details.types %}
+                    <span class="pokemon-card__type pokemon-card__type--{{type.type.name}} pokemon-card__type--sm">{{ type.type.name|capfirst }}</span>
+                  {% endfor %}
+                </div>
+              </div> -->
+              
+              <!-- <div class="pokemon-detailed-card__evolution-card">
+                <div class="icon icon--lg">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div>(Level 32)</div>
+              </div> -->
 
-              <div class="pokemon-detailed-card__evolution-card">
+              <!-- <div class="pokemon-detailed-card__evolution-card">
+                <a href="/3" class="inset-link"></a>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png">
-              </div> 
+                <p class="format-id text-light">3</p>
+                <h3>Venusaur</h3>
+                <div class="u-flex u-justify-center u-items-center u-gap-4">
+                  {% for type in details.types %}
+                    <span class="pokemon-card__type pokemon-card__type--{{type.type.name}} pokemon-card__type--sm">{{ type.type.name|capfirst }}</span>
+                  {% endfor %}
+                </div>
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -193,6 +232,9 @@
     {% endif %}
   </div>
 </main>
+
+
+
 
 <script id="typesOfPokemon" type="application/json">{{ types|safe }}</script>
 <script id="pokemonId" type="application/json">{{ details.id|safe }}</script>
