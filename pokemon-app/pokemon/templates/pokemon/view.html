@@ -9,32 +9,37 @@
     {% else %}
 
     <nav class="navigate-pokemons">
-      <button class="u-flex u-gap-16 button">
-        <span class="icon icon--lg">
-          <i class="fa-solid fa-arrow-left"></i>
-        </span>
-        <span class="u-flex u-gap-16">
-          <span class="navigate-pokemons__left-id">#1025</span>
-          <p>Pecharunt</p>
-        </span>
-      </button>
 
-      <button class="u-flex u-gap-16 button">
-        <span class="u-flex u-gap-16">
-          <p>Ivysaur</p>
-          <span class="navigate-pokemons__right-id">#0002</span>
-        </span>
-        <span class="icon icon--lg">
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-      </button>
+      <a class="button button--light" href="">
+        <div class="u-flex u-gap-8 ">
+          <span class="icon icon--lg">
+            <i class="fa-solid fa-arrow-left"></i>
+          </span>
+          <span class="u-flex u-gap-8">
+            <span id="prev-pokemon-id" class="navigate-pokemons__left-id"> </span>
+            <p id="prev-pokemon-name"> </p>
+          </span>
+        </div>
+      </a>
+
+      <a class="button button--light" href="">
+        <div class="u-flex u-gap-8 ">
+          <span class="u-flex u-gap-8">
+            <p id="next-pokemon-name"> </p>
+            <span id="next-pokemon-id" class="navigate-pokemons__right-id"> </span>
+          </span>
+          <span class="icon icon--lg">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+      </a>
     </nav>
 
     <article class="pokemon-detailed-card">
       <header>
-          <div class="u-flex u-justify-center u-gap-20 u-items-center">
+          <div class="u-flex u-justify-center u-items-center u-gap-20">
             <h1>{{ details.name|capfirst }}</h1>
-            <p>#000{{ details.id }}</p>
+            <p id="pokemon-id-element" class="pokemon-detailed-card__id">{{ details.id }}</p>
           </div>
       </header>
       <section class="pokemon-detailed-card__content">
@@ -157,6 +162,32 @@
             </div>
           </div>
         </div>
+
+        <div class="pokemon-detailed-card__evolutions" class="u-flex u-flex-col u-gap-20">
+          <div class="u-flex u-flex-col u-gap-20">
+            <h2>Evolutions</h2>
+
+            <div class="u-flex u-justify-center u-items-center">
+              <div class="pokemon-detailed-card__evolution-card">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+              </div> 
+              
+              <div class="pokemon-detailed-card__evolution-card">
+                <div class="icon icon--lg">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+
+              <div class="pokemon-detailed-card__evolution-card">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png">
+              </div> 
+
+              <div class="pokemon-detailed-card__evolution-card">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png">
+              </div> 
+            </div>
+          </div>
+        </div>
       </section>
     </article>
     {% endif %}
@@ -164,5 +195,6 @@
 </main>
 
 <script id="typesOfPokemon" type="application/json">{{ types|safe }}</script>
+<script id="pokemonId" type="application/json">{{ details.id|safe }}</script>
 
 {% endblock %}
